@@ -2,3 +2,15 @@ body {
     padding: 0px;
     margin: 0px;
 }
+
+/* Hero */
+.hero h1 {
+    color: #5ada86;
+}
+
+.hero button {
+    background: #5ada86;
+    color: #fff;
+}
+
+/* End Hero */
