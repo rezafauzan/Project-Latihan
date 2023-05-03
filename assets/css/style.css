@@ -3,6 +3,10 @@ body {
     margin: 0px;
 }
 
+.container{
+    max-width: 1200px;
+}
+
 /* Hero */
 .hero h1 {
     color: #5ada86;
@@ -31,9 +35,9 @@ body {
 /* End Gallery */
 
 /* About */
-.about {
-    width: 100%;
+.about .row{
     min-height: 300px;
+    line-height: 1.7;
 }
 
 .about .left-about {
