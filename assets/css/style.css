@@ -29,3 +29,38 @@ body {
 }
 
 /* End Gallery */
+
+/* About */
+.about{
+    width: 100%;
+    min-height: 300px;
+}
+
+.about .left-about{
+    color: #fff;
+}
+
+.about .left-about h3{
+    color: #5ada86;
+}
+
+.about .left-about button{
+    background: #5ada86;
+    color: #fff;
+}
+
+.about .right-about{
+    background: #5ada86;
+    color: #fff;
+}
+
+.about .right-about h3{
+    color: #010101;
+}   
+
+.about .right-about button{
+    background: #010101;
+    color: #fff;
+}
+
+/* End About */
