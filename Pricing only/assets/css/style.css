@@ -1,0 +1,30 @@
+/* Feature-Card */
+.feature-card {
+    width: 100%;
+    min-height: 400px;
+    line-height: 1.85;
+    margin: 40px auto;
+}
+
+.feature-card h5, .feature-card ul li i {
+    color: #5ada86;
+}
+
+.big-feature-card {
+    background-color: #5ada86;
+}
+
+.big-feature-card h5 {
+    color: #010101;
+}
+/* End Feature-Card */
+
+@media (min-width: 1000px) {
+    .feature-card {
+        width: 30%;
+    }
+
+    .big-feature-card {
+        transform: scale(1.12);
+    }
+}
