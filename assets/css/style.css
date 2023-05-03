@@ -14,3 +14,18 @@ body {
 }
 
 /* End Hero */
+
+/* Gallery */
+.gallery h2 {
+    color: #5ada86;
+}
+
+.gallery ul li a {
+    color: #5ada86;
+}
+
+.gallery ul li a i {
+    color: #010101;
+}
+
+/* End Gallery */
