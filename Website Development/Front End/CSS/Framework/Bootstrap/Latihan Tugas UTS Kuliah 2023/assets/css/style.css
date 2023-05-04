@@ -1,0 +1,102 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container{
+    max-width: 1200px;
+}
+
+/* Hero */
+.hero h1 {
+    color: #5ada86;
+}
+
+.hero button {
+    background: #5ada86;
+    color: #fff;
+}
+
+/* End Hero */
+
+/* Gallery */
+.gallery h2 {
+    color: #5ada86;
+}
+
+.gallery ul li a {
+    color: #5ada86;
+}
+
+.gallery ul li a i {
+    color: #010101;
+}
+
+/* End Gallery */
+
+/* About */
+.about .row{
+    min-height: 300px;
+    line-height: 1.7;
+}
+
+.about .left-about {
+    color: #fff;
+}
+
+.about .left-about h3 {
+    color: #5ada86;
+}
+
+.about .left-about button {
+    background: #5ada86;
+    color: #fff;
+}
+
+.about .right-about {
+    background: #5ada86;
+    color: #fff;
+}
+
+.about .right-about h3 {
+    color: #010101;
+}
+
+.about .right-about button {
+    background: #010101;
+    color: #fff;
+}
+
+/* End About */
+
+/* Feature-Card */
+.feature-card {
+    width: 100%;
+    min-height: 400px;
+    line-height: 1.85;
+    margin: 40px auto;
+}
+
+.feature-card h5, .feature-card ul li i {
+    color: #5ada86;
+}
+
+.big-feature-card {
+    background-color: #5ada86;
+}
+
+.big-feature-card h5 {
+    color: #010101;
+}
+
+/* End Feature-Card */
+
+@media (min-width: 1000px) {
+    .feature-card {
+        width: 30%;
+    }
+
+    .big-feature-card {
+        transform: scale(1.12);
+    }
+}
