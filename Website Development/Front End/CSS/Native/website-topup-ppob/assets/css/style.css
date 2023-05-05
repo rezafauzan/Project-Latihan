@@ -1,0 +1,209 @@
+:root {
+    /*  
+    Target Theme : Dark Mode;
+    Behaviour : Professional,Elegant,Neon,Blue Aurora ,Midnight
+    Collor reference : Black, White Pastel , Cyan, Magenta , Purple ,Strong Red Pastel 
+    Collor Pallete : 
+    */
+    /* NEON */
+    --neon-pink: linear-gradient(to bottom, #ff0090 0, #e8f8fd 33%, #FFF 33%, #FFF 66%, #e8f8fd 66%, #ff0090 100%);
+    --neon-purple: linear-gradient(to bottom, #6f00ff 0, #e8f8fd 33%, #FFF 33%, #FFF 66%, #e8f8fd 66%, #6f00ff 100%);
+    --neon-blue: linear-gradient(to bottom, #00f4ff 0, #e8f8fd 33%, #FFF 33%, #FFF 66%, #e8f8fd 66%, #00f4ff 100%);
+    --neon-green: linear-gradient(to bottom, #00ff2c 0, #e8f8fd 33%, #FFF 33%, #FFF 66%, #e8f8fd 66%, #00ff2c 100%);
+    --neon-yellow: linear-gradient(to bottom, #fff300 0, #e8f8fd 33%, #FFF 33%, #FFF 66%, #e8f8fd 66%, #fff300 100%);
+
+    /* Midnight Sky Aurora */
+    --midnight-sky: linear-gradient(to bottom, #c165dd 0, #5c27fe 100%);
+
+    /* Complimentary */
+    --deep-grey: #1a1a1a;
+    --charcoal-grey: #303030;
+    --midnight-blue: #0B2545;
+    --dark-purple: #300741;
+    --black: #000000;
+    --white: #ffffff;
+    --creamy: #eaeaea;
+    --green: #00ff2c;
+
+    /* Theme */
+    --primary: var(--black);
+    --secondary: #202020;
+    --third: var(--white);
+    --fourth: var(--white);
+    --fifth: #1a1a1a;
+    --sixth: #010101;
+}
+
+/* .neon-pink {
+    background: var(--neon-pink);
+}
+.neon-purple {
+    background: var(--neon-purple);
+}
+.neon-blue {
+    background: var(--neon-blue);
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--primary);
+    background-size: cover;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 5px 5px;
+    border-radius: 10px;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.product-container .product-card {
+    max-width: 150px;
+    max-height: 300px;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    background-color: var(--third);
+    box-shadow: 3px 3px;
+    border-radius: 5px;
+}
+
+.product-container .product-card:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.product-container .product-card .product-header .product-icon {
+    margin: 0 5px;
+    box-sizing: border-box;
+}
+
+.product-container .product-card .product-header .product-icon img {
+    max-width: 100%;
+    border-bottom: 1px solid #000;
+    border-radius: 5px;
+}
+
+.product-container .product-card .product-body h3.product-title a{
+    font-size: 1.3em;
+    color: var(--sixth);
+    text-decoration: none;
+}
+
+.product-container .product-card .product-body p.product-description{
+    color: var(--sixth);
+}
+
+header nav {
+    max-height: 60px;
+    background: var(--primary);
+    color: var(--fourth);
+    padding: 20px;
+}
+
+header nav .search {
+    display: flex;
+    justify-content: center;
+}
+
+header nav .search h3.brand a {
+    color: var(--fourth);
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+header nav .search .btn-cari {
+    min-width: 50px;
+    background: var(--secondary);
+    color: var(--white);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 15px auto;
+    padding: 8px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--fourth);
+}
+
+header nav ul li button.social-btn {
+    width: 30px;
+    height: 30px;
+    color: var(--white);
+    background: transparent;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+main{
+    margin: 35px 0;
+}
+
+main h2.sub-heading {
+    color: var(--fourth);
+    margin: 25px 10px;
+}
+
+main hr {
+    margin: 15px 0;
+    border: none;
+    height: 3px;
+    background: var(--fourth);
+}
+
+main section#hero .hero-container .hero-image {
+    width: 100%;
+    max-height: 768px;
+    margin: 0 auto;
+    box-shadow: 1px 1px;
+}
+
+footer {
+    margin: 15px 0 0 0;
+    padding: 20px;
+    color: rgb(245, 245, 245);
+    background: var(--secondary);
+    line-height: 1.9;
+}
+
+footer .footer-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .footer-container h4{
+    color: #ccc;
+}
+
+
+footer .footer-container ul{
+    list-style: none;
+}
+
+footer .footer-container ul li a{
+    color: var(--third);
+    text-decoration: none;
+}
+
+footer .copyright{
+    margin-top: 25px;
+    color: white;
+    text-align: center;
+}
