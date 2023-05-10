@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Grid 14 | Grid Container Property : justify-content</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .grid-container {
+            width: 80%;
+            height: 400px;
+            margin: 20px auto;
+            border: 1px solid black;
+            display: grid;
+            grid-template-columns: repeat(3, 80px);
+            gap: 10px;
+            /* justify-items: start; */
+            /* justify-items: center; */
+            /* justify-items: end; */
+            /* justify-items: stretch */
+            
+            /* align-items: start; */
+            /* align-items: center; */
+            /* align-items: end; */
+            /* align-items: stretch */
+            
+            /* Shorthand justify & align items*/
+            /* place-items: align-items justify-items; */
+            /* place-items: center center; */
+
+            /* justify-content: start; */
+            /* justify-content: center; */
+            /* justify-content: end; */
+            /* justify-content: stretch */
+            /* justify-content: space-around */
+            /* justify-content: space-evenly */
+            /* justify-content: space-between */
+        }
+        .grid-container .item{
+            background: cyan;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .grid-container .item:nth-child(even){
+            background: salmon;
+        }
+
+        .grid-container .item.i1,.item.i4,.item.i7{
+            width: 30px;
+        }
+
+        .grid-container .item.i2,.item.i5,.item.i8{
+            width: 50px;
+        }
+
+        .grid-container .item.i3,.item.i6,.item.i9{
+            width: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="item i1">1</div>
+        <div class="item i2">2</div>
+        <div class="item i3">3</div>
+        <div class="item i4">4</div>
+        <div class="item i5">5</div>
+        <div class="item i6">6</div>
+        <div class="item i7">7</div>
+        <div class="item i8">8</div>
+        <div class="item i9">9</div>
+    </div>
+</body>
+
+</html>

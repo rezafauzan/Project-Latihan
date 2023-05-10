@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Grid 19 | Grid item Property : align-self</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .grid-container {
+            width: 80%;
+            height: 400px;
+            margin: 20px auto;
+            border: 1px solid black;
+            display: grid;
+            gap: 10px;
+        }
+        .grid-container .item{
+            background: cyan;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .grid-container .item:nth-child(even){
+            background: salmon;
+        }
+
+        .grid-container .item.i1{
+            /* grid-column-start: -1;
+            grid-column-end: span 2;
+            grid-row-start: span 3;
+            grid-row-end: -3; */
+
+            /* Shorthand */
+            grid-column: -1 / span 2;
+            grid-row: 1 / -4;
+
+            /* atau */
+            /* grid-area: <name> | <row-start> / <column-start> / <row-end> / <column-end>; */
+
+            /* justify-self: start; */
+            /* justify-self: end; */
+            justify-self: center;
+            /* justify-self: strecth; */
+            
+            /* align-self: start; */
+            /* align-self: end; */
+            align-self: center;
+            /* align-self: strecth; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="item i1">1</div>
+        <div class="item i2">2</div>
+        <div class="item i3">3</div>
+        <div class="item i4">4</div>
+        <div class="item i5">5</div>
+        <div class="item i6">6</div>
+    </div>
+</body>
+
+</html>
