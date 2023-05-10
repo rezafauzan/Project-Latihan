@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pake Float</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            background: purple;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+        }
+
+        main {
+            text-align: center;
+            width: 100%;
+        }
+
+        .sidebar{
+            width: 40%;
+            float: left;
+            background: black;
+        }
+
+        nav {
+            height: 260px;
+            background: red;
+        }
+
+        aside {
+            height: 140px;
+            background: blue;
+        }
+
+        article {
+            width: 60%;
+            height: 400px;
+            background: bisque;
+            float: right;
+        }
+
+        footer {
+            height: 60px;
+            background: grey;
+            text-align: center;
+        }
+
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        HEADER
+    </header>
+    <main>
+        <div class="sidebar">
+            <aside>ASIDE</aside>
+            <nav>
+                NAV
+            </nav>
+        </div>
+        <article>MAIN</article>
+    </main>
+    <div class="clear"></div>
+    <footer>
+        FOOTER
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktek CSS GRID | Membuat Website Gallery Foto</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        ul.gallery{
+            width: 80%;
+            margin: 20px auto;
+            list-style: none;
+            border: 5px solid white;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 5px;
+        }
+
+        ul.gallery li img{
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Gallery Ku</h2>
+    <ul class="gallery">
+        <li><img src="assets/img/1.png" alt="Gambar"></li>
+        <li><img src="assets/img/2.png" alt="Gambar"></li>
+        <li><img src="assets/img/3.png" alt="Gambar"></li>
+        <li><img src="assets/img/4.png" alt="Gambar"></li>
+        <li><img src="assets/img/5.png" alt="Gambar"></li>
+        <li><img src="assets/img/6.png" alt="Gambar"></li>
+        <li><img src="assets/img/7.png" alt="Gambar"></li>
+        <li><img src="assets/img/8.png" alt="Gambar"></li>
+        <li><img src="assets/img/9.png" alt="Gambar"></li>
+        <li><img src="assets/img/10.png" alt="Gambar"></li>
+    </ul>
+</body>
+</html> 

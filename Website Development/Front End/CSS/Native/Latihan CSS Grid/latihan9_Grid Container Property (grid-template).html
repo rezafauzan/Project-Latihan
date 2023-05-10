@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Grid 9 | Grid Container Property : grid-template</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .grid-container {
+            width: 80%;
+            margin: 20px auto;
+            border: 1px solid black;
+            display: grid;
+            /* grid-template-areas:
+                'header header header'
+                'sidebar sidebar sidebar'
+                'main main main'
+                'footer footer footer'; */
+            grid-template:
+                [baris1-mulai] 'header header header' 60px
+                [baris1-akhir baris2-mulai] 'sidebar sidebar sidebar' 60px
+                [baris2-akhir baris3-mulai] 'main main main' 800px
+                [baris3-akhir baris4-mulai] 'footer footer footer' 120px
+                [baris4-akhir];
+        }
+
+        .grid-container header.item {
+            background: lightcoral;
+            grid-area: header;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .grid-container aside.item {
+            background: lightblue;
+            grid-area: sidebar;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .grid-container main.item {
+            background: lightgreen;
+            grid-area: main;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .grid-container footer.item {
+            background: lightslategray;
+            grid-area: footer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media screen and (min-width: 576px) {
+            .grid-container {
+                grid-template:
+                    [baris1-mulai] 
+                    'header header header' 60px
+                    [baris1-akhir baris2-mulai]
+                    'sidebar main main' 60px
+                    [baris2-akhir baris3-mulai]
+                    'sidebar main main' 800px
+                    [baris3-akhir baris4-mulai]
+                    'footer footer footer' 120px
+                    [baris4-akhir];
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <header class="item">Header</header>
+        <aside class="item">Aside</aside>
+        <main class="item">Main</main>
+        <footer class="item">Footer</footer>
+    </div>
+</body>
+
+</html>

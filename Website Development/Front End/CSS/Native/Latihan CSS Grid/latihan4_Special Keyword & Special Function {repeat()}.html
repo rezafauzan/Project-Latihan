@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Grid 4 | Special Keyword & Special Function {repeat()}</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body{
+            background: #eaeaea;
+        }
+
+        .grid-container{
+            width: 70%;
+            margin: 20px auto;
+            padding: 5px;
+            border: 1px dotted black;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr) repeat(3, 1.5fr);
+        }
+
+        .grid-container .item {
+            background: cyan;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .grid-container .item:nth-child(even){
+            background: salmon;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+</body>
+
+</html>
