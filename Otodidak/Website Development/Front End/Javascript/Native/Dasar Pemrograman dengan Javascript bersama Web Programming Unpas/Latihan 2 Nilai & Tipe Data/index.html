@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasar Pemrograman dengan Javascript : Nilai & Tipe Data</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Buka Console Untuk Melihat Hasil Source Code Javascript</h1>
+    <p>Ini Merupakan Hasil Belajar Dari Video Di Channel Youtube Web Programming Unpas Playlist Dasar Pemrograman Dengan
+        Javascript Video ke 8 & 9 tentang <strong>nilai dan tipe data Pada Javascript</strong> Selengkapnya Bisa Dilihat Di <a href="../Catatan.docx">Catatan</a></p>
+    
+    <h2>Catatan</h2>
+    <h3>Nilai dan Tipe Data Pada Javascript</h3>
+    <pre>
+        Sejatinya Komputer bergerak dan bisa melakukan sesuatu karena bagian terkecil dalam komputer yang disebut dengan data dan data ini tersimpan kedalam serangkaian bit/binary digit yaitu satuan terkecil dari data yang ada di dalam komputer 
+
+        Bit ini terdiri dari dua nilai yaitu 0 dan 1 karena secara elektronika digit 1 terjadi ketika salah satu komponen didalam komputer yang Bernama transistor dialiri oleh listrik dan 0 ketika transistor tidak dialiri listrik
+
+        Sebagai contoh komputer menampilkan bilangan 23 bagaimana sebuah komputer merepresentasikan angka 23 dengan binary ini 
+
+        Dan didalam komputer terdapat banyak sekali bit dan untuk bekerja dengan bit bit tersebut tanpa bingung sebuah komputer membagi bit bit kedalam potongan yang disebut dengan nilai/value 
+
+        Dan meskipun nilai terdiri dari sekumpulan bit bisa saja nilai tersebut memiliki peran yang berbeda yang disebut dengan Tipe Data 
+        
+        Di dalam javascript terdapat 6 tipe data yaitu :
+            •	Number
+                Di dalam javascript tidak ada yang Namanya bilangan bulat atau integer melainkan hanya ada pecahan atau floating point  dan ukuran tampungannya sebesar 64-bit( 2^64) atau lebih tepatnya sebesar 18.446.744.073.709.551.616
+                
+                Akan tetapi angka tersebut tidak dapat digunakan semuanya dan ada beberapa jenis angka yang bisa dijadikan nilai pada tipe data number ini yaitu 
+
+                1.	Angka tanpa decimal ex: 10,100,200 (namun angka ini akan direpresentasikan sebagai pecahan dengan akurasi 15 digit)
+                2.	Angka dengan decimal ex: 0.4,0.5,0.6,0.9 maksimal 17 digit dibelakang koma
+                3.	Eksponen ex: 123e5 //12300000, 123e-5 // 0.00123
+                4.	Bilangan Negatif  ex: -888
+
+                    Ps:jangan mengawali angka di Javascript dengan angka 0 karena akan dianggap sebagai bilangan oktal(basis 8 ex: 022 //18) sama juga jika mengawali dengan 0x akan dianggap sebagai nilai hexadecimal(basis 16 ex: 0xFF //255)
+
+                5.	Angka Special 
+                    o	Infinity ex: 2/0 //infinity
+                    o	-infinity ex: -2/0 //-infinity
+                    o	NaN(Not a Number) ex : 0/0 //NaN
+                        NaN ini juga muncul ketika angka dibagi dengan bukan angka  ex: 100/”Apel” = NaN
+                        Namun apabila stringnya berupa angka javascript akan menganggapnya sebagai angka sehingga berlaku operasi matematika ex : 100 / “10” = 10
+            
+            •	String 
+            •	Boolean
+            •	Object
+            •	Function
+            •	Undefined
+                        
+            Dan karena javascript merupakan untyped language untuk membuat sebuah variable dengan tipe data number bisa langsung menuliskan nilainya dengan angka dan untuk string tinggal menuliskannya didalam kutip begitu juga dengan tipe data lainnya contoh :
+                •	Number
+                    let x = 1945
+                •	String 
+                    let nama = “Reza Fauzan Adhima”
+                •	Boolean
+                    let statusBekerja = true
+                •	Object
+                    let makananKesukaan = {
+                    “Nasi Goreng”,
+                    “Kwetiau Rebus”,
+                    “Daging Panggang”,
+                    “Keju”
+                    }
+                •	Function
+                    let makan= function (){
+                    let energi+=10
+                    }
+                •	Undefined
+                    let x = undefined
+
+        Nilai-nilai tersebut akan secara otomatis dirubah kedalam bit secara otomatis oleh javascriptnya dan setiap nilai yang dibuat akan disimpan disuatu tempat di komputer pada umumnya terletak di dalam memory 
+
+        Selama program berjalan nilai nilai tersebut akan disimpan dan bisa memenuhi kapasitas pada ram akan tetapi ini sangat jarang terjadi karena biasanya program program sederhana tidak memakan begitu banyak RAM
+
+        Ketika program dihentikan nilai yang tersimpan didalam RAM secara otomatis dihilangkan dan bit pada RAM Menjadi kosong untuk digunakan lagi
+    </pre>
+
+
+    <!-- Nilai Dan Tipe Data -->
+    <script src="assets/js/video8.js"></script>
+    <script src="assets/js/video9.js"></script>
+</body>
+
+</html>
