@@ -13,12 +13,6 @@ angka = 0.2
 console.log(angka);
 console.log('\n')
 
-// dengan desimal
-console.log('dengan desimal');
-angka = 0.2
-console.log(angka);
-console.log('\n')
-
 // Eksponen
 console.log('eksponen');
 angka = 123e5

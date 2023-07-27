@@ -1,14 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dasar Pemrograman dengan Javascript : Penulisan Source Code Javascript</title>
 </head>
+
 <body>
     <h1 style="text-align: center;">Buka Console Untuk Melihat Hasil Source Code Javascript</h1>
-    <p>Ini Merupakan Hasil Belajar Dari Video Di Channel Youtube Web Programming Unpas Playlist Dasar Pemrograman Dengan Javascript Video ke 7 tentang <strong>penulisan source code javascript dan cara menjalankannya</strong> Selengkapnya Bisa Dilihat Di <a href="../Catatan.docx">Catatan</a></p>
+    <p>Ini Merupakan Hasil Belajar Dari Video Di Channel Youtube Web Programming Unpas Playlist Dasar Pemrograman Dengan
+        Javascript Video ke 7 tentang <strong>penulisan source code javascript dan cara menjalankannya</strong>
+        Selengkapnya Bisa Dilihat Di <a href="../Catatan.docx">Catatan</a></p>
+    <h2>Catatan</h2>
+    <h3>Apa itu pemrograman?</h3>
+    <pre>
+        Secara Bahasa :
+            Program adalah sebuah kumpulan atau serangkaian instruksi
+        Secara Istilah Dunia IT
+
+            Program adalah urutan instruksi terstruktur yang dirancang agar komputer dapat berperilaku sesuai dengan
+        ketentuan dan tujuan untuk menyelesaikan suatu pekerjaan
+
+            Dan pemrograman disini maksudnya adalah memberikan instruksi sederhana kepada komputer melalui Bahasa
+        pemrograman contoh intruksi sederhana itu seperti melakukan operasi matematika contoh lainnya yaitu menampilkan
+        tulisan ke layar
+
+            Perintah perintah yang kita tulis dalam bentuk Bahasa pemrograman itu disebut dengan statement dan statement
+        yang kita buat haruslah sederhana terstruktur dan masuk akal karena apapun instruksi yang diberikan selama
+        statementnya dimengerti oleh komputer maka akan dieksekusi jadi harus memberikan instruksi yang benar
+        Singkatnya pemrograman itu adalah cara kita untuk memberikan instruksi/perintah sederhana dan terstruktur kepada
+        komputer dan instruksi yang kita berikan haruslah sederhana, benar dan masuk akal dan juga statement yang kita
+        buat harus mengikuti aturan pada Bahasa pemrograman tertentu
+    </pre>
+    <h3>Apa itu Bahasa Pemrograman?</h3>
+    <pre>
+            Bahasa pemrograman merupakan Pustaka kumpulan instruksi instruksi untuk membuat perintah terhadap komputer
+
+            Bahasa pemrograman dibuat sejak komputer dibuat dan ada banyak sekali Bahasa pemrograman dan terus bertambah seiring berkembangnya teknologi, mengapa ada banyak karena biasanya Bahasa pemrograman tertentu dibuat untuk tujuan tertentu juga jadi tidak semua Bahasa pemrograman bisa melakukan hal yang sama
+
+            Tapi sebetulnya perangkat yang kita gunakan sehari hari seperti komputer tidak mengerti Bahasa pemrograman yang banyak tersebut .komputer sebenarnya hanya mengerti satu Bahasa yang disebut dengan Bahasa mesin yang biasanya instruksi intruksinya itu ditulis dengan binner,hexa dll
+
+            Dan karena Bahasa mesin cenderung sulit ditulis dan dibaca oleh manusia maka dibuatlah Bahasa pemrograman yang lebih mudah ditulis dan dibaca , Bahasa pemrograman juga memiliki tingkatan dengan sebutan High Level Language dan Low Level Language 
+            
+            High Level Language cenderung lebih mudah dibaca dan ditulis oleh manusia sedangkan Low Level Language merupakan Bahasa yang cenderung lebih mudah dibaca oleh mesin, semakin tinggi level Bahasa pemrograman semakin mudah dipahami namun semakin berat untuk mesin karena harus melalui proses konversi yang disebut dengan compilasi atau interpretasi kedalam Bahasa mesin
+
+            Bahasa pemrograman ditulis dengan Plain Text atau hanya text biasa dan bisa ditulis menggunakan text editor biasa seperti notepad di window ataupun textedit di mac namun ada text editor yang memiliki fitur lebih untuk memudahkan kita dalam menulis Bahasa pemrograman yang disebut dengan Code Editor yang memiliki fitur seperti syntax highlighting debug tool dan auto complete seperti Sublime Text dan Visual Studio Code ada juga yang lebih canggih dari Code Editor yaitu IDE atau Integrated Development Environment yang memiliki fitur lebih lengkap untuk menulis dan menjalankan code contohnya seperti NetBeans, Visual Studio dan Intelij IDEA
+
+            Kumpulan instruksi instruksi menggunakan Bahasa pemrograman disebut dengan Source Code
+
+            lantas bagaimana cara komputer bisa tetap memahami instruksi yang diberikan ? disini lah peran sebuah compiler dan interpreter sebagai penengah atau lebih tepatnya penerjemah dari Bahasa pemrograman ke Bahasa mesin
+    </pre>
+    <h3>Compiler & Interpreter</h3>
+    <pre>
+        Compiler merupakan sebuah perangkat lunak untuk melakukan penerjemahan source code ke Bahasa mesin untuk kemudian menghasilkan file yang bisa dijalankan atau dieksekusi yang disebut dengan Executable biasanya menghasilkan file dengan format .exe nah proses ini disebut dengan compilasi program .exe ini bisa dijalankan dimanapun tanpa harus melalui compiler lagi
+        
+        Sedangkan Interpreter source code yang ditulis tidak memerlukan konversi ke Bahasa mesin namun untuk menjalankannya memerlukan interpreter juga dan tetap berupa source code
+
+        Namun ada juga Bahasa pemrograman yang menggunakan proses compilasi dan interpretasi atau disebut dengan Hybrid cara kerjanya yaitu source code yang ditulis dicompilasi namun bukan menjadi executable melainkan menjadi intermediate language atau biasa disebut byte code 
+
+        Byte code ini sebelum dijalankan akan dilakukan yang Namanya Just In Time Compilation (JIT Compilation) yaitu melakukan compilasi sambal menjalankan programnya
+    </pre>
+    <h3>Mengapa Javascript?</h3>
+    <pre>
+        Javascript merupakan sebuah Bahasa pemrograman yang High Level ,Scripting, Untyped, dan Interpreted. Karena Javascript merupakan Bahasa yang high level sehingga akan lebih mudah dipelajari dan dipahami 
+
+        Javascript disebut dengan Bahasa Scripting yang artinya javascript berjalan diatas program lain yang lebih besar
+
+        Javascript juga merupakan Bahasa yang Untyped atau juga disebut Dynamically Typed yang artinya javascript tidak perlu mendeklarasikan type data nya , ketika membuat variable, variablenya bisa diisi dengan type data apapun ini berbeda dengan Bahasa pemrograman yang Statically Typed atau Typed yang dimana sebelum membuat variable diharuskan untuk mendeklarasikan type datanya dan hanya bisa diisi satu type data saja
+
+        Javascript bisa digunakan untuk Client Side Web Development(Front End) atau membuat website dari sisi client dengan native JS atau disebut Vanila JS maupun menggunakan Framework Seperti Jquery React dll 
+
+        Dan juga sekarang Javascript bisa digunakan untuk Server Side Development(Back End) menggunakan Node JS Atau Express JS
+
+        Javascript juga biasanya digunakan dalam pembuatan browser Extension/Add On,Aplikasi Dekstop menggunakan Electron,App JS dan Mobile menggunakan JQuery Mobile,Cordova 
+
+        Javascript Juga bisa digunakan untuk membuat IOT & Robotics menggunakan CyclonJS dan Jhonny Five
+        Dan Javascript merupakan Bahasa yang interpreted dimana untuk menjalankannya kita memerlukan interpreter dan khususnya javascript memerlukan paling tidak aplikasi browser untuk menjalankannya
+
+        Javascript gratis dan tidak memerlukan instalasi program khusus cukup menggunakan browser yang biasanya sudah terdapat Javascript interpreter atau disebut Javascript Engine
+    </pre>
+    <h3>Lingkungan Pengembangan Javascript</h3>
+    <pre>
+        Javascript merupakan Bahasa scripting yang bisa dijalankan dengan javascript engine atau interpreter yang terdapat didalam browser jadi untuk pengembangan javascript hanya membutuhkan sebuah browser dan code editor 
+        
+        Dan untuk memulai menulis source code javascript cukup dengan menambahkan script kedalam html atau menuliskan dan menjalankan langsung melalui console yang ada pada browser yang bisa di akses melalui hotkey F12 atau klik kanan inspect element masuk ke tab console 
+
+        Penulisan source code javascript di dalam HTML bisa melalui langsung dituliskan didalam html didalam tag script Teknik ini dinamakan inline JS dan ada juga dengan menuliskan source code pada file terpisah dinamakan external js
+    </pre>
+
     <!-- Cara Penulisan Source Code Javascript -->
     <!-- 1.Dengan Menuliskan Langsung Di Tag Script (Internal) -->
     <script>
@@ -17,4 +98,5 @@
     <!-- 2.Dengan Menuliskan Javascript Pada File Terpisah (External)-->
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>

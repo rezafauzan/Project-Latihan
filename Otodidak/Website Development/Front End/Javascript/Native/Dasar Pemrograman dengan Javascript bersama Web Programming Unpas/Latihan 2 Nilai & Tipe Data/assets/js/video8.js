@@ -15,6 +15,7 @@ let makananKesukaan = {
 // Function
 let makan = function () {
     let energi=+10
+    console.log(energi)
 }
 // Undefined
 let undef = undefined
