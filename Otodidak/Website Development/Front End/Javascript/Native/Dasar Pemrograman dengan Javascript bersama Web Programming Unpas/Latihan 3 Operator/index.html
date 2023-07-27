@@ -32,13 +32,29 @@
                 Dan operator ini menghasilkan nilai Boolean (True / False) contohnya 10>5 maka akan menghasilkan true
 
             o	Operator Logika
-            o	Operator String
-        2.	Operator Ternary
+                Operator ini digunakan untuk menentukan logika dari beberapa ekspresi yang digabungkan
+                Contoh:
+                (x > y) && (x%2)
+                Operator AND ini akan mengecek dua kondisi dan harus bernilai true keduanya 
+                (x > y) || (x%2)
+                Operator OR ini akan mengecek dua kondisi dan hanya salah satu yang harus bernilai true
+                !(x > y)
+                Sedangkan Operator NOT akan membalikan hasil yang harusnya true jadi false atau sebaliknya
+
+            o	Operator String ( + (Concatenate) )
+            Di dalam javascript operator (+) ini memiliki dua fungsi jika operandnya adalah angka maka operatornya menjadi aritmatika sedangkan jika operandnya adalah string maka akan menjadi operator penggabung string (Concatenate) dan apabila salah satu operandnya adalah string maka akan dianggap operator string
+                
+        2.	Operator Ternary ( (Kondisi) ? Statement Jika kondisi True : Statement Jika Kondisi False )
             Operator Ternary membutuhkan 3 operand 
             o	Operator Conditional
+                Operator ini digunakan untuk melakukan pengecekan pada sebuah kondisi dan menentukan nilai yang dihasilkan ketika kondisinya bernilai true atau false 
+                Contoh : ( x%2 == 0 ) ? “Genap” : “Ganjil” 
+
         3.	Operator Unary
             Operator Unary hanya membutuhkan 1 operand (operator operand atau operand operator)
-            o	Operator TypeOf
+            o	Operator TypeOf(operand)
+                Operator ini digunakan untuk mengembalikan atau mencari type data pada suatu nilai
+                Contoh : typeof(true)
     </pre>
     <!-- Operator -->
     <script src="assets/js/video10.js"></script>
