@@ -1,7 +1,9 @@
-let i = 1
-while( i <= 10 ){
+let jmlAngkot = 10
+let noAngkot = 1
 
-    console.log( 'Angkot No. ' + i + ' beroperasi dengan baik.' )
-    i++
+while( noAngkot <= jmlAngkot ){
+
+    console.log( 'Angkot No. ' + noAngkot + ' beroperasi dengan baik.' )
+    noAngkot++
 
 }
