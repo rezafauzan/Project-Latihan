@@ -13,6 +13,31 @@
     <p>Ini Merupakan Hasil Belajar Dari Video Di Channel Youtube Web Programming Unpas Playlist Dasar Pemrograman Dengan
         Javascript Video ke 17,18,19,20 tentang <strong>Control Flow</strong> Selengkapnya Bisa Dilihat Di <a href="../Catatan.docx">Catatan</a></p>
     
+    <h2>List Link Ke Halaman Latihan</h2>
+    <ul>
+        <li>
+            <h3><a href="angkot1.html">Latihan Program Angkot Ke - 1</a></h3>
+        </li>
+        <li>
+            <h3><a href="angkot2.html">Latihan Program Angkot Ke - 2</a></h3>
+        </li>
+        <li>
+            <h3><a href="angkot3.html">Latihan Program Angkot Ke - 3</a></h3>
+        </li>
+        <li>
+            <h3><a href="angkot4.html">Latihan Program Angkot Ke - 4</a></h3>
+        </li>
+        <li>
+            <h3><a href="angkot5.html">Latihan Program Angkot Ke - 5</a></h3>
+        </li>
+        <li>
+            <h3><a href="angkot6.html">Latihan Program Angkot Ke - 6</a></h3>
+        </li>
+        <li>
+            <h3><a href="switch.html">Latihan Program Switch Menu Makanan</a></h3>
+        </li>
+    </ul>
+
     <h2>Catatan</h2>
     <h3>Control Flow</h3>
     <pre>
@@ -48,8 +73,77 @@
                 Tabel Penelusuran (Trace Table / Dry-Run Test )
                 Tabel Penelusuran merupakan alat bantu untuk melihat setiap perubahan variable yang terjadi di dalam pengulangan
             
-    Pengkondisian
-    Pengkondisian atau disebut juga percabangan adalah sebuah keadaan dimana program bisa memilih treatment yang berbeda berdasarkan kondisi yang diberikan ada beberapa percabangan yang bisa dipakai salah satu nya adalah if, if else, if else if else, switch
+        Pengkondisian
+        Pengkondisian atau disebut juga percabangan adalah sebuah keadaan dimana program bisa memilih treatment yang berbeda berdasarkan kondisi yang diberikan ada beberapa percabangan yang bisa dipakai salah satu nya adalah if, if else, if else if else, switch
+            •	If
+                Syntax : If(Kondisi){
+                    Aksi/Statement
+                }
+                Statement akan dijalankan apabila kondisi menghasilkan true dan akan keluar dari bloknya apabila kondisi bernilai false
+                Penulisan pengkondisian dengan if ini bisa menangkap lebih banyak pengkondisian dengan menggunakan beberapa if atau bisa juga menggunakan else 
+                Atau 
+            •	If else
+                Syntax: if(kondisi){
+                    Statement/Aksi
+                } else {
+                    Statement/Aksi
+                }
+                Akan tetapi contoh if else diatas kurang baik karena apabila variable angka diisi selain angka maka akan bernilai false sehingga akan menjalankan statement pada blok else
+                Untuk mengatasi permasalahan pada Source Code diatas dibutuhkan pengkondisian berlanjut menggunakan syntax Else If                
+                •	Else If
+                    Syntax :
+                    If( kondisi1 ){
+                        Aksi/Statement
+                    } else If ( kondisi2 ){
+                        Aksi/Statement
+                    }
+                    else{
+                        Aksi/Statement
+                    }
+                    Else if ini merupakan percabangan untuk menambahkan kondisi yang berbeda dan else if disimpan diantara if dan else dan jumlah else if bisa banyak 
+                •	Switch
+                    Syntax : 
+                        switch(ekspresi){
+                            case 1 :
+                                statement/aksi
+                            break ;
+                            case 9 :
+                                statement/aksi
+                            break ;
+                            case 4 :
+                                statement/aksi
+                            break ;
+                            case 5 :
+                                statement/aksi
+                            break ;
+                            case n :
+                                statement/aksi
+                            break ;
+                            default:
+                                statement/aksi
+                            break;
+                        }
+                    Switch merupakan percabangan dengan ekspresi sebagai parameternya dan menjadikan nilai ekspresi sebagai kondisinya yang disimpan pada case dan apabila berada diluar case maka statement didalam default akan dijalankan
+                    Dan khusus pada kasus ini dimana yang menjadi case merupakan integer atau bilangan bulat maka harus nilai variable angka akan dipaksa menjadi integer menggunakan fungsi built in javascript yaitu parseInt() atau merubah nilai case menjadi string angka
+                    
+                    Contoh lain switch bisa dilihat pada catatan.docx
+                    
+                    Apabila case pada switch memiliki statement sama , beberapa case bisa digabungkan dan cukup pada block case terakhir diisi dengan statement
+                    Syntax : 
+                    switch(ekspresi){
+                        case 1 :
+                        case 9 :
+                        case 4 :
+                        case 5 :
+                            statement/aksi
+                        break ;
+                        case n :
+                            statement/aksi
+                        break ;
+                        default:
+                            statement/aksi
+                        break;
+                    }
 
     </pre>
     
