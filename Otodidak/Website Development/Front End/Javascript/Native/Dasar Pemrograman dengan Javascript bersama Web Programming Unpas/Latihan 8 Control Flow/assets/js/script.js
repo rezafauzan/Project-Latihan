@@ -32,4 +32,25 @@
             else {
                 alert(angka + " Bukan Merupakan Sebuah Angka dan ini merupakan hasil dari else")
             }
-
+        // Switch
+        angka = parseInt(prompt("Masukan Angka 1~5"))
+        switch (angka) {
+            case 1:
+                alert("anda memasukan angka 1")
+                break
+            case 2:
+                alert("anda memasukan angka 1")
+                break
+            case 3:
+                alert("anda memasukan angka 1")
+                break
+            case 4:
+                alert("anda memasukan angka 1")
+                break
+            case 5:
+                alert("anda memasukan angka 1")
+                break
+            default:
+                alert("Anda Memasukan Angka Selain 1~5")
+                break
+        }
