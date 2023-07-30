@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasar Pemrograman dengan Javascript : Popup Box</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Lihat Pada Source Code <a href="/assets/js/script.js">Javascript Ini</a></h1>
+    <p>Ini Merupakan Hasil Belajar Dari Video Di Channel Youtube Web Programming Unpas Playlist Dasar Pemrograman Dengan
+        Javascript Video ke 16 tentang <strong>Pop Up Box</strong> Selengkapnya Bisa Dilihat Di <a href="../Catatan.docx">Catatan</a></p>
+    
+    <h2>Catatan</h2>
+    <h3>Pop Up Box</h3>
+    <pre>
+        Pop Up Box Pada Javascript
+        Popup box atau disebut juga Dialog Box adalah sebuah window kecil pada browser yang dapat dimunculkan sebagai alat interaksi agar user dapat berdialog dengan halaman web
+        Ada 3 buah popup box yang dapat digunakan di dalam javascript yaitu alert,prompt dan confirm
+        •	Alert
+            Syntax: alert(“Text”)
+        
+            Apabila dimunculkan lebih dari satu kali maka akan muncul checkbox untuk menghentikan kemunculan alert lagi dan untuk menormalkannya lagi harus halamanya harus dibuka pada tab baru
+        •	Prompt
+            Syntax : Prompt(“Text”)
+            Mirip seperti alert tapi memiliki text input dan dua tombol
+        
+            Untuk menangkap,mendapatkan atau bisa mengakses nilainya prompt ini di assign ke dalam variable contoh : let x = prompt(“Nama ?”) supaya bisa ditampung 
+        •	Confirm 
+            Confirm ini adalah popup box untuk meminta konfirmasi dari user dan akan ada dua tombol dan bisa diberikan aksi yang berbeda ketika user klik ok (akan menghasilkan nilai true) atau cancel (menghasilkan nilai false)
+        
+            Contoh penggunaannya :
+            Let konfirmasi = confirm(“Yakin?”)
+            If(konfirmasi == true){
+                Alert(“user yakin”)
+            } else{
+                Alert(“user tidak yakin”)
+            }
+
+    </pre>
+    
+    <!-- Pop Up Box -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
