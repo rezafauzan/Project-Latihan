@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasar Pemrograman dengan Javascript : Array</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Buka Console Untuk Melihat Hasil Source Code Javascript</h1>
+    <p>Ini Merupakan Hasil Belajar Dari Video Di Channel Youtube Web Programming Unpas Playlist Dasar Pemrograman Dengan
+        Javascript Video ke 34 tentang <strong>Array</strong>
+        Selengkapnya Bisa Dilihat Di <a href="../Catatan.docx">Catatan</a></p>
+    <h2>Catatan</h2>
+    <pre>
+        Array
+        Secara Umum array diartikan sebagai susunan sistematis dari objek objek yang serupa
+        
+        Dan di dalam pemrograman array merupakan tipe data yang digunakan untuk mendeskripsikan kumpulan elemen (nilai atau variable) , yang tiap tiap elementnya memiliki index
+        
+        Array merupakan variable jamak yang mempunyai banyak element dan diacu dengan nama yang sama
+        
+        Array juga terdiri atas pasangan key dan value 
+        
+        Key disini merupakan index pada array dengan tipe integer yang dimulai dari 0
+        
+        Array pada javascript bertipe object (pada Bahasa pemrograman lain biasanya array adalah tipe data tersendiri)
+        
+        Array memiliki fungsi / method length untuk menghitung jumlah element di dalamnya
+        
+        Elemen pada array javascript boleh memiliki tipe data yang berbeda
+        
+        Cara penulisan array 
+        Syntax : let namaVariable = [‘element1’,’element2’,’element3’]
+        Selain untuk menampung banyak nilai ,Array juga  diperlukan untuk mempermudah mengelola nilai/data juga untuk effisiensi memory karena tidak membuat banyak variable
+
+        // Array
+            let bahasa = ['javascript', 'php', 'java', 'c++', 'python'] // deklarasi array
+            console.log(typeof(bahasa)) // akan mengembalikan 'object'
+            console.log(bahasa.length)  // method pada array untuk menghitung jumlah element
+            console.log(bahasa[1])      // akan memunculkan element pada index 1 yaitu php karena index dimulai dari 0
+
+        Pada javascript Array bisa diisi beda tipe data 
+        
+        let arr = ['text' /* String */, 1945 /* Number */, true /* Boolean */, lorem /* Function */, [1,2,3] /* Multi Dimension Array */]
+    </pre>
+
+    <!-- Array -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
