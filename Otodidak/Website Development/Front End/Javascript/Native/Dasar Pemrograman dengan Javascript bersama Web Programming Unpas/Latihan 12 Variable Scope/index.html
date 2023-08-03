@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasar Pemrograman dengan Javascript : Variable Scope</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Buka Console Untuk Melihat Hasil Source Code Javascript</h1>
+    <p>Ini Merupakan Hasil Belajar Dari Video Di Channel Youtube Web Programming Unpas Playlist Dasar Pemrograman Dengan
+        Javascript Video ke 31 tentang <strong>Variable Scope</strong>
+        Selengkapnya Bisa Dilihat Di <a href="../Catatan.docx">Catatan</a></p>
+    <h2>Catatan</h2>
+    <pre>
+        Variable Scope
+    Variable Scope Atau lingkup variable adalah bagaimana variable dapat diakses di dalam sebuah program ada dua jenis scope atau dua jenis lingkup yaitu block scope dan function scope
+    
+    •	Block Scope
+    Variable yang berada di dalam block hanya bisa digunakan di dalam block tidak bisa digunakan di luar block  
+    •	Function Scope
+
+    Scope
+    Secara umum ada beberapa lingkup variable yaitu Global Scope/Window Scope dan Local Scope 
+    •	Global Scope
+    Yaitu Variable Yang Disimpan Di Paling Terluar(berada pada Object Window) Source Code dan bisa digunakan dimana pun di programnya
+    
+    •	Function Scope
+    Yaitu Variable yang dibuat di dalam block function hanya bisa diakses di dalam function itu saja, 
+    
+    akan tetapi variable yang berada pada global scope bisa di akses dari dalam function   
+    // Variable Scope
+        // Global Scope / Window Scope
+        let a = 1
+        function lorem(){
+            let b
+        }
+        console.log(b) // ini tidak akan bisa jalan karena b ada di scope Function Lorem
+        
+        function loremipsum(){
+            console.log(a) // sedangkan a bisa diakses karena a berada di scope Global
+        }
+
+        function dolor(){
+            // name conflict
+            let a = 2  // variable a disini beda dengan a yang ada di global tapi namanya bisa sama
+            // kecuali diakses dengan
+            window.a = 3 
+            
+            a = 4 // apabila tidak ada declarasi variable a di dalam scope local maka akan mencari di global 
+
+            z = 0 
+            // apabila tidak ada declarasi variable di dalam dan di luar maka akan secara otomatis dibuatkan variable di global
+        }
+        console.log(a) // dan ini akan menghasilkan nilai a di global 
+
+    apabila tidak ada declarasi variable a di dalam scope local maka akan mencari di global 
+    apabila tidak ada declarasi variable di dalam dan di luar maka akan secara otomatis dibuatkan variable di global dan ini akan mengotori lingkup global karena tiba tiba ada variable baru dan untuk mengatasi ini bisa dituliskan “Use Strict” pada awal source Code
+    
+
+    Argument akan menjadi local variable baru 
+
+    </pre>
+
+    <!-- Variable Scope -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
