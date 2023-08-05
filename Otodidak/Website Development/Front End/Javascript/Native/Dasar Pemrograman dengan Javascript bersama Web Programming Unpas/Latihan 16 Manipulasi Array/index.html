@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasar Pemrograman dengan Javascript : Manipulasi Array</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Buka Console Untuk Melihat Hasil Source Code Javascript</h1>
+    <p>Ini Merupakan Hasil Belajar Dari Video Di Channel Youtube Web Programming Unpas Playlist Dasar Pemrograman Dengan
+        Javascript Video ke 35,36,37,38 tentang <strong>Manipulasi Array</strong>
+        Selengkapnya Bisa Dilihat Di <a href="../Catatan.docx">Catatan</a></p>
+    <h2>Catatan</h2>
+    <pre>
+    Manipulasi Array
+    •	Menambah Element
+    Menambahkan Element pada array bisa langsung dengan mengisi index yang kosong atau menimpa nilai pada index tersebut
+    Contoh :
+        let arr = []
+        arr[0] = "Element 1"
+        arr[2] = "Element 2"
+        arr[3] = "Element 3"
+        arr[4] = "Element 4"
+        arr[5] = "Element 5"
+    •	Menghapus Element 
+    Menghapus Element pada array bisa langsung dengan menimpa index dengan undefined
+    Contoh :
+        let arr = [‘Element 1’]
+        arr[0] = undefined
+
+    •	Menampilkan Element
+    Untuk menampilkan seluruh isi array bisa dengan menggunakan pengulangan untuk menampilkan element pada semua index array
+    for (let i = 0; i < arr.length; i++) {
+            console.log(arr[i])
+        }
+
+    Method pada array
+    •	length
+    merupakan method untuk mengembalikan jumlah element pada array
+    
+    •	join
+    method untuk menggabungkan seluruh element array dan mengubahnya menjadi string
+    method ini memiliki parameter yaitu separator atau pemisah antar string element bisa diisi dengan argument string apapun
+    
+    •	push
+    adalah sebuah method untuk memasukan element baru di akhir array dan bisa diisi banyak
+    
+    •	pop
+    sebuah method untuk menghilangkan element terakhir
+    
+    •	shift
+    untuk menghilangkan element di awal array    
+
+    •	unshift
+    untuk menambahkan element baru di awal array
+
+    •	slice
+    Adalah method pada array untuk mengambil beberapa element pada array dan menjadikannya array yang baru dan array lama tetap ada
+    Syntax: array.slice(indexAwal, indexAkhir)
+    Akan tetapi index awal akan terbawa index terakhir tidak jadi apabila ingin menghapus index 1 dan 2 maka array.slice(1,3)
+
+    •	splice
+
+    Adalah method untuk menyambung atau menambal atau menyisipkan element pada array
+	Syntax array.splice(indexAwal, berapaElementYangAkanDihapus, elementBaru1, elementBaruN)
+    
+    •	forEach
+    merupakan looping untuk array 
+    Syntax :
+    array.forEach(function (e,i) { console.log(e /*untuk element*/, /*untuk index*/) })
+    Foreach ini akan menjalankan fungsi untuk setiap element pada array
+
+    •	map
+    sama seperti foreach tapi map mengembalikan nilai nilainya menjadi array
+
+    let angka = [1,2,4,3,5,6,9,7,8]
+    let angka2 = item.map(function (e /* untuk element */, i /* untuk index */){
+        return e * 2 // sebagai array baru
+    })
+
+    •	sort 
+    method untuk mengurutkan element element di dalam array 
+    akan tetapi sort ini membandingkan character awalnya saja akan kacau ketika contohnya ada angka lebih dari 1 digit dan harus diakali
+    angka.sort(function (a,b) { return a-b })
+    
+    •	filter
+    method untuk mencari element element pada array dan mengembalikan array
+    let angka3 = angka2.filter(function (x) { return x <= 9 /* Bisa Menggunakan Operator Logika */ })
+    
+    •	find
+    Method untuk mencari sebuah element pada array 
+
+    Dan masih banyak lagi method method array lainnya
+
+    </pre>
+
+    <!-- Manipulasi Array -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
