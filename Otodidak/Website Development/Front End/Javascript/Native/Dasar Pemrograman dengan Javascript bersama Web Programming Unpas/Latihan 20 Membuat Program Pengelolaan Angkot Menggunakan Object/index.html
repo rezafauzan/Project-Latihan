@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasar Pemrograman dengan Javascript : Latihan Object dengan Membuat Program Pengelolaan Angkot</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Buka Console Untuk Melihat Hasil Source Code Javascript</h1>
+    <p>Ini Merupakan Hasil Belajar Dari Video Di Channel Youtube Web Programming Unpas Playlist Dasar Pemrograman Dengan
+        Javascript Video ke 44 Akhir Seri Belajar Dasar Pemrograman Dengan Javascript tentang <strong>Latihan Object dengan Membuat Program Pengelolaan Angkot</strong>
+        Selengkapnya Bisa Dilihat Di <a href="../Catatan.docx">Catatan</a></p>
+    
+        <h2>Catatan</h2>
+        <h4 style="text-align: center;">Terima Kasih Banyak Ini adalah latihan terakhir dari seri belajar dasar pemrograman dengan javascript dari channel youtube Web Programming Unpas bersama Bpk.Sandhika Galih Saya Ucapkan Syukur Alhamdulillah Jazakallahu Khoiran atas ilmu yang diberikan</h4>
+
+        <h2>Penggunaan Program Angkot</h2>
+        <p>Terdapat 5 instansi angkot yaitu : angkot1, angkot2, angkot3, angkot4, angkot5</p>
+        <p>Masing masing instansi memiliki properti : Kas, Nama Supir, Trayek, dan Nama-nama Penumpang</p>
+        <p>Dan masing masing instansi memiliki method : penumpangNaik( namaPenumpang, daftarPenumpang ), dan penumpangTurun( namaPenumpang, daftarPenumpang )</p>
+        <p>method penumpang naik memiliki rules sebagai berikut : </p>
+        <ol>
+            <li>apabila angkot kosong maka penumpang akan duduk di kursi pertama (index 0)</li>
+            <li>apabila angkot ada kursi kosong maka penumpang akan duduk di kursi yang kosong terlebih dahulu (index yang memiliki nilai undefined)</li>
+            <li>apabila nama penumpang sama maka tidak bisa naik pada angkot yang sama</li>
+            <li>ketika turun kursi akan di set sebagai undefined</li>
+            <li>ketika turun penumpang akan membayar tarif sesuai trayek sebagai berikut :</li>
+            <ul>
+                <li><pre>Soreang - Bandung  : 8000</pre></li>
+                <li><pre>Soreang - Banjaran : 7000</pre></li>
+                <li><pre>Soreang - Ciwidey  : 7500</pre></li>
+                <li><pre>Soreang - Cimahi   : 7500</pre></li>
+                <li><pre>Soreang - Cililin  : 6500</pre></li>
+                <li><pre>Jauh Dekat         : 10000</pre></li>
+            </ul>
+        </ol>
+
+        <table style="width: 100%; margin: 0 auto; margin-bottom: 200px; text-align: center;" border="1px">
+            <tr>
+                <th>Nama Angkot</th>
+                <th>Nama Supir</th>
+                <th>Trayek</th>
+                <th>Aksi</th>
+            </tr>
+            <tr>
+                <td>Angkot1</td>
+                <td>Supir1</td>
+                <td>Soreang - Bandung</td>
+                <td><button onclick="angkot1Naik()">Penumpang Naik</button> | <button onclick="angkot1Turun()">Penumpang Turun</button> | <button onclick="angkot1Kas()">Cek Kas</button></td>
+            </tr>
+            <tr>
+                <td>Angkot2</td>
+                <td>Supir2</td>
+                <td>Soreang - Bandung</td>
+                <td><button onclick="angkot2Naik()">Penumpang Naik</button> | <button onclick="angkot2Turun()">Penumpang Turun</button> | <button onclick="angkot2Kas()">Cek Kas</button></td>
+            </tr>
+            <tr>
+                <td>Angkot3</td>
+                <td>Supir3</td>
+                <td>Soreang - Bandung</td>
+                <td><button onclick="angkot3Naik()">Penumpang Naik</button> | <button onclick="angkot3Turun()">Penumpang Turun</button> | <button onclick="angkot3Kas()">Cek Kas</button></td>
+            </tr>
+            <tr>
+                <td>Angkot4</td>
+                <td>Supir4</td>
+                <td>Soreang - Bandung</td>
+                <td><button onclick="angkot4Naik()">Penumpang Naik</button> | <button onclick="angkot4Turun()">Penumpang Turun</button> | <button onclick="angkot4Kas()">Cek Kas</button></td>
+            </tr>
+            <tr>
+                <td>Angkot5</td>
+                <td>Supir5</td>
+                <td>Soreang - Bandung</td>
+                <td><button onclick="angkot5Naik()">Penumpang Naik</button> | <button onclick="angkot5Turun()">Penumpang Turun</button> | <button onclick="angkot5Kas()">Cek Kas</button></td>
+            </tr>
+        </table>
+
+    <!-- Latihan Object dengan Membuat Program Pengelolaan Angkot -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
