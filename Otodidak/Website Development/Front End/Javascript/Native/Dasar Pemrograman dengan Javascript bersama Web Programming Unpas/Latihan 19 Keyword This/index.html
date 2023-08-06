@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasar Pemrograman dengan Javascript : Keyword This</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Buka Console Untuk Melihat Hasil Source Code Javascript</h1>
+    <p>Ini Merupakan Hasil Belajar Dari Video Di Channel Youtube Web Programming Unpas Playlist Dasar Pemrograman Dengan
+        Javascript Video ke 43 tentang <strong>Keyword This</strong>
+        Selengkapnya Bisa Dilihat Di <a href="../Catatan.docx">Catatan</a></p>
+    <h2>Catatan</h2>
+    <pre>
+        Keyword This
+        This adalah sebuah keyword special secara otomatis di definisikan pada setiap function 
+        
+    •	Context Global 
+        secara default this akan mengembalikan context yang dimana this ini sekarang akan mengembalikan object window atau object global
+
+        console.log(this) // secara default this akan mengembalikan context yang dimana this ini sekarang akan mengembalikan object window atau object global
+        console.log(window) // ini dan yang diatas sama
+        console.log(this === window) 
+
+        let a = 'Variable Global'
+        console.log(a) 
+        console.log(this.a) 
+        console.log(window.a) 
+        //ketiga ini pun sama
+
+        function halo(){}
+        halo()
+        this.halo()
+        window.halo()
+        //  karena function ini dibuat didalam object window maka context
+            this disini adalah window
+
+    •	Context Object Literal
+        this pada Object Literal contextnya adalah obj maka akan this disini akan mengembalikan let obj ini atau this disini mengembalikan object yang bersangkutan
+        let obj = {}
+        obj.halo() = function(){
+            console.log(this) // this disini contextnya adalah obj maka akan this disini akan mengembalikan let obj ini atau this disini mengembalikan object yang bersangkutan
+            console.log('halo')
+        }
+
+        let obj1 = {buah:'apple' , item:'garpu'}
+        obj.halo() = function(){
+            console.log(this)
+            console.log('halo')
+        }
+
+    •	Context Instance
+        this disini akan mengembalikan object yang baru dibuat sebagai contextnya
+        
+        function Halo(){
+            console.log(this) // this disini akan mengembalikan instance dari Halo
+            console.log('halo')
+        }
+        let halo1 = new Halo() // this disini contextnya adalah instance(halo1) maka akan mengembalikan object halo1 
+        let halo2 = new Halo() // this disini contextnya adalah instance(halo2) maka akan mengembalikan object halo2
+        let halo3 = new Halo() // this disini contextnya adalah instance(halo3) maka akan mengembalikan object halo3
+
+    </pre>
+
+    <!-- Keyword This -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

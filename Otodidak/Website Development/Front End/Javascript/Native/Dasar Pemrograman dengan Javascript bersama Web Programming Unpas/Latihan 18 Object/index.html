@@ -14,6 +14,96 @@
         Javascript Video ke 41,42 tentang <strong>Object</strong>
         Selengkapnya Bisa Dilihat Di <a href="../Catatan.docx">Catatan</a></p>
     <h2>Catatan</h2>
+    <pre>
+    Object
+    Secara umum object merupakan kumpulan nilai yang memiliki nama 
+
+    Anatomi Object 
+    Variable di dalam object disebut dengan property
+    Dan function di dalam object disebut method
+
+    Syntax : 
+    let namaObject = {}
+    object juga bisa dibuat pada console dengan syntax let namaObject = {} dan juga bisa dibuatkan property atau method melalui console dengan namaObject.namaPropertiAtauMethod = nilai / function
+    begitu juga untuk membuat object melalui Source Code 
+    apabila lebih dari satu atribut maka pisahkan dengan koma
+    Dan untuk mengakses property atau methodnya bisa dengan cara namaObject.namaPropertyAtauFunction
+    Atau bisa dengan memanggil nama propertinya di dalam kurung siku contoh : karyawan[‘nama’]
+    dan untuk menampilkan semuanya bisa menuliskan namaObject saja
+    
+    // Object
+        Let karyawan = {} 
+
+        karyawan = {
+            nama : 'Reza',
+            umur : 19,
+            kpi : [99,99,99,99,99],
+            alamat : {
+                jalan : 'JL. Terusan Cipatik No.16 Kp.Sukarame RT:03 RW:01 Desa Parungserab Kec.Soreang Kab.Bandung Jawa Barat',
+                kota : 'Bandung',
+                provinsi : 'Jawa Barat'
+            }
+        }
+
+        console.log('nama : ' + karyawan.nama)
+        console.log('umur : ' + karyawan['umur'])
+        console.log('umur : ' + karyawan.kpi[1])
+        console.log('umur : ' + karyawan.alamat['kota'])
+        console.log('umur : ' + karyawan['alamat']['jalan'])
+        console.log('umur : ' + karyawan['alamat'].provinsi)
+
+    Membuat Object
+    Ada beberapa cara untuk membuat object pada javascript yaitu dengan cara Object Literal,Function Declaration,Constructor Function( keyword new), Object.create()
+    •	Object Literal
+        let siswa = {
+            nama : 'Reza',
+            nip  : '0405',
+            jurusan : 'Rekayasa Perangkat Lunak'
+        }
+
+        let siswa2 = {
+            nama : 'Denita',
+            nip  : '0504',
+            jurusan : 'Rekayasa Perangkat Lunak'
+        }
+    Untuk membuat object literal cukup dengan membuat variable yang diisi dengan kurung kurawal 
+    Kekurangannya adalah apabila ingin membuat object baru maka harus dibuat semua property dan method nya 
+
+    •	Function Declaration
+    Yaitu membuat object dengan cara membuat function untuk mengisi object 
+    Contoh :
+        // Function Declaration
+        function itemBaru(namaItem,idItem){
+            let item = {}
+            item.namaItem,
+            item.idItem
+            return item
+        }
+
+        let item = itemBaru('Sendok',1)
+
+    Lebih ringkas dari object literal karena templatenya dibuat sekali dan bisa membuat object berkali kali
+
+    •	Constructor Function( keyword new)
+    Mirip dengan function declaration dan constructor ini adalah function khusus untuk membuat object
+    Penulisannya pun sama seperti function declaration dan ada kebiasaan untuk membedakanya yaitu dengan menulis nama function diawali huruf besar
+    Dan dengan constructor ini tidak perlu menulis property dan object seperti pada function declaration melainkan cukup menggunakan syntax this.namaProperty
+    Dan untuk membuat objectnya yaitu dengan cara membuat variable baru diisi dengan keyword new dan nama constructornya dan diisi parameternya
+    Dengan menggunakan keyword new maka secara otomatis bisa dianggap akan dibuatkan variable this = {} dan mereturnnya 
+    Namun apabila tidak diikuti keyword new akan dianggap pemanggilan function declaration yang dimana karena tidak ada variable object dan returnya maka akan mengembalikan nilai undefined
+        // Constructor
+        function Buku(namaBuku,idBuku){
+            // bisa dianggap terdapat let this = {}
+            this.namaBuku = namaBuku
+            this.idBuku = idBuku
+        }
+
+        let buku = new Buku('Catatan.docx',2)
+        // let buku = Buku('Catatan.docx',2) akan dianggap function declaration dan mengembalikan nilai undefined karena tidak ada object pada function Buku
+
+    •	Object.create()
+
+    </pre>
 
     <!-- Object -->
     <script src="assets/js/script.js"></script>
