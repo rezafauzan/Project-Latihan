@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Dasar Latihan 4 : Hyperlink\Link\Weblink</title>
+</head>
+
+<body>
+
+    <h1>Hyperlink</h1>
+
+    <a href="">Ini adalah Hyperlink</a>
+
+    <hr>
+    
+    <a href="https://google.com">Ini adalah Hyperlink External Link menuju Google.com</a>
+    <a href="https://facebook.com">Ini adalah Hyperlink External Link menuju facebook.com</a>
+
+    <hr>
+
+    <a href="halaman2.html">Ini adalah Hyperlink Internal untuk mengakses sumber daya yang berada di satu domain website ini, Menuju halaman2.html</a>
+    <a href="halaman2.html">Ini adalah Hyperlink Relative URL untuk mengakses sumber daya yang berada di satu domain website ini dan berbeda folder, Menuju halaman2.html</a>
+
+    <hr>
+
+    <a href="index.html#pageAnchor1">Menuju Page Anchor 1</a>
+    <a href="index.html#pageAnchor2">Menuju Page Anchor 2</a>
+    <a href="#catatan">Catatan</a>
+
+    <hr>
+
+    <a href="halaman2.html" target="_self"> Hyperlink dengan <em>Attribute Target dengan value _self/default</em> Menuju Halaman 2 Pada Tab Yang Sama</a>
+    <a href="halaman/halaman3.html" target="_blank"> Hyperlink dengan <em>Attribute Target dengan value _blank</em> Menuju Halaman 3 Pada Tab Baru</a>
+    <a href="pages/halaman4.html" target="_parent"> Hyperlink dengan <em>Attribute Target dengan value _parent</em> Menuju Halaman 4</a>
+    <a href="index.html" target="_top"> Hyperlink dengan <em>Attribute Target dengan value _top</em> Menuju Halaman Utama</a>
+
+    <hr>
+
+    <br><br><br><br><br>
+
+    <h3 id="pageAnchor1">Hyperlink Page Anchor 1</h3>
+    
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora iure consequatur possimus eligendi distinctio magnam obcaecati numquam laborum dolore explicabo minima ipsam inventore deleniti, error rerum voluptatibus, dignissimos soluta pariatur!</p>
+
+    <br><br><br><br><br>
+    
+    <h3 id="pageAnchor2">Hyperlink Page Anchor 2</h3>
+    
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora iure consequatur possimus eligendi distinctio magnam obcaecati numquam laborum dolore explicabo minima ipsam inventore deleniti, error rerum voluptatibus, dignissimos soluta pariatur!</p>
+
+    <br><br><br><br><br>
+
+    <hr>
+
+    <p id="catatan">
+        Ini Merupakan Hasil Belajar Dari Video Di Channel Youtube Web Programming Unpas Playlist Dasar HTML Video ke 8
+        tentang <strong>Hyperlink\Link\Weblink</strong> Catatan Selengkapnya Bisa Dilihat Di <a
+            href="../Catatan.docx">Catatan</a>
+    </p>
+
+    <h2>Catatan</h2>
+    <pre>
+        Tag Hyperlink
+        Link/Hyperlink/WebLink merupakan sebuah koneksi dari sebuah sumber web ke sumber lain
+        Link pada HTML dibuat menggunakan tag <a></a> atau disebut dengan Anchor dan tag ini memerlukan satu attribute wajib yaitu href diisi dengan sumber tujuan
+        
+        Ada beberapa tujuan yang bisa menjadi sumber dalam tag Anchor ini yaitu :
+
+    •	External Link
+        Yaitu link yang mengarahkan pada halaman diluar website
+
+    •	Internal Link / Relative URL
+        Yaitu sebuah link untuk mengakses sumber dari domain yang sama dengan Website yang dibuat
+    
+        Disebut Relative URL karena bisa mengakses sumber dalam satu domain dengan berbeda folder
+        
+        Untuk mengakses sumber dengan beda folder bisa menggunakan format alamat 
+        / = root 
+        /namaSumber.extensi
+        /namaFolder/namaSumber.extensi
+        Dan apabila berada satu level diatas folder sekarang bisa menggunakan 
+        ../namaSumber.extensi 
+        ../namaFolder/namaSumber.extensi 
+        Titik dua kali menyatakan bahwa akan keluar/naik satu kali dari folder sekarang
+
+    •	Page Anchor 
+
+        Merupakan sebuah hyperlink untuk mengakses sebuah halaman dengan bagian didalam halamanya
+        Untuk bisa menggunakan Teknik ini diperlukan attribute id untuk diakses melalui href contoh
+        Apabila hyperlink ini diklik maka akan langsung membuka halaman kemudian menuju ke section dengan id yang ditulis di href
+    
+    Attribute Target
+
+    Attribute target ini merupakan sebuah attribute untuk menentukan sifat hyperlink ketika diklik
+
+    •	_self
+        _self merupakan value default akan membuka tujuan pada tab yang sama
+        Apabila tag Anchor tidak memiliki attribute target maka value target akan menggunakan _self
+
+    •	_blank
+        blank merupakan value target yang akan membuka tujuan pada tab baru
+
+    •	_parent
+        _parrent merupakan value target secara viewport
+
+    •	_top
+        _parrent merupakan value target secara viewport
+
+    </pre>
+</body>
+
+</html>
