@@ -162,6 +162,115 @@
         </tfoot>
     </table>
 
+    <h2>Attribute Col Span</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th></th>
+                <th>kolom 1</th>
+                <th>kolom 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>baris 1</th>
+                <td colspan="2">kolom 1 & 2 baris 1</td>
+            </tr>
+            <tr>
+                <th>baris 2</th>
+                <td>kolom 1 baris 2</td>
+                <td>kolom 2 baris 2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th></th>
+                <th>kolom 1</th>
+                <th>kolom 2</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>Attribute Row Span</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th></th>
+                <th>kolom 1</th>
+                <th>kolom 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>baris 1</th>
+                <td rowspan="3">baris 1 & 2</td>
+                <td>kolom 1 baris 1</td>
+            </tr>
+            <tr>
+                <th>baris 2</th>
+                <td>kolom 1 baris 2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th></th>
+                <th>kolom 1</th>
+                <th>kolom 2</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+
+    <h2>Latihan Table Merging</h2>
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th></th>
+                <th>kolom 1</th>
+                <th>kolom 2</th>
+                <th>kolom 3</th>
+                <th>kolom 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>baris 1</th>
+                <td>kolom 1 baris 1 </td>
+                <td>kolom 2 baris 1</td>
+                <td>kolom 3 baris 1</td>
+                <td>kolom 4 baris 1</td>
+            </tr>
+            <tr>
+                <th>baris 2</th>
+                <td>kolom 1 baris 2</td>
+                <td colspan="2" rowspan="2">kolom 2 baris 2</td>
+                <td>kolom 4 baris 2</td>
+            </tr>
+            <tr>
+                <th>baris 3</th>
+                <td>kolom 1 baris 3</td>
+                <td>kolom 4 baris 3</td>
+            </tr>
+            <tr>
+                <th>baris 4</th>
+                <td>kolom 1 baris 4</td>
+                <td>kolom 2 baris 4</td>
+                <td>kolom 3 baris 4</td>
+                <td>kolom 4 baris 4</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th></th>
+                <th>kolom 1</th>
+                <th>kolom 2</th>
+                <th>kolom 3</th>
+                <th>kolom 4</th>
+            </tr>
+        </tfoot>
+    </table>
+
     <hr>
 
     <h2>Merapihkan form dengan table</h2>
@@ -236,9 +345,10 @@
     •	cell padding
     merupakan attribute untuk menambahkan luas di dalam cell 
     •	colspan
-
+    merupakan attribute tag td untuk melakukan merging atau penggabungan beberapa cell dalam kolom
     •	rowspan
-
+    merupakan attribute tag td untuk melakukan merging atau penggabungan beberapa cell dalam baris dan apabila sebuah td diberi attribute rowspan maka td tersebut akan menempati baris sesuai jumlah rowspan
+    
     </pre>
 </body>
 
