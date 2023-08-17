@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Dasar Latihan 5 : Image</title>
+</head>
+
+<body>
+    <h1>Image</h1>
+
+    <h2>Gambar Dari Internal Resource</h2>
+    <img src="assets/img/Reza's-Profile.jpg">
+
+    <h2>Gambar Dari External Resource</h2>
+    <img src="chrome://new-tab-page/icons/google_logo.svg">
+
+    <h2>Attribute alt</h2>
+    <img src="assets/img/Reza's-Profile" alt="Ini Merupakan Text Yang Muncul Karena Sumber Tidak Ditemukan">
+
+    <h2>Attribute width</h2>
+    <img src="assets/img/Reza's-Profile.jpg" width="200px">
+
+    <h2>Attribute height</h2>
+    <img src="assets/img/Reza's-Profile.jpg" height="200px">
+
+    <h2>Attribute title</h2>
+    <img src="assets/img/Reza's-Profile.jpg" title="Ini merupakan attribute title pada img">
+
+    <h2>Hyperlink Image</h2>
+    <a href="/"><img src="assets/img/Reza's-Profile.jpg"></a>
+
+    <hr>
+
+    <p>
+        Ini Merupakan Hasil Belajar Dari Video Di Channel Youtube Web Programming Unpas Playlist Dasar HTML Video ke 9
+        tentang <strong>Image</strong> Catatan Selengkapnya Bisa Dilihat Di <a href="../Catatan.docx">Catatan</a>
+    </p>
+
+    <h2>Catatan</h2>
+    <pre>
+    Tag Image
+    Yaitu merupakan tag untuk menampilkan gambar pada halaman website menggunakan tag <img> dan memiliki attribute src untuk membuat rujukan sumber yang akan ditampilkan
+    Attribute src ini bisa merujuk pada internal resource ( berada 1 folder/domain dengan website ) atau external resourse ( dari website lain ) dan untuk sumbernya mesti ditulis beserta extensinya
+
+    Akan tetapi penggunaan external resource memiliki beberapa resiko yaitu bisa terkena hak cipta, menggunakan bandwith pemiliki resource, dan beresiko apabila gambar di sumber asli hilang atau tidak dapat diakses akan merusak penampilan website karena gambar akan diisi dengan icon
+    Attribute Tag Image
+
+    Tag image memiliki attribute attribute yang dapat digunakan salah satunya adalah :
+
+    •	src
+    Merupakan attribute utama yang berfungsi untuk merujuk sumber yang akan ditampilkan
+
+    •	alt
+    Merupakan attribute untuk menampilkan text sebagai alternative apabila sumber tidak dapat ditemukan
+
+    •	width
+    Merupakan attribute untuk mengatur lebar dari elemen gambar yang ditampilkan apabila diset hanya widthnya saja maka height akan proporsi terhadap width
+
+    •	height
+    Merupakan attribute untuk mengatur tinggi elemen gambar yang ditampilkan apabila diset hanya heightnya saja maka width akan proporsi terhadap height
+
+    •	title
+    Merupakan attribute judul pada tag img muncul ketika dihover menggunakan cursor dan muncul juga ketika sumber hilang tapi tidak ada attribute alt
+
+    Hyperlink + Image
+    Didalam HTML memungkinkan untuk membuat image sebagai hyperlink dengan cara mengisi konten tag anchor menggunakan image
+    <a href="/"><img src="assets/img/Reza's-Profile.jpg"></a>
+    Ini akan membuat image bisa diklik dan mengarah ke suatu tujuan sebagaimana hyperlink biasa 
+
+    </pre>
+
+</body>
+
+</html>

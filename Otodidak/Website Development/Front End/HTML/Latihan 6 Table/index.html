@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Dasar Latihan 6 : Table</title>
+</head>
+
+<body>
+    <h1>Table</h1>
+
+    <h2>Baris dan Kolom</h2>
+    <table border="1">
+        <tr>
+            <td>kolom 1 baris 1</td>
+            <td>kolom 2 baris 1</td>
+        </tr>
+        <tr>
+            <td>kolom 1 baris 2</td>
+            <td>kolom 2 baris 2</td>
+        </tr>
+    </table>
+
+    <h2>Table Header</h2>
+    <table border="1">
+        <tr>
+            <th></th>
+            <th>kolom 1</th>
+            <th>kolom 2</th>
+        </tr>
+        <tr>
+            <th>baris 1</th>
+            <td>kolom 1 baris 1</td>
+            <td>kolom 2 baris 1</td>
+        </tr>
+        <tr>
+            <th>baris 2</th>
+            <td>kolom 1 baris 2</td>
+            <td>kolom 2 baris 2</td>
+        </tr>
+    </table>
+
+    <h2>Semantic Table dengan Thead Tbody Tfoot</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th></th>
+                <th>kolom 1</th>
+                <th>kolom 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>baris 1</th>
+                <td>kolom 1 baris 1</td>
+                <td>kolom 2 baris 1</td>
+            </tr>
+            <tr>
+                <th>baris 2</th>
+                <td>kolom 1 baris 2</td>
+                <td>kolom 2 baris 2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th></th>
+                <th>kolom 1</th>
+                <th>kolom 2</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>Attribute Border (desprecated)</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th></th>
+                <th>kolom 1</th>
+                <th>kolom 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>baris 1</th>
+                <td>kolom 1 baris 1</td>
+                <td>kolom 2 baris 1</td>
+            </tr>
+            <tr>
+                <th>baris 2</th>
+                <td>kolom 1 baris 2</td>
+                <td>kolom 2 baris 2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th></th>
+                <th>kolom 1</th>
+                <th>kolom 2</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>Attribute Cell Spacing (desprecated)</h2>
+    <table border="1" cellspacing="10">
+        <thead>
+            <tr>
+                <th></th>
+                <th>kolom 1</th>
+                <th>kolom 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>baris 1</th>
+                <td>kolom 1 baris 1</td>
+                <td>kolom 2 baris 1</td>
+            </tr>
+            <tr>
+                <th>baris 2</th>
+                <td>kolom 1 baris 2</td>
+                <td>kolom 2 baris 2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th></th>
+                <th>kolom 1</th>
+                <th>kolom 2</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>Attribute Cell Padding (desprecated)</h2>
+    <table border="1" cellpadding="20">
+        <thead>
+            <tr>
+                <th></th>
+                <th>kolom 1</th>
+                <th>kolom 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>baris 1</th>
+                <td>kolom 1 baris 1</td>
+                <td>kolom 2 baris 1</td>
+            </tr>
+            <tr>
+                <th>baris 2</th>
+                <td>kolom 1 baris 2</td>
+                <td>kolom 2 baris 2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th></th>
+                <th>kolom 1</th>
+                <th>kolom 2</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>Attribute Col Span</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th></th>
+                <th>kolom 1</th>
+                <th>kolom 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>baris 1</th>
+                <td colspan="2">kolom 1 & 2 baris 1</td>
+            </tr>
+            <tr>
+                <th>baris 2</th>
+                <td>kolom 1 baris 2</td>
+                <td>kolom 2 baris 2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th></th>
+                <th>kolom 1</th>
+                <th>kolom 2</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>Attribute Row Span</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th></th>
+                <th>kolom 1</th>
+                <th>kolom 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>baris 1</th>
+                <td rowspan="3">baris 1 & 2</td>
+                <td>kolom 1 baris 1</td>
+            </tr>
+            <tr>
+                <th>baris 2</th>
+                <td>kolom 1 baris 2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th></th>
+                <th>kolom 1</th>
+                <th>kolom 2</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+
+    <h2>Latihan Table Merging</h2>
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th></th>
+                <th>kolom 1</th>
+                <th>kolom 2</th>
+                <th>kolom 3</th>
+                <th>kolom 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>baris 1</th>
+                <td>kolom 1 baris 1 </td>
+                <td>kolom 2 baris 1</td>
+                <td>kolom 3 baris 1</td>
+                <td>kolom 4 baris 1</td>
+            </tr>
+            <tr>
+                <th>baris 2</th>
+                <td>kolom 1 baris 2</td>
+                <td colspan="2" rowspan="2">kolom 2 baris 2</td>
+                <td>kolom 4 baris 2</td>
+            </tr>
+            <tr>
+                <th>baris 3</th>
+                <td>kolom 1 baris 3</td>
+                <td>kolom 4 baris 3</td>
+            </tr>
+            <tr>
+                <th>baris 4</th>
+                <td>kolom 1 baris 4</td>
+                <td>kolom 2 baris 4</td>
+                <td>kolom 3 baris 4</td>
+                <td>kolom 4 baris 4</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th></th>
+                <th>kolom 1</th>
+                <th>kolom 2</th>
+                <th>kolom 3</th>
+                <th>kolom 4</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+
+    <h2>Merapihkan form dengan table</h2>
+    <table>
+        <tr>
+            <td>
+                <label for="username">Username</label>
+            </td>
+            <td>
+                <input type="text" name="username" id="username" placeholder="username">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="email">Email</label>
+            </td>
+            <td>
+                <input type="email" name="email" id="email" placeholder="email">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="password">Password</label>
+            </td>
+            <td>
+                <input type="password" name="password" id="password" placeholder="password">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="notelp">Nomor Telepon</label>
+            </td>
+            <td>
+                <input type="tel" name="notelp" id="notelp" placeholder="notelp">
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <p>
+        Ini Merupakan Hasil Belajar Dari Video Di Channel Youtube Web Programming Unpas Playlist Dasar HTML Video ke 10 & 11
+        tentang <strong>Table</strong> Catatan Selengkapnya Bisa Dilihat Di <a href="../Catatan.docx">Catatan</a>
+    </p>
+
+    <h2>Catatan</h2>
+    <pre>
+    Tag Table
+    Merupakan elemen HTML untuk menampilkan data tabular(berbentuk tabel) untuk membuat table dalam HTML menggunakan tag <table></table> 
+
+    Struktur tabel
+    Tabel terdiri atas struktur kolom, baris, cell, header
+
+    Baris merupakan bagian tabel yang berada sejajar secara horizontal untuk membuat baris bisa menggunakan tag table row <tr></tr> di dalam tag table atau tag table body atau tag table head atau tag table foot
+
+    Kolom merupakan bagian tabel yang berada sejajar secara vertical untuk membuat baris bisa menggunakan tag table data <td></td> di dalam tag table row
+
+	Cell atau data merupakan perpotongan antara baris dan kolom
+
+    Header merupakan penanda atau judul pada baris atau kolom header juga bisa ditempatkan di keduanya(baris dan kolom) untuk membuat header menggunakan tag table header<th></th> bisa disimpan di dalam tag table row ataupun tag table data
+
+    Best practice struktur tabel
+    Untuk membuat struktur table yang baik yang bisa dibaca oleh mesin pencari dan accessibility yang baik adalah dengan membuat struktur table yang menggunakan pembagian table head, table body dan table foot
+
+    Attribute element table
+    Terdapat beberapa attribute pada element table yaitu border, cellspacing, cell padding, colspan, rowspan
+
+    •	border
+    merupakan attribute untuk menambahkan garis disekitar cell diisi dengan angka satuanya pixel
+    •	cell spacing
+    merupakan attribute untuk menambahkan jarak disekitar cell 
+    •	cell padding
+    merupakan attribute untuk menambahkan luas di dalam cell 
+    •	colspan
+    merupakan attribute tag td untuk melakukan merging atau penggabungan beberapa cell dalam kolom
+    •	rowspan
+    merupakan attribute tag td untuk melakukan merging atau penggabungan beberapa cell dalam baris dan apabila sebuah td diberi attribute rowspan maka td tersebut akan menempati baris sesuai jumlah rowspan
+    
+    </pre>
+</body>
+
+</html>

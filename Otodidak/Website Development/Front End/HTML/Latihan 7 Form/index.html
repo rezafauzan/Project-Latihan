@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Dasar Latihan 7 : Form</title>
+</head>
+
+<body>
+    <h1>Form</h1>
+    <h2>Input</h2>
+    <form action="">
+        <input type="text">
+        <input type="number">
+        <input type="tel">
+        <input type="password">
+
+        <h2>Input + Label</h2>
+        <label for="username">Username</label>
+        <input type="text" id="username">
+        <label for="password">Password</label>
+        <input type="password" id="password">
+
+        <h2>Radio Button tanpa attribute name</h2>
+        <label for="pria">Pria</label>
+        <input type="radio" id="pria">
+        
+        <label for="wanita">Wanita</label>
+        <input type="radio" id="wanita">
+        
+        <h2>Radio Button dengan attribute name</h2>
+        <label for="pria">Pria</label>
+        <input type="radio" name="gender" id="pria" placeholder="pria">
+        
+        <label for="wanita">Wanita</label>
+        <input type="radio" name="gender" id="wanita">
+        
+        <h2>Check Box Button tanpa attribute name</h2>
+        <label for="hobby">Hobby</label>
+        <input type="checkbox" id="hobby1"><label for="hobby1">hobby1</label> 
+        <input type="checkbox" id="hobby2"><label for="hobby2">hobby2</label>
+        <input type="checkbox" id="hobby3"><label for="hobby3">hobby3</label>
+        <input type="checkbox" id="hobby4"><label for="hobby4">hobby4</label>
+        
+        <h2>Check Box Button dengan attribute name</h2>
+        <label for="hobby">Hobby</label>
+        <input type="checkbox" id="hobby5" name="hobby"><label for="hobby5">hobby1</label> 
+        <input type="checkbox" id="hobby6" name="hobby"><label for="hobby6">hobby2</label>
+        <input type="checkbox" id="hobby7" name="hobby"><label for="hobby7">hobby3</label>
+        <input type="checkbox" id="hobby8" name="hobby"><label for="hobby8">hobby4</label>
+        
+        <h2>Dropdown / Select</h2>
+        <select name="pilih" id="pilih">
+            <option value="" disabled selected>Domisili</option>
+            <option value="bandung">Bandung</option>
+            <option value="jakarta">Jakarta</option>
+            <option value="surabaya">Surabaya</option>
+        </select>
+
+        <h2>Text Area</h2>
+        <textarea name="pesan" id="pesan" cols="30" rows="10"></textarea>
+
+        <h2>Button</h2>
+        <p>Tag input bisa dijadikan button juga namun tidak semantic</p>
+        <input type="button" name="" id="" value="tombol">
+        <input type="submit" name="" id="" value="Kirim">
+        <input type="reset" name="" id="" value="Reset">
+        <p>Button Submit dan Reset hanya akan berpengaruh pada field yang berada didalam satu tag form dengan buttonnya</p>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+    <hr>
+
+    <p>
+        Ini Merupakan Hasil Belajar Dari Video Di Channel Youtube Web Programming Unpas Playlist Dasar HTML Video ke 12 & 13 Sekaligus Akhir Dari Seri HTML Dasar dari Channel Youtube Web Programming Unpas
+        tentang <strong>Form</strong> Catatan Selengkapnya Bisa Dilihat Di <a href="../Catatan.docx">Catatan</a>
+    </p>
+
+    <h2>Catatan</h2>
+    <pre>
+        Form
+        Merupakan sebuah element HTML untuk mengelola input yang dilakukan oleh user baik ketika mengisi sebuah kolom input maupun sebuah pilihan pada combo box, dropdown atau pun radio button atau sebuah tombol 
+        Contoh form seperti form login, form pendaftaran, dll
+        
+        Untuk membuat sebuah formulir dibutuhkan tag form <form></form> untuk membungkus satu kumpulan elemen-elemen form agar kemudian nilai dari input user bisa ditampung atau digunakan
+        
+        Komponen Form 
+        Input pada form bisa berbentuk macam macam yaitu :
+
+        •	Input / Text Field
+        
+            Kolom input berupa text atau pun number biasanya disebut dengan text field untuk membuat field ini menggunakan tag <input/> dan tag ini memiliki attribute type berfungsi untuk menyaring input user sesuai type field nya 
+            Salah satu Value attribute type ini adalah :
+            
+                	Text
+                Ini merupakan value default dapat menampung string apapun
+                	Number
+                Untuk membatasi bahwa field hanya bisa diisi dengan angka dan huruf e sebagai eksponen input ini juga memiliki tombol tambahan untuk increment dan decrement
+                	Tel
+                Untuk membatasi bahwa field ini hanya bisa diisi angka dan lebih spesifik digunakan untuk menulis nomor telepon dan bisa juga diberikan pola
+                	Password
+                Sama seperti text namun apapun yang ditulis di dalam field ini akan ditampilkan sebagai bullet ini bukanlah enkripsi jadi apapun yang diisikan masih bisa dilihat
+                	Email
+                Input type email bisa diisi dengan string apapun namun harus menyertakan @(wajib) dan domain(optional)
+                Dan masih banyak lagi type type inputan seperti color, date, dll
+
+            Selain Attribute type field ini juga memiliki attribute placeholder yang akan memunculkan text sebagai hint di dalam field
+
+        •	Text Area
+            Merupakan kolom input mirip dengan tag input akan tetapi lebih besar biasanya digunakan untuk membuat kolom komentar atau pesan untuk membuat field ini menggunakan tag <textarea><textarea/>
+
+        •	Dropdown Menu / Combo Box / List Box
+            Merupakan Kolom Input berupa pilihan yang muncul kebawah untuk membuat field ini menggunakan tag <select><select/> dan diisi dengan tag <option></option> untuk menampilkan list pilihanya dan tag option harus diberikan attribute value agar bisa field ini bisa mengembalikan suatu nilai
+
+        •	Radio Button
+            Merupakan Input berupa pilihan ganda yang biasanya digunakan untuk input yang harus memilih satu pilihan untuk membuat field ini menggunakan tag input dengan type radio dan tag ini harus diberikan attribute value agar bisa field ini bisa mengembalikan suatu nilai dan input type radio memerlukan nama yang sama agar bisa menjadi satu kelompok sehingga hanya satu nilai yang bisa digunakan
+            Jika tidak ada attribute name 2 radio button akan dianggap 2 kelompok berbeda dan bisa diaktifkan dua duanya
+
+        •	Check Box
+            Merupakan Input Berupa Pilihan ganda yang biasanya digunakan untuk input yang bisa memilih beberapa pilihan untuk membuat field ini menggunakan tag input dengan type checkbox dan tag ini harus diberikan attribute value agar bisa field ini bisa mengembalikan suatu nilai dan input type checkbox memerlukan nama yang sama agar bisa menjadi satu kelompok sehingga checkbox checkbox yang dipilih nilainya menjadi satu kelompok
+            Jika tidak ada attribute name 2 checkbox akan dianggap 2 kelompok berbeda dan bisa diaktifkan dua duanya
+
+        •	Button
+            Untuk menampilkan tombol yang nantinya bisa diberi aksi bisa berupa hal spesifik atau untuk mengirimkan data 
+            
+            Tag input bisa dijadikan button juga namun tidak semantic
+            Untuk mengganti text pada tombol di tag input bisa menggunakan attribute value
+
+            Button Submit dan Reset hanya akan berpengaruh pada field yang berada didalam satu tag form dengan buttonnya
+
+        •	Label
+            Label bukan lah input field melainkan tag untuk menampilkan tag biasa digunakan untuk memberi tau user field disebelah nya adalah field apa
+            Label juga memiliki attribute for yang berfungsi sebagai pemasang label dengan field, attribute for diisi dengan id dari field mana, dengan adanya for ini maka field dan label akan menjadi sepasang ditandai dengan apabila label diklik cursor akan focus pada field untuk diisi
+    </pre>
+</body>
+
+</html>
