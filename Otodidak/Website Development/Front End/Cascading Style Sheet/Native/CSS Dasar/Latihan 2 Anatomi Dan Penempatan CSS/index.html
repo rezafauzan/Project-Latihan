@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar CSS Dasar Latihan 2 : Anatomi Dan Penempatan CSS</title>
+    <style> /* Ini Merupakan Embed CSS / Internal CSS */
+        .textWithCSS /* Selector */{
+            font-size /* Attribute */: 6 /* Value */;
+            color /* Attribute */: darkblue /* Value */;
+            font-family /* Attribute */: Arial, Helvetica, sans-serif /* Value */;
+            text-align /* Attribute */: center /* Value */;
+        }
+    </style>
+    <!-- Ini Merupakan Tag Untuk Memanggil File CSS yang terpisah (External CSS) -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <h1>Anatomi Dan Penempatan CSS</h1>
+    <h2>Sebelum CSS Dibuat</h2>
+    <p>Sebelum CSS dibuat untuk menghias sebuah website bisa menggunakan html secara langsung menggunakan tag ataupun
+        attribute tertentu dan memiliki banyak keterbatasan dan cara ini sudah Desprecated alias usang tidak disarankan
+        dipakai</p>
+    <font size="+6" color="darkblue" face="arial">
+        <center>
+            <strong>Text Ini Menggunakan Tag dan Attribute HTML Untuk Styling</strong>
+        </center>
+    </font>
+
+    <h2>Setelah CSS Dibuat</h2>
+    <p> lihat pada Source Code </p>
+    <p class="textWithCSS">Text Ini Menggunakan CSS Untuk Styling</p>
+    <p class="textWithCSS">Text Ini juga Menggunakan CSS yang Sama Untuk Styling</p>
+    <p class="textWithCSS">Text Ini juga Menggunakan CSS yang Sama Untuk Styling</p>
+    <p class="textWithCSS">Text Ini juga Menggunakan CSS yang Sama Untuk Styling</p>
+    <p class="textWithCSS">Membuktikan bahwa CSS memberi kemudahan dan efektifitas dengan kemampuan memberi style yang
+        sama pada seluruh element dengan <b><i>selector</i></b>yang sama</p>
+
+    <hr>
+
+    <h2>Penempatan CSS</h2>
+    <p>Cek Pada Komentar Di Source Code Terdapat Internal CSS / Embed CSS Menggunakan Tag style di dalam tag head dibawah tag title</p>
+    <br>
+
+    <p class="externalCSS">Cek Pada Komentar Di Source Code Terdapat External CSS Menggunakan Tag link dengan attribute rel dan href menuju file style.css pada folder assets/css/ di dalam tag head dibawah tag style(Internal CSS)</p>
+    <br>
+
+    <p style="color: turquoise;">Ini merupakan element html yang dihias menggunakan Inline CSS cek pada Source Code Element Paragraf ini memiliki Attribute Style</p>
+    <p>Sebisa mungkin hindari penggunanaan inline css karena ini mencampurkan html dan css</p>
+    <hr>
+
+    <p>
+        Ini Merupakan Hasil Belajar Dari Video Di Channel Youtube Web Programming Unpas Playlist CSS Dasar Video ke 1
+        Seri CSS Dasar dari Channel Youtube Web Programming Unpas
+        tentang <strong>Anatomi Dan Penempatan CSS</strong> Catatan Selengkapnya Bisa Dilihat Di <a
+            href="../Catatan.docx">Catatan</a>
+    </p>
+
+    <h2>Catatan</h2>
+    <pre>
+        Anatomi CSS
+            Sama seperti html css juga memiliki anatomy atau struktur yaitu selector { property: value; }
+                
+            Selector 
+            Selector Merupakan bagian dari CSS yang digunakan untuk memilih dan memanipulasi elemen spesifik pada html contohnya pada gambar diatas h1 sebagai selector berarti seluruh elemen h1 pada halaman yang sama akan dihias
+            Selector bisa berupa nama tag atau selector buatan seperti id, class dan bahkan pola/pattern dan selector ini bisa dikombinasikan menjadi kompleks apabila struktur htmlnnya juga kompleks	 
+        
+            Property & Value
+            CSS memiliki banyak sekali property dan value nya yang dimana property ini merupakan attribute yang menggambarkan bagaimana element html akan ditampilkan dan value adalah nilai yang diberikan pada property
+        
+            Terdapat banyak sekali property di dalam CSS yang bisa dilihat secara lengakap di http://developer.mozila.org/en-US/docs/Web/CSS/Reference atau http://css-tricks.com/almanac atau website lainnya
+
+            contoh :
+            .textWithCSS /* Selector */{
+                font-size /* Attribute */: 6 /* Value */;
+                color /* Attribute */: darkblue /* Value */;
+                font-family /* Attribute */: Arial, Helvetica, sans-serif /* Value */;
+                text-align /* Attribute */: center /* Value */;
+            }
+        
+        Penempatan CSS
+            Ada 3 Cara untuk menempatkan CSS dalam halaman HTML yaitu file terpisah dengan extensi .css (External) , menggunakan tag <style></style> (Embed), dan dengan menggunakan attribute style pada tag HTML (Inline CSS)
+
+            External CSS
+            Merupakan sebuah cara untuk melakukan pemanggilan file css terpisah dengan menggunakan tag link dengan attribute rel=”stylesheet” dan href=”lokasiFileCSS”
+
+            Internal CSS / Embed CSS
+            Embed CSS yaitu sebuah cara menempatkan CSS Secara langsung di dokumen HTML dengan menggunakan Tag <style></style> biasanya ditempatkan di dalam tag head dan dibawah tag title
+
+
+            Inline CSS
+            Merupakan Teknik Menghias Element HTML langsung pada element HTMLnya dengan menambahkan Attribute Style diisi dengan property CSS yang akan digunakan
+
+            Sebisa mungkin hindari penggunanaan inline css karena ini mencampurkan html dan css            
+    </pre>
+</body>
+
+</html>
