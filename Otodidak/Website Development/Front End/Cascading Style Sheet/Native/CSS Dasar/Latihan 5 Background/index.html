@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar CSS Dasar Latihan 5 : Background</title>
+    <style> 
+    div{
+        height: 500px;
+    }
+    .bgcolor{
+        background-color: #000;
+        color: #fff;
+    }
+    .bgimg{
+        background-image : url(assets/img/background.webp)
+    }
+    .bgimgrepeatnorepeat{
+        background-image: url(assets/img/horizontal.jpg);
+        background-repeat: no-repeat;
+    }
+    .bgimgrepeatx{
+        background-image: url(assets/img/horizontal.jpg);
+        background-repeat: repeat-x;
+    }
+    .bgimgrepeat{
+        background-image: url(assets/img/horizontal.jpg);
+        background-repeat: repeat;
+    }
+    .bgimgrepeaty{
+        background-image: url(assets/img/vertical.jpg);
+        background-repeat: repeat-y;
+    }
+    .bgimgpos{
+        background-image : url(assets/img/background.webp);
+        background-repeat: no-repeat;
+        background-position: right center;
+    }
+    .shorthand { 
+        background: #00f0f0 url(assets/img/background.webp) center repeat-y;
+    }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Background</h1>
+    <h2>Property background-color</h2>
+    <div class="bgcolor"><p>div ini menggunakan background-color : #000</p></div>
+    
+    <h2>Property background-image</h2>
+    <div class="bgimg"><p>div ini menggunakan background-image : url(assets/img/background.webp)</p></div>
+    
+    <h2>Property background-image background-repeat</h2>
+    <div class="bgimgrepeatnorepeat"><p>div ini menggunakan background-image : url(assets/img/horizontal.jpg) background-repeat: no-repeat</p></div>
+    <div class="bgimgrepeat"><p>div ini menggunakan background-image : url(assets/img/horizontal.jpg) background-repeat: repeat</p></div>
+    <div class="bgimgrepeatx"><p>div ini menggunakan background-image : url(assets/img/horizontal.jpg) background-repeat: no-repeat</p></div>
+    <div class="bgimgrepeaty"><p>div ini menggunakan background-image : url(assets/img/vertical.jpg) background-repeat: no-repeat</p></div>
+
+    <h2>Property background-image background-position</h2>
+    <div class="bgimgpos"><p>div ini menggunakan background-image : url(assets/img/background.webp) background-repeat: no-repeat background-position: right center</p></div>
+
+    <h2>SHORTHAND BACKGROUND</h2>
+    <div class="shorthand">
+        <p>CSS memiliki property shorthand untuk mengatur background yaitu dengan menggunakan property background: color url() position repeat;</p>
+    </div>
+    <hr>
+
+    <p>
+        Ini Merupakan Hasil Belajar Dari Video Di Channel Youtube Web Programming Unpas Playlist CSS Dasar Video ke 6
+        Seri CSS Dasar dari Channel Youtube Web Programming Unpas
+        tentang <strong>Background</strong> Catatan Selengkapnya Bisa Dilihat Di <a
+            href="../Catatan.docx">Catatan</a>
+    </p>
+
+    <h2>Catatan</h2>
+    <pre>
+        Background
+        Merupakan cara untuk memberi background atau latar belakang pada sebuah element terdapat beberapa property terkait background yaitu :
+        
+        •	Property background-color
+            Untuk menjadikan warna sebagai latar belakang
+
+        •	Property background-image
+            Untuk menjadikan gambar sebagai latar belakang
+
+        •	Property background-position
+            Untuk mengatur posisi gambar latar value nya bisa diisi dan dikombinasikan yaitu top, left, bottom, right ,center dan x% y% dan x-pos y-pos
+
+        •	Property background-repeat
+            Untuk mengatur jenis pengulangan dari 1 gambar pada background
+
+            Property-property diatas bisa digunakan sekaligus pada 1 elemen
+
+        •	SHORTHAND BACKGROUND
+            CSS memiliki property shorthand untuk mengatur background yaitu dengan menggunakan property background: color url() position repeat
+
+    </pre>
+</body>
+
+</html>
