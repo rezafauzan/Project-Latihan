@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar CSS Dasar Latihan 9 : Specificity</title>
+    <style>
+
+        .text-cyan{
+            color: cyan;
+        }
+
+        p.list {
+            color: black;
+        }
+
+        ul#minuman li {
+            color: brown;
+        }
+
+        .favorit{
+            color: aqua;
+        }
+
+        ul#minuman1 li {
+            color: brown;
+        }
+
+        ul#minuman1 .favorit1{
+            color: aqua;
+        }
+
+        p{
+            color: green;
+        }
+
+        p{
+            color: blue;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Specificity</h1>
+    <h2>Lihat Pada Source Code</h2>
+    
+    <h2>Overiding CSS</h2>
+    <p>Paragraf ini akan berwarna biru sesuai dengan urutan eksekusi css dan mengoveride atau menimpa property color sebelumnya (Lihat Pada Source Code)</p>
+
+    <h2>Pembobotan Selector CSS</h2>
+    <p class="text-cyan">Paragraf ini akan berwarna cyan meskipun urutan penulisan css nya lebih awal dari selector p di bagian overiding karena tag p ini memiliki class sehingga memiliki bobot selector sebesar 10</p>
+    
+    <ul id="minuman">
+        <li class="favorit">Air Mineral</li>
+        <li>Teh</li>
+        <li>Jus</li>
+        <li>Coffee</li>
+        <li>Soft Drink</li>
+    </ul>
+    <p class="list">pada list minuman diatas terdapat tag ul dengan id minuman dan satu li dengan class favorit</p>
+    <p class="list">apabila ingin merubah warna pada text seluruh ul maka bisa dengan mudah menggunakan selector ul#minuman namun class favorit meskipun menggunakan selector .favorit tidak berubah karena bobot spesifiknya lebih kecil dari ul#minuman sehingga semua berwarna brown</p>
+    <pre>
+        ul#minuman li /* bernilai 0 1 0 2*/{ 
+            color: brown;
+        }
+
+        .favorit /* bernilai 0 0 1 0 */{
+            color: aqua;
+        }
+    </pre>
+    
+    <ul id="minuman1">
+        <li class="favorit1">Air Mineral</li>
+        <li>Teh</li>
+        <li>Jus</li>
+        <li>Coffee</li>
+        <li>Soft Drink</li>
+    </ul>
+    <p class="list">Dan agar class favorit bisa berbeda warna maka harus diberi pembobotan tambahan pada selectornya agar lebih spesifik</p>
+    <pre>
+        ul#minuman1 li /* bernilai 0 1 0 2 */{
+            color: brown;
+        }
+
+        ul#minuman1 .favorit1 /* bernilai 0 1 1 0 */{
+            color: aqua;
+        }
+    </pre>
+
+    <h2>Lebih Detail Lihat Catatan Dan Source Code</h2>
+
+    <hr> 
+    
+    <p>
+        Ini Merupakan Hasil Belajar Dari Video Di Channel Youtube Web Programming Unpas Playlist CSS Dasar Video ke 10 dan sekaligus akhir dari seri CSS Dasar Dari Channel Youtube Web Programming Unpas Terima Kasih Atas Ilmunya jazakallahu khoiran
+        Seri CSS Dasar dari Channel Youtube Web Programming Unpas
+        tentang <strong>Specificity</strong> Catatan Selengkapnya Bisa Dilihat Di <a
+            href="../Catatan.docx">Catatan</a>
+    </p>
+
+    <h2>Catatan</h2>
+    <pre>
+        Specificity
+        Merupakan Konsep bahwa setiap deklarasi css (selector) memiliki berat yang berbeda, berat ini menentukan seberapa spesifik sebuah elemen dapat dipilih oleh selector
+
+        Contoh kasus : Lihat Pada catatan.docx
+
+        Syntax css diatas akan menjadi ambigu dan menimpa(Overiding) sehingga baris paling bawah yang dipakai 
+
+        Namun ketika selectornya memiliki bobot spesifik sehingga akan terjadi kalkulasi dimana selector yang memiliki bobot paling tinggi akan digunakan 
+
+        Menghitung Specificity
+            Anggaplah terdapat 4 digit angka masing masing digit memiliki label seperti pada gambar yaitu inline, id, class, element
+            Dan untuk menghitung nilai specificity nya bisa dilihat pada selectornya misal apabila selectornya menggunakan 1 buah class seperti .namaClass maka digit class akan bertambah 1 
+            Kembali pada contoh kasus antara selector #p1 dengan p memiliki bobot specificity sebagai berikut 
+
+            #p1 = 0 1 0 0 dan p = 0 0 0 1 maka pada kasus ini #p1 memiliki nilai specificity yang lebih tinggi sehingga mengalahkan selector p
+
+            Contoh kasus lain yang lebih kompleks adalah selector ul#sarapan li dengan .favorit pada gambar diatas
+
+            Hasilnya : lihat pada catatan.docx
+
+            Karena selector ul#sarapan li memiliki nilai specificity = 0 1 0 2 sedangkan selector .favorit = 0 0 1 0 sehingga selector ul#sarapan li lebih spesifik
+            Dan jika ingin menampilkan tulisan nasi goreng(elemen ber class .favorit) dengan warna merah maka harus diberikan beban specificity tambahan agar bisa lebih spesifik contoh ul#sarapan li.favorit
+
+            Untuk mempermudah penghitungan terdapat website untuk menghitung beban specificity pada selector css yaitu di http://specificity.keegan.st
+
+    </pre>
+</body>
+
+</html>
