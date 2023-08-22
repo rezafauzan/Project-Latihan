@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar CSS Dasar Latihan 6 : Selector</title>
+    <style>
+        body /*Nama Tag Sebagai Selector*/{
+            font: arial, helvetica, sans-serif;
+            background: darkslategray;
+        }
+
+        h1, h2, h3 /*Multiple Selector dipisahkan dengan koma*/{
+            color: #0fff0f
+        }
+
+        ul li a /*Selector Spesifik untuk Menghias Elemen yang berada di dalam elemen dipisahkan dengan spasi*/{
+            color: azure;
+        }
+
+        ol li a /*Selector Spesifik untuk Menghias Elemen yang berada di dalam elemen dipisahkan dengan spasi*/{
+            color:wheat;
+        }
+
+        #p1 /*Id sebagai Selector Diawali Dengan #*/{
+            color: aqua;
+        }
+
+        .p2 /*Class Sebagai Selector Diawali Dengan .*/{
+            color: darkgoldenrod;
+        }
+
+        .cetak-miring /*Class ini dipakai di dua element yaitu judul artikel(h3.cetak-miring) dan p.p2.cetak-miring*/{
+            font-style: italic;
+        }
+
+        .p2.cetak-miring /*Selector Spesifik menggunakan class*/{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Selector</h1>
+    <h2>Lihat Pada Source Code</h2>
+    <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+        <li><a href="#">Link 5</a></li>
+    </ul>
+
+    <ol>
+        <li><a href="#">Link 6</a></li>
+        <li><a href="#">Link 7</a></li>
+        <li><a href="#">Link 8</a></li>
+        <li><a href="#">Link 9</a></li>
+        <li><a href="#">Link 10</a></li>
+    </ol>
+
+    <h3 class="cetak-miring">Judul Artikel</h3>
+    <p id="p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur similique impedit incidunt corporis tempore quibusdam voluptatibus ea vel tenetur rerum suscipit a assumenda natus, eius adipisci enim eveniet libero numquam!</p>
+    <p class="p2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro nulla eum repellat fugiat quaerat eaque, debitis, praesentium nisi cupiditate, quisquam iste incidunt aut? Distinctio quod voluptatibus a delectus fugit? Natus!</p>
+    <p class="p2 cetak-miring">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro nulla eum repellat fugiat quaerat eaque, debitis, praesentium nisi cupiditate, quisquam iste incidunt aut? Distinctio quod voluptatibus a delectus fugit? Natus!</p>
+    
+    <hr>
+    
+    
+    
+    <p>
+        Ini Merupakan Hasil Belajar Dari Video Di Channel Youtube Web Programming Unpas Playlist CSS Dasar Video ke 7
+        Seri CSS Dasar dari Channel Youtube Web Programming Unpas
+        tentang <strong>Selector</strong> Catatan Selengkapnya Bisa Dilihat Di <a
+            href="../Catatan.docx">Catatan</a>
+    </p>
+
+    <h2>Catatan</h2>
+    <pre>
+        Selector
+
+        Merupakan sebuah identifier sebuah element html yang akan diberi style, ada beberapa identifier yang bisa digunakan sebagai selector yaitu nama tag atau nama element HTML, id, class dan selector gabungan atau bisa disebut selector kompleks
+
+        •	Nama Element HTML Sebagai Selector
+            Nama dari element HTML bisa digunakan sebagai selector
+        
+        •	Id Sebagai Selector
+            Memberikan attribute id pada element html value id tersebut bisa dijadikan sebagai selector pada css, pemanggilan id sebagai selector diawali dengan tanda “#”
+            
+            Dalam satu halaman html hanya diperbolehkan hanya ada 1 element dengan nama id tersebut tidak boleh ada element lain dengan id sama
+            Element yang memiliki id dapat dijadikan value pada attribute href di tag anchor
+            Id ini juga bisa digunakan di javascript
+            Untuk css lebih baik menggunakan class
+
+        •	Class Sebagai Selector
+        
+            Memberikan attribute id pada element html value id tersebut bisa dijadikan sebagai selector pada css, pemanggilan id sebagai selector diawali dengan tanda “.”
+            Satu element html bisa memiliki banyak class dan satu class bisa dimiliki oleh banyak element
+            Untuk memberi lebih dari satu class pada element html cukup dipisahkan dengan menggunakan spasi pada attribute class dan untuk css ditulis berdampingan menggunakan titik tiap nama class
+
+        •	Selector Kompleks
+            •	Gabungan Nama Element HTML, Id, Class Sebagai Selector 
+            
+            •	Multiple Selector
+                Untuk memberikan styling pada beberapa selector bisa menggunakan koma sebagai separator untuk melakukan styling pada element element tersebut namun apabila ingin melakukan penambahan pada element spesifik elemen tersebut bisa dilakukan styling lagi 
+        
+            •	Spesifik Selector
+                Untuk melakukan styling yang spesifik seperti tag a di dalam tag ul dan li seperti diatas diperlukan selector spesifik agar hanya tag a di dalam ul li tersebut yang dimodifikasi 
+                untuk melakukan hal tersebut bisa menggunakan spasi sebagai separator contoh :
+                
+                Selector diatas artinya akan mencari tag a di dalam tag li yang berada di dalam tag ul sehingga hanya tag a yang ada di dalam ul li yang akan berubah
+        
+    </pre>
+</body>
+
+</html>
