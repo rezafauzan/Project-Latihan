@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar CSS Dasar Latihan 8 : Inheritance / Pewarisan</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: lightslategray;
+        }
+
+        .inherit{
+            color: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Inheritance / Pewarisan</h1>
+    <h2>Lihat Pada Source Code</h2>
+
+    <a href="#">Tag ini tidak akan mewarisi property color dari tag parentnya(tag body)</a>
+    <hr>
+    <a href="#" class="inherit">Tag ini akan mewarisi property color dari tag parentnya(tag body) karena memiliki property yang diisi dengan nilai "inherit"</a>
+
+    <hr> 
+    
+    <p>
+        Ini Merupakan Hasil Belajar Dari Video Di Channel Youtube Web Programming Unpas Playlist CSS Dasar Video ke 9
+        Seri CSS Dasar dari Channel Youtube Web Programming Unpas
+        tentang <strong>Inheritance / Pewarisan</strong> Catatan Selengkapnya Bisa Dilihat Di <a
+            href="../Catatan.docx">Catatan</a>
+    </p>
+
+    <h2>Catatan</h2>
+    <pre>
+        Inheritance / Pewarisan
+        Merupakan konsep dalam css yang dimana sebuah elemen dapat mewarisi beberapa nilai dari properti yang dimiliki oleh parentnya 
+        Apabila element parent memiliki property yang bisa diwariskan diantaranya adalah property color, font, letter-spacing, line-height, list-style, text-align, text-indent, text-transform, visibility, white-space 
+        
+        Maka element childrennya cenderung akan memiliki nilai dari property yang sama namun ada kasus tertentu dimana property parent tidak diwariskan secara langsung contohnya pada tag anchor karena secara default tag anchor ini tidak mewarisi property color
+        
+        Dan untuk membuat tag seperti ini mewarisi property dari parentnya maka perlu diberikan property yang sama dengan nilai inherit
+
+    </pre>
+
+</body>
+
+</html>
