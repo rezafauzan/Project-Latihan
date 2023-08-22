@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar CSS Dasar Latihan 7 : Pseudo Class</title>
+    <style>
+        .click:active{
+            color: coral;
+            font-style: italic;
+        }
+
+        .hover:hover{
+            color: darkcyan;
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+
+        .visited:visited{
+            color: firebrick;
+            font: small-caps italic 20px/5px
+        }
+
+        .first-child li:first-child a{
+            color: rosybrown;
+        }
+
+        .last-child li:last-child a{
+            color: black;
+        }
+
+        .n2-child li:nth-child(2n) a{
+            color: gold;
+        }
+
+        .nth-child li:nth-child(1) a{
+            color: gold;
+        }
+        .nth-child li:nth-child(4) a{
+            color: gold;
+        }
+        .nth-child li:nth-child(5) a{
+            color: gold;
+        }
+        .nth-child li:nth-child(9) a{
+            color: gold;
+        }
+
+        .odd-child li:nth-child(odd) a{
+            color: darkgreen;
+        }
+
+        .even-child li:nth-child(even) a{
+            color: deepskyblue;
+        }
+
+        h4:first-of-type{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: italic;
+            font-size: large;
+            color: blue;
+        }
+
+        h4:last-of-type{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: 100;
+            font-size: large;
+            color: green;
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <h1>Pseudo Class</h1>
+    <h2>Lihat Pada Source Code</h2>
+    
+    <h2>:click</h2>
+    <a href="#" class="click">Klik disini warna akan berubah</a>
+    
+    <h2>:hover</h2>
+    <a href="#" class="hover">arahkan kursor kesini akan berubah</a>
+    
+    <h2>:visited</h2>
+    <a href="/" class="visited">apabila link ini pernah diklik maka akan berubah</a>
+    
+    <h2>:first-child</h2>
+    <ul class="first-child">
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+        <li><a href="#">Link 5</a></li>
+        <li><a href="#">Link 6</a></li>
+        <li><a href="#">Link 7</a></li>
+        <li><a href="#">Link 8</a></li>
+        <li><a href="#">Link 9</a></li>
+        <li><a href="#">Link 10</a></li>
+    </ul>
+
+    <h2>:last-child</h2>
+    <ul class="last-child">
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+        <li><a href="#">Link 5</a></li>
+        <li><a href="#">Link 6</a></li>
+        <li><a href="#">Link 7</a></li>
+        <li><a href="#">Link 8</a></li>
+        <li><a href="#">Link 9</a></li>
+        <li><a href="#">Link 10</a></li>
+    </ul>
+    
+    <h2>:last-child</h2>
+    <ul class="last-child">
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+        <li><a href="#">Link 5</a></li>
+        <li><a href="#">Link 6</a></li>
+        <li><a href="#">Link 7</a></li>
+        <li><a href="#">Link 8</a></li>
+        <li><a href="#">Link 9</a></li>
+        <li><a href="#">Link 10</a></li>
+    </ul>
+
+    <h2>:nth-child 1 4 5 9</h2>
+    <ul class="nth-child">
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+        <li><a href="#">Link 5</a></li>
+        <li><a href="#">Link 6</a></li>
+        <li><a href="#">Link 7</a></li>
+        <li><a href="#">Link 8</a></li>
+        <li><a href="#">Link 9</a></li>
+        <li><a href="#">Link 10</a></li>
+    </ul>
+
+    <h2>:nth-child kelipatan 2</h2>
+    <ul class="n2-child">
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+        <li><a href="#">Link 5</a></li>
+        <li><a href="#">Link 6</a></li>
+        <li><a href="#">Link 7</a></li>
+        <li><a href="#">Link 8</a></li>
+        <li><a href="#">Link 9</a></li>
+        <li><a href="#">Link 10</a></li>
+    </ul>
+
+    <h2>:nth-child ganjil(odd)</h2>
+    <ul class="odd-child">
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+        <li><a href="#">Link 5</a></li>
+        <li><a href="#">Link 6</a></li>
+        <li><a href="#">Link 7</a></li>
+        <li><a href="#">Link 8</a></li>
+        <li><a href="#">Link 9</a></li>
+        <li><a href="#">Link 10</a></li>
+    </ul>
+
+    <h2>:nth-child genap(even)</h2>
+    <ul class="even-child">
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+        <li><a href="#">Link 5</a></li>
+        <li><a href="#">Link 6</a></li>
+        <li><a href="#">Link 7</a></li>
+        <li><a href="#">Link 8</a></li>
+        <li><a href="#">Link 9</a></li>
+        <li><a href="#">Link 10</a></li>
+    </ul>
+
+    <h2>Pseudo Code tipe</h2>
+    <h4>Pseudo Code first-of-type</h4>
+    <h4>Pseudo Code last-of-type</h4>
+
+    <hr> 
+    
+    <p>
+        Ini Merupakan Hasil Belajar Dari Video Di Channel Youtube Web Programming Unpas Playlist CSS Dasar Video ke 8
+        Seri CSS Dasar dari Channel Youtube Web Programming Unpas
+        tentang <strong>Pseudo Class</strong> Catatan Selengkapnya Bisa Dilihat Di <a
+            href="../Catatan.docx">Catatan</a>
+    </p>
+
+    <h2>Catatan</h2>
+    <pre>
+        CSS Pseudo Class
+        Merupakan kelas semu dari sebuah elemen html untuk mendefinisikan style pada keadaan tertentu seperti ketika diklik ketika cursor berada diatas element dll
+        Disebut kelas semu karena kelas ini ada atau aktif hanya pada kondisi tertentu
+        •	Pseudo Class Untuk Element dan Element Link
+        
+            o	Pseudo Class :link
+                Merupakan style dan kondisi default pada sebuah tag a yang memiiki href
+                
+            o	Pseudo Class :hover
+                Merupakan style ketika kursor mouse berada diatas sebuah element
+                
+            o	Pseudo Class :active
+                Style ketika link diklik atau klik tahan
+                
+            o	Pseudo Class :visited
+                Style ketika sebuah link sudah pernah dikunjungi di dalam browser yang sama
+
+        •	Pseudo Class Posisi Element
+            Pseudo class ini hanya bisa digunakan apabila element memiliki parent
+            
+            o	Pseudo Class :first-child
+                Merupakan pseudo class untuk memilih elemen pertama dari sebuah parent atau pembungkusnya
+                
+            o	Pseudo Class :last-child
+                Merupakan pseudo class untuk memilih elemen terakhir dari sebuah parent atau pembungkusnya
+                
+            o	Pseudo Class :nth-child
+                Merupakan pseudo class untuk memilih elemen ke-n atau bisa juga untuk ganjil(odd) dan genap(even) dari sebuah parent atau pembungkusnya bisa juga dengan pola kelipatan atau pengurangan atau pertambahan 
+                
+            o	Pseudo Class :first-of-type
+                Memilih elemen pertama dari sebuah jenis / tipe tag
+                
+            o	Pseudo Class :last-of-type
+                Memilih elemen terakhir dari sebuah jenis / tipe tag
+
+    </pre>
+</body>
+
+</html>
