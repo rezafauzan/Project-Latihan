@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar CSS Dasar Latihan 1 : Pendahuluan, Tag Div & Span</title>
+    <style>
+        .navigation { 
+            background: skyblue;
+        }
+        .navigation ul{
+            list-style: none;
+        }
+        .navigation ul li a{
+            text-decoration: none;
+        }
+
+        .article{
+            background: grey;
+            font-family: fantasy;
+        }
+
+        .article h4{
+            font-weight: 500;
+            font-size: larger;
+            text-align: center;
+        }
+
+        .article p{
+            text-indent: 15px;
+            text-align: justify;
+            font-weight: lighter;
+        }
+
+        .article p span{
+            font-family: Arial;
+            font-size: x-large;
+            color: white;
+            background-color: darkblue;
+        }
+
+        .footer{
+            background: black;
+            color: white;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Pendahuluan, Tag Div & Span</h1>
+    <h2>Pendahuluan Lihat Di catatan.docx</h2>
+    <hr>
+
+    <h2>Tag Div</h2>
+    <h3>Tanpa Tag Div</h3>
+    <ul>
+        <li><a href="#">Link ini tidak dibungkus dengan tag div</a></li>
+        <li><a href="#">Link ini tidak dibungkus dengan tag div</a></li>
+        <li><a href="#">Link ini tidak dibungkus dengan tag div</a></li>
+        <li><a href="#">Link ini tidak dibungkus dengan tag div</a></li>
+        <li><a href="#">Link ini tidak dibungkus dengan tag div</a></li>
+    </ul>
+    <h4>Header Ini Tidak Dibungkus Dengan Tag Div</h4>
+    <p>Paragraf ini tidak menggunakan tag div sebagai pembungkusnya</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque veritatis autem consequuntur maxime perferendis dolorem? Qui, repellendus. Dolorum qui pariatur, dolor consequuntur, ab nihil suscipit possimus alias iure nobis voluptate.</p>
+    <p>footer</p>
+    <hr>
+
+    <h3>Dengan Tag Div</h3>
+    <div class="navigation">
+        <h4>Navigation</h4>
+        <ul>
+            <li><a href="#">Link ini dibungkus dengan tag div lihat pada Source Code</a></li>
+            <li><a href="#">Link ini dibungkus dengan tag div lihat pada Source Code</a></li>
+            <li><a href="#">Link ini dibungkus dengan tag div lihat pada Source Code</a></li>
+            <li><a href="#">Link ini dibungkus dengan tag div lihat pada Source Code</a></li>
+            <li><a href="#">Link ini dibungkus dengan tag div lihat pada Source Code</a></li>
+        </ul>
+    </div>
+    <div class="article">
+        <h4>Header Ini Dibungkus Dengan Tag Div Lihat Pada Source Code</h4>
+        <p>Paragraf ini menggunakan tag div sebagai pembungkusnya lihat pada source code</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque veritatis autem consequuntur maxime perferendis dolorem? Qui, repellendus. Dolorum qui pariatur, dolor consequuntur, ab nihil suscipit possimus alias iure nobis voluptate.</p>
+    </div>
+    <div class="footer"><p>footer</p></div>
+
+    <p>
+        Meskipun tidak terjadi perbedaan pada tampilan namun sekarang memiliki tag div untuk mengelompokan dan bisa dijadikan selector untuk menghias satu kelompok element tersebut, LIHAT PADA SOURCE CODE
+    </p>
+
+    <hr>
+    <h2>Tag Span</h2>
+    <div class="navigation">
+        <h4>Navigation</h4>
+        <ul>
+            <li><a href="#">Link ini dibungkus dengan tag div lihat pada Source Code</a></li>
+            <li><a href="#">Link ini dibungkus dengan tag div lihat pada Source Code</a></li>
+            <li><a href="#">Link ini dibungkus dengan tag div lihat pada Source Code</a></li>
+            <li><a href="#">Link ini dibungkus dengan tag div lihat pada Source Code</a></li>
+            <li><a href="#">Link ini dibungkus dengan tag div lihat pada Source Code</a></li>
+        </ul>
+    </div>
+    <div class="article">
+        <h4>Header Ini Dibungkus Dengan Tag Div Lihat Pada Source Code</h4>
+        <p>Paragraf ini menggunakan tag div sebagai pembungkusnya lihat pada source code</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <span>Text Ini Dibungkus Menggunakan tag Span</span> Qui, repellendus. Dolorum qui pariatur, dolor consequuntur, ab nihil suscipit possimus alias iure nobis voluptate.</p>
+    </div>
+    <div class="footer"><p>footer</p></div>
+
+    <hr>
+    
+    <p>
+        Ini Merupakan Hasil Belajar Dari Video Di Channel Youtube Web Programming Unpas Playlist CSS Layouting Video ke 1
+        tentang <strong>Pendahuluan, Tag Div & Span</strong> Catatan Selengkapnya Bisa Dilihat Di <a
+            href="../Catatan.docx">Catatan</a>
+    </p>
+
+    <h2>Catatan</h2>
+    <pre>
+        CSS Layouting
+
+        Definisi CSS Layouting
+        CSS Layouting atau Tata Letak CSS merupakan teknik CSS untuk mengatur dan meletakan atau memposisikan element element HTML yang telah dibuat menggunakan syntax CSS 
+        Teknik CSS Layouting ini memungkinkan untuk mengatur ukuran, posisi ataupun perilaku dari element element html tersebut 
+        
+        Penting sebelum memasuki seri CSS Layouting alangkah lebih baiknya untuk memahami HTML Dasar dan CSS Dasar terlebih dahulu
+        CSS Layouting akan membahas seputar Display, Dimensi, Overflow, Box Model, Float dan Position 
+        Div & Span
+
+        Di dalam HTML terdapat banyak tag yang digunakan untuk memberikan maksud atau arti pada sebuah konten contohnya tag <p></p> digunakan untuk membuat paragraf, tag <h1></h1> digunakan untuk membuat header level 1 atau utama dan banyak lagi 
+        Sedangkan tag <div></div> dan <span></span> tidak memiliki arti apapun keduanya digunakan untuk mengelompokan tag tag atau konten HTML dan memberikan informasi terhadap element element tersebut
+        
+        •	Tag Div
+            Tanpa Pengelompokan menggunakan div
+                
+            Tanpa dikelompokan oleh tag div konten html harus dihias masing masing element meskipun stylenya sama
+            Dengan Pengelompokan menggunakan div
+            
+            Dengan menggunakan div konten tadi dikelompokan menjadi 3 bagian yaitu Bagian Navigasi, Bagian Artikel, dan Footer
+            Tag div dan span tidak menampilkan apapun melainkan untuk mengelompokan
+            
+            Bisa terlihat ketika div dengan class navigation diberi style background color seluruh isi div nya terkena property css yang sama membuktikan bahwa element element ini adalah satu kelompok begitu juga dengan bagian artikel dan footer dikelompokan dan diberi background color yang berbeda
+
+        •	Tag Span
+            Sama seperti tag div berfungsi untuk mengelompokan element HTML namun Tag Span biasanya digunakan untuk mengelompokan text pada element HTML
+    </pre>
+</body>
+
+</html>
