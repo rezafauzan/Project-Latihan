@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar CSS Dasar Latihan 2 : Display</title>
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+    <h1>Display</h1>
+    <h2>Element Yang Memiliki Nilai Default Display Inline</h2>
+    <a href="#">Tag Anchor </a>
+    <b>Tag Bold </b>
+    <em>Tag Em </em>
+    <button>Tag Button </button>
+    <sub>Tag Sub </sub>
+    <sup>Tag Sup </sup>
+    <span>Tag Span,dan masih banyak tag tag yang memiliki nilai default display inline</span>
+    <p>Yang dimana element element ini tidak menambahkan baris baru ketika dibuat sehingga element baru akan berada di sebelahnya</p>
+    <span style="background-color: black; color: aliceblue;">lebar dan tinggi element dengan display inline akan setinggi dan selebar kontennya dan tidak bisa diatur meski diberi width dan height</span>
+    <span style="background-color: blue; color: aliceblue;">segini misalnya</span>
+    <img style="width:400px; height:400px; background-color: black; color:white" src="" alt="Satu Satunya element HTML dengan Display inline yang bisa diatur dimensinya adalah tag img">
+    <h2>Display Inline-Block</h2>
+    <p>baca catatan.docx untuk lebih lanjut</p>
+    <a href="#" style=" display: inline-block; background-color: aquamarine;  width: 200px; height: 200px;">Tag Anchor dengan display inline-block bisa diatur lebar dan tingginya</a>
+    <a href="#" style=" display: inline-block; background-color: aquamarine;  width: 200px; height: 200px;">Tag Anchor </a>
+    <a href="#" style=" display: inline-block; background-color: aquamarine;  width: 200px; height: 200px;">Tag Anchor </a>
+    <a href="#" style=" display: inline-block; background-color: aquamarine;  width: 200px; height: 200px;">Tag Anchor </a>
+    <h2>Element Yang Memiliki Nilai Default Display Block</h2>
+    <h4 style="background-color: burlywood;">Header 1 sampai 6 secara default memiliki display block</h4>
+    <p style="background-color: burlywood;">tag paragraf juga dan masih banyak tag lainnya secara default widthnya akan memenuhi parentnya</p>
+    <div style="background-color: blueviolet; width: 400px; height: 100px;">
+        <p style="background-color: aqua;">Lebar memenuhi parentnya</p>
+        <p style="background-color: aqua;">Dan element baru akan berada dibawahnya bukan disampingnya</p>
+    </div>
+
+    <h2>Display None</h2>
+    <p>Lihat Pada Source Code</p>
+    <div style="width: 400px; height: 400px; background-color: black; display: none;">Ini Div yang Dihilangkan menggunakan property display dengan nilai none</div>
+
+    <h2>Mengubah Display Pada Sebuah Element</h2>
+    <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+        <li><a href="#">Link 5</a></li>
+    </ul>
+    <p>Secara Default Element li memiliki display block namun ini bisa disejajarkan dengan menggunakan display inline</p>
+    <ul>
+        <li style="display: inline;"><a href="#">Link 1</a></li>
+        <li style="display: inline;"><a href="#">Link 2</a></li>
+        <li style="display: inline;"><a href="#">Link 3</a></li>
+        <li style="display: inline;"><a href="#">Link 4</a></li>
+        <li style="display: inline;"><a href="#">Link 5</a></li>
+    </ul>
+
+    <hr>
+    
+    <p>
+        Ini Merupakan Hasil Belajar Dari Video Di Channel Youtube Web Programming Unpas Playlist CSS Layouting Video ke 1
+        tentang <strong>Display</strong> Catatan Selengkapnya Bisa Dilihat Di <a
+            href="../Catatan.docx">Catatan</a>
+    </p>
+
+    <h2>Catatan</h2>
+    <pre>
+        Secara Default Tag div memiliki property display block sehingga akan menambahkan baris baru dan tag span memiliki property display inline element selanjutnya akan disimpan sejajar
+
+        Display
+        Setiap Element HTML berada di dalam sebuah kotak yang disebut dengan Box Model dan Property Display pada css mengatur perilaku dari kotak tersebut
+
+        Dan Setiap tag HTML secara default sudah memiliki property display dan property ini bisa dirubah untuk mengganti perilakunya dengan mengganti value pada property display 
+
+        Property display memiliki empat nilai yaitu inline, inline-block, block, dan none
+
+        •	Display Inline
+            Property ini membuat element tidak menambahkan baris baru ketika dibuat 
+            Lebar dan tinggi elementnya sebesar konten yang ada di dalamnya kecuali tag img
+            Element dengan value display inline tidak dapat diatur tinggi dan lebarnya
+            Margin dan Padding hanya mempengaruhi element secara horizontal dan tidak berpengaruh secara vertikal 
+
+            Contoh element dengan display inline secara default diantaranya tag b, strong, i, em, a, span, sub, sup, button, input, label, select, textarea, dll
+
+        •	Display Inline-Block
+            Tidak ada element html yang secara default memiliki value display inline-block, inline-block ini merupakan value yang diatur secara manual, perilaku dasarnya sama dengan inline yaitu tidak menambahkan baris baru
+            Namun element dengan  display inline-block dapat diatur tinggi dan lebarnya
+
+        •	Display Block
+            Element yang secara default menambahkan baris baru ketika dibuat
+            Jika lebar dan tingginya tidak diatur maka lebar default akan memenuhi lebar dari parentnya
+            Element dengan display block bisa diatur tinggi dan lebarnya
+            Di dalam element block bisa menyimpan tag dengan display inline, inline-block, atau bahkan element block lagi
+            Contoh element dengan display block secara default adalah tag p, h1~h6,ol, ul, li, form, hr, div dan lain lain
+
+        •	Display None
+            Display dengan value none digunakan untuk menghilangkan sebuah element
+
+            Element html bisa dirubah display defaultnya contohnya li dengan display block bisa dirubah menjadi sejajar dengan mengganti nilai display ke inline
+    </pre>
+</body>
+
+</html>
