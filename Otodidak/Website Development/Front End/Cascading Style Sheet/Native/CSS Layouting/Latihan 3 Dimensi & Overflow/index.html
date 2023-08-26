@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar CSS Dasar Latihan 3 : Dimensi & Overflow</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+        }
+        .relativeUnit{
+            width: 50%;
+            height: 200px;
+            background-color: aqua;
+        }
+
+        .relativeUnit .child{
+            width: 70%;
+            height: 30%;
+            background-color: blueviolet;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Dimensi & Overflow</h1>
+    <h2>Mengatur Width dan Height</h2>
+    <h3>Satuan Absolute / Pixel</h3>
+    <div></div>
+
+    <hr>
+
+    <h3>Satuan Relative / %</h3>
+    <div class="relativeUnit">
+        <div class="child">
+
+        </div>
+    </div>
+
+    <hr>
+
+    <h3>Satuan Dunia Nyata Inchi(in)</h3>
+    <div style="width: 3in; height: 0.5in;"></div>
+
+    <h3>Satuan Dunia Nyata Centimeter(cm)</h3>
+    <div style="width: 3cm;height: 1.5cm;"></div>
+    
+    <h3>Satuan Dunia Nyata Point(pt)</h3>
+    <div style="width: 30pt;height: 20pt;"></div>
+
+    <h3>Satuan Dunia Nyata Pica(pc)</h3>
+    <div style="width: 3pc;height: 4pc;"></div>
+
+    <hr>
+
+    <h3>Diatur Salah Satu Dimensinya</h3>
+    <h4>Hanya Diatur Widthnya</h4>
+    <div style="width: 200px; height: auto;">
+        <p>Element div ini akan selalu memiliki lebar 200px tapi tingginya sesuai jumlah konten, semakin panjang atau banyak kontennya maka heightnya akan terus bertambah</p>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aperiam saepe aliquid asperiores, ullam tempora quo quas officia molestias, ducimus aspernatur architecto amet. Delectus ducimus aliquid animi doloribus, ex officia?</p>
+    </div>
+    <h4>Hanya Diatur Heightnya</h4>
+    <div style="height: 200px; width: auto;">
+        <p>Element div ini akan selalu setinggi 200px tapi lebarnya akan menyesuaikan dengan jumlah konten, semakin panjang atau banyak kontennya maka lebarnya akan semakin bertambah</p>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aperiam saepe aliquid asperiores, ullam tempora quo quas officia molestias, ducimus aspernatur architecto amet. Delectus ducimus aliquid animi doloribus, ex officia?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aperiam saepe aliquid asperiores, ullam tempora quo quas officia molestias, ducimus aspernatur architecto amet. Delectus ducimus aliquid animi doloribus, ex officia?</p>
+    </div>
+
+    <h2>Overflow</h2>
+    <h3>Konten Melebihi Width Atau Height Yang Ditentukan</h3>
+
+    <div style="width: 100px; display: inline-block;">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, cupiditate dicta doloribus autem, sit assumenda distinctio iusto asperiores minus obcaecati praesentium nobis aut accusantium, suscipit commodi temporibus rem vitae quidem.</p>
+    </div>
+
+    <div style="height: 100px; display: inline-block;">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, cupiditate dicta doloribus autem, sit assumenda distinctio iusto asperiores minus obcaecati praesentium nobis aut accusantium, suscipit commodi temporibus rem vitae quidem.</p>
+    </div>
+
+    <p>ketika sebuah element diatur dimensinya dan element didalamnya melebihi dari lebar dan tinggi parentnya maka akan terjadi sesuatu yang disebut dengan overflow</p>
+    <p>Tentunya hal ini biasanya tidak diinginkan tapi tergantung tujuan, dan untuk mengatasi hal ini perlu diberikan property CSS overflow pada element parrentnya</p>
+    <p>Property overflow memiliki beberapa value untuk mengatur perilaku kelebihan konten tersebut yaitu :</p>
+
+    <h3>Value Overflow Visible</h3>
+    <div style="overflow: visible;">
+        <p>Merupakan Value Default yaitu akan tetap memaksa menampilkan seluruh konten meski melebihi width dan height pembungkusnya</p>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, accusantium officiis modi aspernatur ea ullam placeat quis labore quas nam possimus earum, totam veniam qui voluptas asperiores doloremque reprehenderit! Velit.</p>
+    </div>
+    <br><br><br><br><br>
+    
+    <h3>Value Overflow Hidden</h3>
+    <div style="overflow: hidden;">
+        <p>overflow:hidden akan menyembunyikan dan tidak akan bisa diakses semua konten yang melebihi width dan height parentnya</p>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, accusantium officiis modi aspernatur ea ullam placeat quis labore quas nam possimus earum, totam veniam qui voluptas asperiores doloremque reprehenderit! Velit.</p>
+    </div>
+    <br>
+
+    <h3>Value Overflow Scroll</h3>
+    <div style="overflow: scroll;">
+        <p>Value ini akan memunculkan controller scroll jadi kelebihan konten akan bisa diakses menggunakan scroll dan ukuran pembungkusnya tetap teratur</p>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, accusantium officiis modi aspernatur ea ullam placeat quis labore quas nam possimus earum, totam veniam qui voluptas asperiores doloremque reprehenderit! Velit.</p>
+    </div>
+    <br>
+
+    <h3>Value Overflow Auto</h3>
+    <h4>Konten Tidak Melebihi Dimensi Parent</h4>
+    <div style="overflow: auto;">
+        <p>Value ini flexible karena apabila kontennya cukup maka controller scroll tidak dimunculkan dan kalo konten melebihi dimensi parentnya maka akan memunculkan scroll yang sesuai vertical atau horizontal atau keduanya</p>
+    </div>
+    <br>
+
+    <h4>Konten Melebihi Dimensi Parent</h4>
+    <div style="overflow: auto;">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In similique quidem aperiam consectetur consequuntur, enim ipsum atque repudiandae reprehenderit deleniti expedita voluptatibus aut officiis totam aspernatur nesciunt, hic deserunt explicabo!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In similique quidem aperiam consectetur consequuntur, enim ipsum atque repudiandae reprehenderit deleniti expedita voluptatibus aut officiis totam aspernatur nesciunt, hic deserunt explicabo!</p>
+    </div>
+    <br>
+
+    <hr>
+    
+    <p>
+        Ini Merupakan Hasil Belajar Dari Video Di Channel Youtube Web Programming Unpas Playlist CSS Layouting Video ke 3
+        tentang <strong>Dimensi & Overflow</strong> Catatan Selengkapnya Bisa Dilihat Di <a
+            href="../Catatan.docx">Catatan</a>
+    </p>
+
+    <h2>Catatan</h2>
+    <pre>
+        Dimensi
+        Element element html memiliki display yang dimana element dengan display block dan inline-block bisa dirubah lebar dan tingginya atau ukuran yang disebut dengan dimensi 
+        Untuk mengatur lebar dan tingginya yaitu dengan menggunakan property width untuk mengatur lebar dan height untuk mengatur tingginya 
+
+        Property width dan height bisa diisi dengan berbagai satuan ukuran atau unit ukuran yang bermacam macam diantaranya :
+
+        •	Satuan Absolute
+            Satuan absolute atau satuan pasti disimbolkan dengan px (dibaca pixel)
+
+        •	Satuan Relative
+            Satuan relative ini disimbolkan dengan % satuan relative itu relative terhadap parentnya misalkan diberi width: 50%; maka akan selalu menjadi setengah dari element parentnya meskipun parentnya berubah ukuran
+
+        •	Satuan Dunia Nyata
+            Satuan ini diambil dari dunia nyata seperti in(dibaca inchi), cm, mm, pt (dibaca point cocok untuk media cetak dan biasa digunakan untuk font ), pc (dibaca pica atau paica)
+
+        Dan masih banyak satuan lainnya seperti vw dan vh, dll
+
+        Apabila hanya diatur salah satu dimensinya maka dimensi yang lain akan menyesuaikan dengan proporsi dari dimensi yang diatur 
+        
+        Contoh apabila suatu element diatur widthnya saja maka heightnya akan proporsi dan menyesuaikan sesuai jumlah kontennya
+
+        Overflow
+        Terkadang ketika sebuah element diatur dimensinya dan element didalamnya melebihi dari lebar dan tinggi parentnya maka akan terjadi sesuatu yang disebut dengan overflow
+
+        Tentunya hal ini biasanya tidak diinginkan tapi tergantung tujuan, dan untuk mengatasi hal ini perlu diberikan property CSS overflow pada element parrentnya
+        Property overflow memiliki beberapa value untuk mengatur perilaku kelebihan konten tersebut yaitu :
+
+        •	Visible (Default)
+            Merupakan Value Default yaitu akan tetap memaksa menampilkan seluruh konten meski melebihi width dan height pembungkusnya
+
+        •	Hidden
+            Value ini akan menyembunyikan dan tidak akan bisa diakses semua konten yang melebihi width dan height parentnya
+
+        •	Scroll
+            Value ini akan memunculkan controller scroll jadi kelebihan konten akan bisa diakses menggunakan scroll dan ukuran pembungkusnya tetap teratur
+
+        •	Auto
+            Value ini flexible karena apabila kontennya cukup maka controller scroll tidak dimunculkan dan kalo konten melebihi dimensi parentnya maka akan memunculkan scroll yang sesuai vertical atau horizontal atau keduanya
+    </pre>
+</body>
+
+</html>
