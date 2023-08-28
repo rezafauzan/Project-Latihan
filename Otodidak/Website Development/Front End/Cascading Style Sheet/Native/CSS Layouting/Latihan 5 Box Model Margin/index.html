@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar CSS Dasar Latihan 5 : Konsep Box Model : Margin</title>
+    <style>
+        .satu{
+            width: 200px;
+            height: 200px;
+            background-color: deepskyblue;
+        }
+        .dua{
+            width: 150px;
+            height: 150px;
+            background-color: fuchsia;
+        }
+        .tiga{
+            width: 50px;
+            height: 50px;
+            background-color: springgreen;
+        }
+
+        .satu.ml{
+            margin-left: 45px;
+        }
+
+        .dua.mt{
+            margin-top: 45px;
+        }
+
+        .tiga.mr{
+            margin-right: 45px;
+        }
+
+        .satu.mb{
+            margin-bottom: 45px;
+        }
+
+        .dua.ml.mt.mr.mb{
+            margin-top: 45px;
+            margin-right: 45px;
+            margin-bottom: 45px;
+            margin-left: 45px;
+        }
+
+        .dua.shorthand{
+
+        }
+
+        .satu.mo{margin-bottom: 45px;}
+        .dua.mo{margin-top: 20px;}
+
+        .satu.mh.overlap{margin-right: 10px;}
+        .dua.mh.overlap{margin-left: 30px;}
+
+        .mh{
+            margin-right: 0;
+            display: inline-block;
+        }
+
+        .mh1{
+            margin-right: 10px;
+            display: inline-block;
+        }
+
+        .satu.nm{margin-bottom: 10px;}
+        .dua.nm{margin-top: -50px; margin-left: -85px ;}
+        
+        .satu.left-auto{
+            margin-left: auto;
+        }
+        .dua.left-auto{
+            margin-left: auto;
+        }
+        .tiga.left-auto{
+            margin-left: auto;
+        }
+
+        .satu.right-auto{
+            margin-right: auto;
+        }
+        .dua.right-auto{
+            margin-right: auto;
+        }
+        .tiga.right-auto{
+            margin-right: auto;
+        }
+
+        .satu.lr-auto{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .dua.lr-auto{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .tiga.lr-auto{
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .satu.m1{
+            margin: 20px;
+        }
+        .dua.m1{
+            margin: 20px;
+        }
+        .tiga.m1{
+            margin: 20px;
+        }
+
+        .satu.m2{
+            margin: 20px 15px;
+        }
+        .dua.m2{
+            margin: 20px 15px;
+        }
+        .tiga.m2{
+            margin: 20px 15px;
+        }
+
+        .satu.m3{
+            margin: 20px 15px 10px;
+        }
+        .dua.m3{
+            margin: 20px 15px 10px;
+        }
+        .tiga.m3{
+            margin: 20px 15px 10px;
+        }
+
+        .satu.m4{
+            margin: 20px 15px 10px 5px;
+        }
+        .dua.m4{
+            margin: 20px 15px 10px 5px;
+        }
+        .tiga.m4{
+            margin: 20px 15px 10px 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Konsep Box Model : Margin</h1>
+    
+    <h2>Tiga Div Dengan class .satu .dua .tiga</h2>
+    <div class="satu">1</div>
+    <div class="dua">2</div>
+    <div class="tiga">3</div>
+    <hr>
+
+    <h2>Property margin-left</h2>
+    <div class="satu ml">1</div>
+    <div class="dua">2</div>
+    <div class="tiga">3</div>
+
+    <h2>Property margin-top</h2>
+    <div class="satu">1</div>
+    <div class="dua mt">2</div>
+    <div class="tiga">3</div>
+
+    <h2>Property margin-right</h2>
+    <div class="satu">1</div>
+    <div class="dua">2</div>
+    <div class="tiga mr">3</div>
+
+    <h2>Property margin-bottom</h2>
+    <div class="satu mb">1</div>
+    <div class="dua">2</div>
+    <div class="tiga">3</div>
+
+    <h2>Margin 4 Sisi</h2>
+    <div class="satu">1</div>
+    <div class="dua mt mr mb ml">2</div>
+    <div class="tiga">3</div>
+
+    <h2>Shorthand Margin</h2>
+    <div class="satu">1</div>
+    <div class="dua shorthand">2</div>
+    <div class="tiga">3</div>
+
+    <hr>
+
+    <h2>Overlaping Margin</h2>
+    
+    <h3>Overlaping Vertical Margin</h3>
+    <div class="satu mo">1</div>
+    <div class="dua mo">2 jarak antara div 1 dan 2 adalah 45px bukan 65px</div>
+    <div class="tiga">3</div>
+
+    <h3>Overlaping Horizontal Margin</h3>
+        <div class="satu mh overlap">1</div>
+        <div class="dua mh overlap">2</div>
+        <div class="tiga mh overlap">3</div>
+    <hr>
+
+    <h2>Horizontal Margin 0</h2>
+    <div class="satu mh">1</div>
+    <div class="dua mh">2</div>
+    <div class="tiga mh">3</div>
+
+    <h2>Horizontal Margin > 0</h2>
+    <div class="satu mh1">1</div>
+    <div class="dua mh1">2</div>
+    <div class="tiga mh1">3</div>
+
+    <h2>Horizontal Margin True 0</h2>
+    <div class="satu mh">1</div><div class="dua mh">2</div><div class="tiga mh">3</div>
+    
+    <hr>
+
+    <h2>Negative Margin</h2>
+    <div class="satu nm">1</div>
+    <div class="dua nm">2</div>
+    <div class="tiga nm">3</div>
+    
+    <hr>
+
+    <h2>Margin Auto</h2>
+    
+    <h3>Margin Left Auto</h3>
+    <div class="satu left-auto">1</div>
+    <div class="dua left-auto">2</div>
+    <div class="tiga left-auto">3</div>
+    
+    <h3>Margin Right Auto</h3>
+    <div class="satu right-auto">1</div>
+    <div class="dua right-auto">2</div>
+    <div class="tiga right-auto">3</div>
+
+    <h3>Margin Left Right Auto</h3>
+    <div class="satu lr-auto">1</div>
+    <div class="dua lr-auto">2</div>
+    <div class="tiga lr-auto">3</div>
+    
+    <hr>
+
+    <h2>Shorthand Margin</h2>
+    
+    <h3>Property Margin 1 Nilai</h3>
+    <div class="satu m1">1</div>
+    <div class="dua m1">2</div>
+    <div class="tiga m1">3</div>
+
+    <h3>Property Margin 2 Nilai</h3>
+    <div class="satu m2">1</div>
+    <div class="dua m2">2</div>
+    <div class="tiga m2">3</div>
+
+    <h3>Property Margin 3 Nilai</h3>
+    <div class="satu m3">1</div>
+    <div class="dua m3">2</div>
+    <div class="tiga m3">3</div>
+
+    <h3>Property Margin 4 Nilai</h3>
+    <div class="satu m4">1</div>
+    <div class="dua m4">2</div>
+    <div class="tiga m4">3</div>
+    
+    <hr>
+    
+    <p>
+        Ini Merupakan Hasil Belajar Dari Video Di Channel Youtube Web Programming Unpas Playlist CSS Layouting Video ke 4
+        tentang <strong>Konsep Box Model : Margin</strong> Catatan Selengkapnya Bisa Dilihat Di <a
+            href="../Catatan.docx">Catatan</a>
+    </p>
+
+    <h2>Catatan</h2>
+    
+</body>
+
+</html>

@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Belajar CSS Dasar Latihan 3 : Dimensi & Overflow</title>
+    <title>Belajar CSS Dasar Latihan 4 : Konsep Box Model</title>
     <style>
+        *{
+            border: 1px solid red;
+        }
+
         div{
             width: 200px;
             height: 200px;
@@ -28,7 +32,8 @@
 </head>
 
 <body>
-    <h1>Dimensi & Overflow</h1>
+    <h1>Konsep Box Model</h1>
+    <h2>Seluruh Konten Sekarang Diberi Border 1px solid red untuk menunjukan bahwa semua element merupakan kotak</h2>
     <h2>Mengatur Width dan Height</h2>
     <h3>Satuan Absolute / Pixel</h3>
     <div></div>
@@ -129,51 +134,35 @@
     <hr>
     
     <p>
-        Ini Merupakan Hasil Belajar Dari Video Di Channel Youtube Web Programming Unpas Playlist CSS Layouting Video ke 3
-        tentang <strong>Dimensi & Overflow</strong> Catatan Selengkapnya Bisa Dilihat Di <a
+        Ini Merupakan Hasil Belajar Dari Video Di Channel Youtube Web Programming Unpas Playlist CSS Layouting Video ke 4
+        tentang <strong>Konsep Box Model</strong> Catatan Selengkapnya Bisa Dilihat Di <a
             href="../Catatan.docx">Catatan</a>
     </p>
 
     <h2>Catatan</h2>
     <pre>
-        Dimensi
-        Element element html memiliki display yang dimana element dengan display block dan inline-block bisa dirubah lebar dan tingginya atau ukuran yang disebut dengan dimensi 
-        Untuk mengatur lebar dan tingginya yaitu dengan menggunakan property width untuk mengatur lebar dan height untuk mengatur tingginya 
+        Box Model
 
-        Property width dan height bisa diisi dengan berbagai satuan ukuran atau unit ukuran yang bermacam macam diantaranya :
-
-        •	Satuan Absolute
-            Satuan absolute atau satuan pasti disimbolkan dengan px (dibaca pixel)
-
-        •	Satuan Relative
-            Satuan relative ini disimbolkan dengan % satuan relative itu relative terhadap parentnya misalkan diberi width: 50%; maka akan selalu menjadi setengah dari element parentnya meskipun parentnya berubah ukuran
-
-        •	Satuan Dunia Nyata
-            Satuan ini diambil dari dunia nyata seperti in(dibaca inchi), cm, mm, pt (dibaca point cocok untuk media cetak dan biasa digunakan untuk font ), pc (dibaca pica atau paica)
-
-        Dan masih banyak satuan lainnya seperti vw dan vh, dll
-
-        Apabila hanya diatur salah satu dimensinya maka dimensi yang lain akan menyesuaikan dengan proporsi dari dimensi yang diatur 
+        Box Model merupakan sebuah konsep yang menyatakan bahwa setiap element di dalam halaman berada di dalam sebuah box atau kotak dan kotak tersebut bisa dimodifikasi dimensi dan posisinya juga background atau latar dari kotak tersebut
         
-        Contoh apabila suatu element diatur widthnya saja maka heightnya akan proporsi dan menyesuaikan sesuai jumlah kontennya
+        Gambar di catatan.docx merupakan website facebook dan lazada yang seluruh halamannya diberi property border sebesar 1px berwarna merah terlihat seluruh element yang berbentuk persegi atau pun tidak memiliki border yang berbentuk kotak
+        
+        Hal ini menunjukan bahwa setiap element pada halaman website merupakan sebuah kotak dan inilah konsep box model
+        
+        CSS Box Model mendefinisikan kotak yang dihasilkan sebuah element lalu menampilkannya sesuai dengan format visualnya seperti dimensinya, warna tulisannya, background colornya dan kontenya juga posisinya
+        
+        CSS Box Terdiri dari 4 komponen yaitu margin, border, padding dan content(Bisa berupa tulisan, gambar dan lainnya) 
 
-        Overflow
-        Terkadang ketika sebuah element diatur dimensinya dan element didalamnya melebihi dari lebar dan tinggi parentnya maka akan terjadi sesuatu yang disebut dengan overflow
+        •	Margin
+            Merupakan area transparan di sekitar kotak(di luar border)
+        •	Padding
+            Merupakan area transparan di dalam kotak (antara content dan border)
+        •	Border
+            Merupakan batas disekeliling content dan padding
+        •	Content
+            Konten merupakan sesuatu yang berada sebenarnya di dalam box bisa berupa teks atau gambar
+            Dari ke empat komponen box model hanya 3 yang bisa diatur oleh CSS yaitu margin, padding, border, dan content 
 
-        Tentunya hal ini biasanya tidak diinginkan tapi tergantung tujuan, dan untuk mengatasi hal ini perlu diberikan property CSS overflow pada element parrentnya
-        Property overflow memiliki beberapa value untuk mengatur perilaku kelebihan konten tersebut yaitu :
-
-        •	Visible (Default)
-            Merupakan Value Default yaitu akan tetap memaksa menampilkan seluruh konten meski melebihi width dan height pembungkusnya
-
-        •	Hidden
-            Value ini akan menyembunyikan dan tidak akan bisa diakses semua konten yang melebihi width dan height parentnya
-
-        •	Scroll
-            Value ini akan memunculkan controller scroll jadi kelebihan konten akan bisa diakses menggunakan scroll dan ukuran pembungkusnya tetap teratur
-
-        •	Auto
-            Value ini flexible karena apabila kontennya cukup maka controller scroll tidak dimunculkan dan kalo konten melebihi dimensi parentnya maka akan memunculkan scroll yang sesuai vertical atau horizontal atau keduanya
     </pre>
 </body>
 
