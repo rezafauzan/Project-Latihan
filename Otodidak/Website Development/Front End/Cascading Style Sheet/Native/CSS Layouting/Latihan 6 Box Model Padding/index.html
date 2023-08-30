@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar CSS Dasar Latihan 5 : Konsep Box Model : Padding</title>
+    <style>
+        .pad{
+            width: 200px;
+            margin: 20px auto;
+            padding-top: 20px;
+            padding-right: 15px;
+            padding-bottom: 10px;
+            padding-left: 5px;
+            background-color: salmon;
+        }
+
+        .padShorthand{
+            width: 200px;
+            margin: 20px auto;
+            padding: 20px 15px 10px 5px;
+            background-color: salmon;
+        }
+
+        .padIncreaseBoxSize{
+            width: 300px;
+            height: 300px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: aqua;
+        }
+
+        .Solution1{
+            width: 280px;
+            height: 280px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: aqua;
+        }
+
+        .Solution2{
+            width: 300px;
+            height: 300px;
+            margin: 20px auto;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: darkcyan;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Konsep Box Model : Padding</h1>
+
+    <h2>Property Padding</h2>
+    <p>Sama seperti margin, padding memiliki 4 property untuk mengatur jarak padding sisi atas, sisi kanan, sisi bawah, dan sisi kiri</p>
+    <div class="pad">
+        <p>Div Ini Menggunakan Property padding-top: 20px; padding-right: 15px; padding-bottom: 10px; padding-left: 5px;</p>
+    </div>
+
+    <div class="padShorthand">
+        <p>Div Ini Menggunakan Property shorthand Padding padding: 20px 15px 10px 5px;</p>
+        <p style="font-size: larger; font-weight: bold;">Padding ini hampir mirip sama persis dengan margin bedanya adalah padding tidak bisa diisi nilai negative dan auto</p>
+    </div>
+
+    <h2>Padding Menambah Ukuran Box Pada Element</h2>
+    <div class="padIncreaseBoxSize">
+        <p>Kotak Ini Berukuran 300px x 300px dan memiliki padding sebesar 20px setiap sisi</p>
+        <p>Karena Padding Kini Ukuran Elementnya tidak lagi 300px x 300px melainkan 320px x 320px</p>
+    </div>
+
+    <div class="Solution1">
+        <p>Karena Padding Kini Ukuran Elementnya tidak lagi 300px x 300px melainkan 320px x 320px</p>
+        <p>Dan untuk mengakali hal ini bisa dengan cara mengukur contoh mengurangi width dan height element dengan ukuran padding</p>
+        <p>kini ukuran elementnya adalah 300px x 300px hasil dari penjumlahan width dan heigth dikurangi 20, lihat pada source code</p>
+    </div>
+
+    <div class="Solution2">
+        <p>Karena Padding Kini Ukuran Elementnya tidak lagi 300px x 300px melainkan 320px x 320px</p>
+        <p>Solusi kedua adalah dengan menggunakan property box-sizing:border-box</p>
+    </div>
+
+    <hr>
+    
+    <p>
+        Ini Merupakan Hasil Belajar Dari Video Di Channel Youtube Web Programming Unpas Playlist CSS Layouting Video ke 4
+        tentang <strong>Konsep Box Model : Padding</strong> Catatan Selengkapnya Bisa Dilihat Di <a
+            href="../Catatan.docx">Catatan</a>
+    </p>
+
+    <h2>Catatan</h2>
+    <pre>
+        Box Model : Padding
+        Padding merupakan area transparent di dalam kotak diantara border dan content
+        Sama seperti margin, padding memiliki 4 property untuk mengatur jarak padding sisi atas, sisi kanan, sisi bawah, dan sisi kiri
+
+        Padding ini hampir mirip sama persis dengan margin bedanya adalah padding tidak bisa diisi nilai negative dan auto
+        Padding menambah ukuran element, element yang ditambahkan padding akan merubah ukuran element tersebut singkatnya padding mempengaruhi ukuran boxnya
+
+        Hitungannya adalah ukuran element ditambah padding sisi horizontal atau sisi vertical 
+        Dan untuk mengakali hal ini bisa dengan cara mengukur contoh mengurangi width dan height element dengan ukuran padding 
+    </pre>
+</body>
+
+</html>
