@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar CSS Layouting Latihan 9 : Praktikum 1 Membuat Website Sederhana Dengan CSS Box Model</title>
+    <style>
+        /* Menggunakan Selector Universal */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 800px;
+            margin:  10px auto;
+            border: 0.1px solid black;
+            box-shadow: 2px 2px 2px black;
+        }
+
+        .container nav ul {
+            list-style: none;
+            margin: 10px;
+        }
+
+        .container nav li {
+            display: inline;
+        }
+
+        .container nav ul li a {
+            text-decoration: none;
+        }
+
+        .container nav h1.brand{
+            margin: 10px; 
+        }
+
+        .container nav h1.brand a{ 
+            text-decoration: none;
+            color: black
+        }
+
+        .hero-image img{
+            width: 100%;
+            max-height: 300px;
+        }
+
+        article{
+            padding: 20px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav>
+            <h1 class="brand"><a href="#">Website Praktikum Box Model</a></h1>
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-image">
+            <img src="assets/img/hero/hero.jpg" alt="Hero Image City Ligth">
+        </div>
+        <article>
+            <h1>Judul Artikel</h1>
+            <p>Ditulis oleh <a href="#">Reza Fauzan Adhima</a> pada 2 September 2023</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere harum doloremque numquam natus facilis
+                accusantium, delectus obcaecati unde eaque sequi voluptatibus minima voluptatem reiciendis deserunt
+                quod, vel cumque magni minus.</p>
+            <br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam expedita at dolores debitis voluptate
+                neque libero ut, rerum enim hic autem praesentium adipisci fuga aut. Deserunt, illum. Voluptatum,
+                expedita suscipit!
+                Rem reprehenderit tempora earum nihil necessitatibus eaque, temporibus tenetur odit, minima quisquam
+                inventore! Iure neque qui, iusto odit eaque sunt doloremque ab corporis ad quis necessitatibus,
+                mollitia, ipsa esse amet?
+                Architecto ea voluptas sed, fugit iusto voluptatem. Maiores consequuntur iste dolorem alias eveniet ex,
+                est molestiae earum aut ad molestias, quidem deleniti temporibus aliquam adipisci ducimus dolorum
+                ratione aspernatur expedita.
+                Saepe minus optio facere magni in magnam, inventore at? Sequi dignissimos perferendis, dolores atque
+                consectetur earum quae nostrum. Mollitia velit obcaecati dolorem labore tempore suscipit atque
+                consectetur voluptatibus rerum in?</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt laborum fugiat temporibus voluptate
+                nobis, vel officiis, aperiam hic, sit mollitia assumenda rerum reprehenderit? Dicta eveniet molestiae,
+                est sint vero minus!
+                Ullam quia eveniet dignissimos dolores laborum, delectus libero deleniti blanditiis tenetur amet cumque
+                maxime provident labore iste cupiditate minus dolorum, consequatur sit! Laudantium, ipsa voluptas? Nemo
+                ratione doloremque quibusdam velit.
+                Odit ut nobis exercitationem ab quidem est minima iure sed harum aut eius suscipit, voluptates expedita
+                numquam quisquam! Corrupti atque quasi qui dolores repellendus mollitia nihil unde voluptatibus eum
+                quas!</p>
+
+            <hr>
+
+            <p>
+                Ini Merupakan Hasil Belajar Dari Video Di Channel Youtube Web Programming Unpas Playlist CSS Layouting
+                Video ke
+                5
+                tentang <strong>Praktikum 1 Membuat Website Sederhana Dengan CSS Box Model</strong> Catatan Selengkapnya
+                Bisa
+                Dilihat Di <a href="../Catatan.docx">Catatan</a>
+            </p>
+
+            <br>
+
+            <h2>Catatan</h2>
+            <h2><span style='mso-ansi-language:EN-US'>Box Model<o:p></o:p></span></h2>
+            <p class=MsoNormal><span style='mso-ansi-language:EN-US'>Box Model <span
+            class=SpellE>merupakan</span> <span class=SpellE>sebuah</span> <span
+            class=SpellE>konsep</span> yang <span class=SpellE>menyatakan</span> <span
+            class=SpellE>bahwa</span> <span class=SpellE>setiap</span> element di <span
+            class=SpellE>dalam</span> <span class=SpellE>halaman</span> <span class=SpellE>berada</span>
+            di <span class=SpellE>dalam</span> <span class=SpellE>sebuah</span> box <span
+            class=SpellE>atau</span> <span class=SpellE>kotak</span> dan <span
+            class=SpellE>kotak</span> <span class=SpellE>tersebut</span> <span
+            class=SpellE>bisa</span> <span class=SpellE>dimodifikasi</span> <span
+            class=SpellE>dimensi</span> dan <span class=SpellE>posisinya</span> juga
+            background <span class=SpellE>atau</span> <span class=SpellE>latar</span> <span
+            class=SpellE>dari</span> <span class=SpellE>kotak</span> <span class=SpellE>tersebut</span><o:p></o:p></span></p>
+
+            
+
+            
+
+            
+
+            <p class=MsoNormal><span style='mso-ansi-language:EN-US'>Gambar <span
+            class=SpellE>diatas</span> <span class=SpellE>merupakan</span> website <span
+            class=SpellE>facebook</span> dan <span class=SpellE>lazada</span> yang <span
+            class=SpellE>seluruh</span> <span class=SpellE>halamannya</span> <span
+            class=SpellE>diberi</span> property border <span class=SpellE>sebesar</span>
+            1px <span class=SpellE>berwarna</span> <span class=SpellE>merah</span> <span
+            class=SpellE>terlihat</span> <span class=SpellE>seluruh</span> element yang <span
+            class=SpellE>berbentuk</span> <span class=SpellE>persegi</span> <span
+            class=SpellE>atau</span> pun <span class=SpellE>tidak</span> <span
+            class=SpellE>memiliki</span> border yang <span class=SpellE>berbentuk</span> <span
+            class=SpellE>kotak</span><o:p></o:p></span></p>
+
+            <p class=MsoNormal><span style='mso-ansi-language:EN-US'>Hal <span
+            class=SpellE>ini</span> <span class=SpellE>menunjukan</span> <span
+            class=SpellE>bahwa</span> <span class=SpellE>setiap</span> element pada <span
+            class=SpellE>halaman</span> website <span class=SpellE>merupakan</span> <span
+            class=SpellE>sebuah</span> <span class=SpellE>kotak</span> dan <span
+            class=SpellE>inilah</span> <span class=SpellE>konsep</span> box model<o:p></o:p></span></p>
+
+            <p class=MsoNormal><span style='mso-ansi-language:EN-US'>CSS Box Model <span
+            class=SpellE>mendefinisikan</span> <span class=SpellE>kotak</span> yang <span
+            class=SpellE>dihasilkan</span> <span class=SpellE>sebuah</span> element <span
+            class=SpellE>lalu</span> <span class=SpellE>menampilkannya</span> <span
+            class=SpellE>sesuai</span> <span class=SpellE>dengan</span> format <span
+            class=SpellE>visualnya</span> <span class=SpellE>seperti</span> <span
+            class=SpellE>dimensinya</span>, <span class=SpellE>warna</span> <span
+            class=SpellE>tulisannya</span>, background <span class=SpellE>colornya</span>
+            dan <span class=SpellE>kontenya</span> juga <span class=SpellE>posisinya</span><o:p></o:p></span></p>
+
+            <p class=MsoNormal><span style='mso-ansi-language:EN-US'>CSS Box <span
+            class=SpellE>Terdiri</span> <span class=SpellE>dari</span> 4 <span
+            class=SpellE>komponen</span> <span class=SpellE>yaitu</span> <b><i>margin,
+            border, padding dan <span class=GramE>content(</span>Bisa <span class=SpellE>berupa</span>
+            tulisan, <span class=SpellE>gambar</span> dan <span class=SpellE>lainnya</span>)</i></b>
+            <o:p></o:p></span></p>
+
+            
+
+            
+
+            <h3 style='mso-list:l0 level1 lfo4'><![if !supportLists]><span
+            style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+            Symbol;font-weight:normal;font-style:normal'><span style='mso-list:Ignore'>�<span
+            style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span></span><![endif]>Margin</h3>
+
+            <p class=MsoNormal style='margin-left:1.0in'><span class=SpellE><span
+            style='mso-ansi-language:EN-US'>Merupakan</span></span><span style='mso-ansi-language:
+            EN-US'> area <span class=SpellE>transparan</span> di <span class=SpellE>sekitar</span>
+            <span class=SpellE><span class=GramE>kotak</span></span><span class=GramE>(</span>di
+            <span class=SpellE>luar</span> border)<o:p></o:p></span></p>
+
+            <h3 style='mso-list:l0 level1 lfo4'><![if !supportLists]><span
+            style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+            Symbol;font-weight:normal;font-style:normal'><span style='mso-list:Ignore'>�<span
+            style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span></span><![endif]>Padding</h3>
+
+            <p class=MsoNormal style='margin-left:1.0in'><span class=SpellE><span
+            style='mso-ansi-language:EN-US'>Merupakan</span></span><span style='mso-ansi-language:
+            EN-US'> area <span class=SpellE>transparan</span> di <span class=SpellE>dalam</span>
+            <span class=SpellE>kotak</span> (<span class=SpellE>antara</span> content dan
+            border)<o:p></o:p></span></p>
+
+            <h3 style='mso-list:l0 level1 lfo4'><![if !supportLists]><span
+            style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+            Symbol;font-weight:normal;font-style:normal'><span style='mso-list:Ignore'>�<span
+            style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span></span><![endif]>Border</h3>
+
+            <p class=MsoNormal style='margin-left:1.0in'><span class=SpellE><span
+            style='mso-ansi-language:EN-US'>Merupakan</span></span><span style='mso-ansi-language:
+            EN-US'> batas <span class=SpellE>disekeliling</span> content dan padding<o:p></o:p></span></p>
+
+            <h3 style='mso-list:l0 level1 lfo4'><![if !supportLists]><span
+            style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+            Symbol;font-weight:normal;font-style:normal'><span style='mso-list:Ignore'>�<span
+            style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span></span><![endif]>Content</h3>
+
+            <p class=MsoNormal style='margin-left:1.0in'><span class=SpellE><span
+            style='mso-ansi-language:EN-US'>Konten</span></span><span style='mso-ansi-language:
+            EN-US'> <span class=SpellE>merupakan</span> <span class=SpellE>sesuatu</span>
+            yang <span class=SpellE>berada</span> <span class=SpellE>sebenarnya</span> di <span
+            class=SpellE>dalam</span> box <span class=SpellE>bisa</span> <span
+            class=SpellE>berupa</span> <span class=SpellE>teks</span> <span class=SpellE>atau</span>
+            <span class=SpellE>gambar</span><o:p></o:p></span></p>
+
+            <p class=MsoNormal><span style='mso-ansi-language:EN-US'>Dari <span
+            class=SpellE>ke</span> <span class=SpellE>empat</span> <span class=SpellE>komponen</span>
+            box model <span class=SpellE>hanya</span> 3 yang <span class=SpellE>bisa</span>
+            <span class=SpellE>diatur</span> oleh CSS <span class=SpellE>yaitu</span>
+            margin, padding, border, dan content <o:p></o:p></span></p>
+
+            <p class=MsoNormal><span class=SpellE><span style='mso-ansi-language:EN-US'>untuk</span></span><span
+            style='mso-ansi-language:EN-US'> <span class=SpellE>mengatur</span> masing <span
+            class=SpellE>masing</span> <span class=SpellE>komponen</span> <span
+            class=SpellE>bisa</span> <span class=SpellE>menggunakan</span> property <span
+            class=SpellE>namaKomponen</span>-top/left/bottom/right <span class=SpellE>atau</span>
+            <span class=SpellE>namaKomponen</span> <span class=SpellE>nya</span> <span
+            class=SpellE>saja</span> <span class=SpellE>sebagai</span> shortcut <o:p></o:p></span></p>
+
+            
+
+            <p class=MsoNormal><span class=SpellE><span style='mso-ansi-language:EN-US'>apabila</span></span><span
+            style='mso-ansi-language:EN-US'> <span class=SpellE>diisi</span> 4 <span
+            class=SpellE>angka</span> (<span class=SpellE>dipisahkan</span> <span
+            class=SpellE>koma</span>) <span class=SpellE>maka</span> <span class=SpellE>akan</span>
+            <span class=SpellE>secara</span> <span class=SpellE>berurutan</span> <span
+            class=SpellE>memberi</span> <span class=SpellE>nilainya</span> <span
+            class=SpellE>dari</span> top <span class=SpellE>ke</span> left <span
+            class=SpellE>ke</span> bottom <span class=SpellE>ke</span> right<o:p></o:p></span></p>
+
+            <p class=MsoNormal><span class=SpellE><span style='mso-ansi-language:EN-US'>apabila</span></span><span
+            style='mso-ansi-language:EN-US'> <span class=SpellE>diisi</span> 3 <span
+            class=SpellE>angka</span> <span class=SpellE>maka</span> value <span
+            class=SpellE>pertama</span> <span class=SpellE>akan</span> <o:p></o:p></span></p>
+
+            <h2><span style='mso-ansi-language:EN-US'>Box <span class=GramE>Model :</span>
+            Margin<o:p></o:p></span></h2>
+
+            <p class=MsoNormal><span style='mso-ansi-language:EN-US'>Margin <span
+            class=SpellE>merupakan</span> area <span class=SpellE>transparan</span> di <span
+            class=SpellE>sekitar</span> <span class=SpellE><span class=GramE>kotak</span></span><span
+            class=GramE>(</span>di <span class=SpellE>luar</span> border)<o:p></o:p></span></p>
+
+            
+
+            <p class=MsoNormal><span style='mso-ansi-language:EN-US'>Pada <span
+            class=SpellE>contoh</span> <span class=SpellE>gambar</span> <span class=SpellE>diatas</span>
+            <span class=SpellE>terdapat</span> 3 <span class=SpellE>buah</span> div <span
+            class=SpellE>dengan</span> <span class=SpellE>ukuran</span> dan
+            background-color <span class=SpellE>berbeda</span>, <o:p></o:p></span></p>
+
+            <h3 style='mso-list:l0 level1 lfo4'><![if !supportLists]><span
+            style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+            Symbol;font-weight:normal;font-style:normal'><span style='mso-list:Ignore'>�<span
+            style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span></span><![endif]>Property Margin-Left</h3>
+
+            <p class=MsoNormal style='margin-left:1.0in'><span style='mso-ansi-language:
+            EN-US'>div <span class=SpellE>dengan</span> class <span class=SpellE>satu</span>
+            <span class=SpellE>diberi</span> property <b><i>margin-left: 45px;</i></b> <span
+            class=SpellE>maka</span> <span class=SpellE>akan</span> <span class=SpellE>menambah</span>
+            <span class=SpellE>jarak</span> di <span class=SpellE>sebelah</span> <span
+            class=SpellE>kiri</span> <span class=SpellE><span class=GramE>div.satu</span></span>
+            <span class=SpellE>sebanyak</span> 45px dan <span class=SpellE>seakan</span> <span
+            class=SpellE>bergeser</span> <span class=SpellE>ke</span> <span class=SpellE>kanan</span><o:p></o:p></span></p>
+
+            
+
+            <h3 style='mso-list:l0 level1 lfo4'><![if !supportLists]><span
+            style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+            Symbol;font-weight:normal;font-style:normal'><span style='mso-list:Ignore'>�<span
+            style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span></span><![endif]>Property Margin-Top</h3>
+
+            <p class=MsoNormal style='margin-left:1.0in'><span class=SpellE><span
+            style='mso-ansi-language:EN-US'>Begitu</span></span><span style='mso-ansi-language:
+            EN-US'> juga <span class=SpellE>ketika</span> <span class=SpellE>div.dua</span>
+            <span class=SpellE>diberi</span> <b><i>margin-top</i></b>: <b><i>45px;</i></b> <span
+            class=SpellE>maka</span> element <span class=SpellE>div.dua</span> <span
+            class=SpellE>akan</span> <span class=SpellE>ada</span> <span class=SpellE>jarak</span>
+            <span class=SpellE>sebesar</span> 45px <span class=SpellE>keatas</span> dan <span
+            class=SpellE>seakan</span> <span class=SpellE>bergeser</span> <span
+            class=SpellE>ke</span> <span class=SpellE>bawah</span><o:p></o:p></span></p>
+
+            <p class=MsoNormal align=center style='margin-left:1.0in;text-align:center'><span
+            
+
+            <h3 style='mso-list:l0 level1 lfo4'><![if !supportLists]><span
+            style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+            Symbol;font-weight:normal;font-style:normal'><span style='mso-list:Ignore'>�<span
+            style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span></span><![endif]>Property Margin-Right</h3>
+
+            <p class=MsoNormal style='margin-left:1.0in'><span class=SpellE><span
+            style='mso-ansi-language:EN-US'>Begitu</span></span><span style='mso-ansi-language:
+            EN-US'> juga <span class=SpellE>ketika</span> <span class=SpellE><span
+            class=GramE>div.tiga</span></span> <span class=SpellE>diberi</span> <b><i>margin-right</i></b>:
+            <b><i>45px;</i></b> <span class=SpellE>maka</span> element <span class=SpellE>div.dua</span>
+            <span class=SpellE>akan</span> <span class=SpellE>ada</span> <span
+            class=SpellE>jarak</span> <span class=SpellE>sebesar</span> 45px <span
+            class=SpellE>ke</span> <span class=SpellE>kanan</span> <span class=SpellE>meskipun</span>
+            <span class=SpellE>tidak</span> <span class=SpellE>terlihat</span> <span
+            class=SpellE>karena</span> <span class=SpellE>tidak</span> <span class=SpellE>ada</span>
+            element lain di <span class=SpellE>sebelah</span> <span class=SpellE>kanannya</span><o:p></o:p></span></p>
+
+            
+
+            <p class=MsoNormal style='margin-left:1.0in'><span class=SpellE><span
+            style='mso-ansi-language:EN-US'>Namun</span></span><span style='mso-ansi-language:
+            EN-US'> <span class=SpellE>meski</span> <span class=SpellE>tidak</span> <span
+            class=SpellE>terlihat</span> <span class=SpellE>sebetulnya</span> margin right <span
+            class=SpellE>tersebut</span> <span class=SpellE>nilainya</span> <span
+            class=SpellE>sudah</span> <span class=SpellE>berlaku</span> <span class=SpellE>bisa</span>
+            <span class=SpellE>dilihat</span> pada <b><i>inspect element </i></b>pada
+            browser <span class=SpellE>setelah</span> di <span class=SpellE>seleksi</span> <span
+            class=SpellE>elementnya</span> <span class=SpellE>lihat</span> pada tab <b><i>computed</i></b>
+            <span class=SpellE>disana</span> <span class=SpellE>akan</span> <span
+            class=SpellE>terlihat</span> box model <span class=SpellE>beserta</span> value <span
+            class=SpellE>value</span> <span class=SpellE>nya</span><o:p></o:p></span></p>
+
+            
+
+            <p class=MsoNormal style='margin-left:1.0in'><span style='mso-ansi-language:
+            EN-US'>Dan <span class=SpellE>terlihat</span> <span class=SpellE>bahwa</span>
+            margin <span class=SpellE>sebelah</span> <span class=SpellE>kanan</span> <span
+            class=SpellE>sudah</span> <span class=SpellE>bernilai</span> 45px<o:p></o:p></span></p>
+
+            
+
+            <h3 style='mso-list:l0 level1 lfo4'><![if !supportLists]><span
+            style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+            Symbol;font-weight:normal;font-style:normal'><span style='mso-list:Ignore'>�<span
+            style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span></span><![endif]>Property Margin-Bottom</h3>
+
+            <p class=MsoNormal style='margin-left:1.0in'><span class=SpellE><span
+            style='mso-ansi-language:EN-US'>Begitu</span></span><span style='mso-ansi-language:
+            EN-US'> juga <span class=SpellE>ketika</span> <span class=SpellE><span
+            class=GramE>div.satu</span></span> <span class=SpellE>diberi</span> <b><i>margin-bottom</i></b>:
+            <b><i>45px;</i></b> <span class=SpellE>maka</span> element <span class=SpellE>div.satu</span>
+            <span class=SpellE>akan</span> <span class=SpellE>ada</span> <span
+            class=SpellE>jarak</span> <span class=SpellE>sebesar</span> 45px <span
+            class=SpellE>ke</span> <span class=SpellE>bawah</span> dan <span class=SpellE>mendorong</span>
+            element <span class=SpellE>lainnya</span> <span class=SpellE>sejauh</span> 45px
+            <span class=SpellE>kebawah</span><o:p></o:p></span></p>
+
+            
+
+            <p class=MsoNormal style='margin-left:1.0in'><span class=SpellE><span
+            style='mso-ansi-language:EN-US'>Keempat</span></span><span style='mso-ansi-language:
+            EN-US'> property <span class=SpellE>tersebut</span> <span class=SpellE>dapat</span>
+            <span class=SpellE>diberikan</span> pada <span class=SpellE>satu</span> element
+            yang <span class=SpellE>sama</span> <span class=SpellE>sehingga</span> <span
+            class=SpellE>satu</span> element <span class=SpellE>bisa</span> <span
+            class=SpellE>memiliki</span> <span class=SpellE>nilai</span> margin <span
+            class=SpellE>untuk</span> <span class=SpellE>keempat</span> <span class=SpellE>sisinya</span><o:p></o:p></span></p>
+
+            <h3 style='margin-left:.75in;text-indent:.25in;mso-list:none'><span
+            class=SpellE>Overlaping</span> Margin</h3>
+
+            <h4><span style='mso-ansi-language:EN-US'><span style='mso-tab-count:3'>���������������������������� </span><span
+            class=SpellE>Overlaping</span> <span class=SpellE>VerticalMargin</span><o:p></o:p></span></h4>
+
+            <p class=MsoNormal style='margin-left:1.5in'><span style='mso-ansi-language:
+            EN-US'>Margin Vertical <span class=SpellE>tidak</span> <span class=SpellE>saling</span>
+            <span class=SpellE>menambahkan</span> <span class=SpellE>contohnya</span> <span
+            class=SpellE>apabila</span> <span class=SpellE>terdapat</span> dua div yang <span
+            class=SpellE>satu</span> <span class=SpellE>diberi</span> margin bottom 20px
+            dan yang dua <span class=SpellE>diberi</span> margin top 20px, <span
+            class=SpellE>jarak</span> <span class=SpellE>diantara</span> <span
+            class=SpellE>keduanya</span> <span class=SpellE>tidak</span> <span
+            class=SpellE>akan</span> <span class=SpellE>menjadi</span> 40px, <span
+            class=SpellE>melainkan</span> <span class=SpellE>nilai</span> margin <span
+            class=SpellE>akan</span> <span class=SpellE>menggunakan</span> <span
+            class=SpellE>nilai</span> margin yang paling <span class=SpellE>besar</span> <span
+            class=SpellE>misal</span> div <span class=SpellE>satu</span> <span
+            class=SpellE>diberi</span> margin bottom 45px, <span class=SpellE>maka</span> <span
+            class=SpellE>jarak</span> div <span class=SpellE>satu</span> dan dua <span
+            class=SpellE>adalah</span> 45px <span class=SpellE>bukan</span> 65px<o:p></o:p></span></p>
+
+            
+
+            <h4><span style='mso-ansi-language:EN-US'><span style='mso-tab-count:3'>���������������������������� </span><span
+            class=SpellE>Overlaping</span> Horizontal Margin<o:p></o:p></span></h4>
+
+            <p class=MsoNormal style='margin-left:1.5in'><span class=SpellE><span
+            style='mso-ansi-language:EN-US'>Meskipun</span></span><span style='mso-ansi-language:
+            EN-US'> <span class=SpellE>belum</span> <span class=SpellE>diberi</span> margin
+            left <span class=SpellE>atau</span> right <span class=SpellE>atau</span> <span
+            class=SpellE>diberi</span> <span class=SpellE>nilai</span> 0 <span
+            class=SpellE>terdapat</span> <span class=SpellE>jarak</span> gap <span
+            class=SpellE>secara</span> horizontal <span class=SpellE>ini</span> <span
+            class=SpellE>merupakan</span> salah <span class=SpellE>satu</span> <span
+            class=SpellE>keanehan</span> margin horizontal <o:p></o:p></span></p>
+
+            
+
+            <p class=MsoNormal style='margin-left:1.5in'><span style='mso-ansi-language:
+            EN-US'>Ketika <span class=SpellE>diberi</span> <span class=SpellE>nilai</span> <span
+            class=SpellE>diatas</span> <span class=SpellE>nol</span> <span class=SpellE>maka</span>
+            <span class=SpellE>barulah</span> <span class=SpellE>tampak</span> <span
+            class=SpellE>jarak</span> yang <span class=SpellE>ditentukan</span> <span
+            class=SpellE>seperti</span> <span class=SpellE>mendorong</span><o:p></o:p></span></p>
+
+            
+
+            <p class=MsoNormal style='margin-left:1.5in'><span class=SpellE><span
+            style='mso-ansi-language:EN-US'>Untuk</span></span><span style='mso-ansi-language:
+            EN-US'> <span class=SpellE>menghilangkan</span> margin horizontal <span
+            class=SpellE>secara</span> <span class=SpellE>utuh</span> <span class=SpellE>caranya</span>
+            <span class=SpellE>agak</span> <span class=SpellE>aneh</span> <span
+            class=SpellE>yaitu</span> <span class=SpellE>dengan</span> <span class=SpellE>menempatkan</span>
+            source code element <span class=SpellE>htmlnya</span> <span class=SpellE>sejajar</span>
+            <span class=SpellE>tanpa</span> blank space<o:p></o:p></span></p>
+
+            
+
+            <p class=MsoNormal style='margin-left:1.0in'><span class=SpellE><span
+            style='mso-ansi-language:EN-US'>Overlaping</span></span><span style='mso-ansi-language:
+            EN-US'> pada margin <span class=SpellE>secara</span> horizontal <span
+            class=SpellE>berbeda</span> <span class=SpellE>dengan</span> <span
+            class=SpellE>overlaping</span> <span class=SpellE>secara</span> vertical <span
+            class=SpellE>dimana</span> <span style='mso-tab-count:1'>������� </span>pada
+            margin horizontal <span class=SpellE>bukan</span> <span class=SpellE>diambil</span>
+            yang <span class=SpellE>terbesar</span> <span class=SpellE>tapi</span> <span
+            class=SpellE>akan</span> <span class=SpellE>dijumlahkan</span> </span><span
+            
+
+            <p class=MsoNormal style='margin-left:1.0in'><span style='mso-ansi-language:
+            EN-US'>Ketika <span class=SpellE><span class=GramE>div.satu</span></span> <span
+            class=SpellE>diberi</span> margin-right 10px <span class=SpellE>maka</span> <span
+            class=SpellE>akan</span> <span class=SpellE>membuat</span> <span class=SpellE>jarak</span>
+            <span class=SpellE>ke</span> <span class=SpellE>kanan</span> <span
+            class=SpellE>sebesar</span> 10px<o:p></o:p></span></p>
+
+            
+
+            <p class=MsoNormal style='margin-left:1.0in'><span style='mso-ansi-language:
+            EN-US'>Dan <span class=SpellE>ketika</span> <span class=SpellE>div.dua</span> <span
+            class=SpellE>diberi</span> margin-left 30px <span class=SpellE>maka</span> <span
+            class=SpellE>akan</span> <span class=SpellE>menambah</span> <span class=SpellE>jarak</span>
+            <span class=SpellE>marginnya</span> <span class=SpellE>sebesar</span> 30px <span
+            class=SpellE>jadi</span> <span class=SpellE>sekarang</span> <span class=SpellE>jarak</span>
+            <span class=SpellE><span class=GramE>div.satu</span></span> <span class=SpellE>ke</span>
+            <span class=SpellE>div.dua</span> <span class=SpellE>adalah</span> <span
+            class=SpellE>sebesar</span> 40px<o:p></o:p></span></p>
+
+            <p class=MsoNormal style='margin-left:.5in'><span class=SpellE><span
+            style='mso-ansi-language:EN-US'>Kesimpulannya</span></span><span
+            style='mso-ansi-language:EN-US'> <span class=SpellE>adalah</span> margin <span
+            class=SpellE>secara</span> vertical <span class=SpellE>diambil</span> yang
+            paling <span class=SpellE>besar</span> <span class=SpellE>tapi</span> margin
+            horizontal <span class=SpellE>akan</span> <span class=SpellE>saling</span> <span
+            class=SpellE>menambahkan</span> <span class=SpellE>jaraknya</span><o:p></o:p></span></p>
+
+            <h3 style='margin-left:0in;text-indent:.5in;mso-list:none'>Negative Margin</h3>
+
+            <p class=MsoNormal style='margin-left:.5in'><span style='mso-ansi-language:
+            EN-US'>Nilai negative pada margin <span class=SpellE>akan</span> <span
+            class=SpellE>memberi</span> margin pada <span class=SpellE>arah</span> yang <span
+            class=SpellE>berlawanan</span> <span class=SpellE>misal</span> <o:p></o:p></span></p>
+
+            <p class=MsoNormal style='margin-left:.5in'><span style='mso-ansi-language:
+            EN-US'>margin-<span class=GramE>top:-</span>50px <span class=SpellE>maka</span>
+            <span class=SpellE>ini</span> <span class=SpellE>akan</span> <span
+            class=SpellE>menggerakan</span> <span class=SpellE>ke</span> <span
+            class=SpellE>atas</span> <span class=SpellE>sebanyak</span> 50px <span
+            class=SpellE>bukan</span> <span class=SpellE>mendorong</span> <span
+            class=SpellE>ke</span> <span class=SpellE>bawah</span> <span class=SpellE>sebesar</span>
+            50px dan <span class=SpellE>akan</span> <span class=SpellE>membawa</span>
+            element <span class=SpellE>dibawahnya</span> <span class=SpellE>atau</span> <span
+            class=SpellE>disampingnya</span> <span class=SpellE>berlaku</span> di
+            horizontal <span class=SpellE>maupun</span> vertical<o:p></o:p></span></p>
+
+            <p class=MsoNormal align=center style='margin-left:.5in;text-align:center'><span
+            
+
+            
+
+            
+
+            <p class=MsoNormal style='margin-left:.5in'><span style='mso-ansi-language:
+            EN-US'>Negative margin juga <span class=SpellE>biasa</span> <span class=SpellE>digunakan</span>
+            <span class=SpellE>untuk</span> <span class=SpellE>menyembunyikan</span>
+            element html<o:p></o:p></span></p>
+
+            <h3 style='margin-left:0in;text-indent:.5in;mso-list:none'>Margin Auto</h3>
+
+            <p class=MsoNormal style='margin-left:.5in'><span class=SpellE><span
+            style='mso-ansi-language:EN-US'>Merupakan</span></span><span style='mso-ansi-language:
+            EN-US'> <span class=SpellE>nilai</span> <span class=SpellE>khusus</span> <span
+            class=SpellE>untuk</span> margin <span class=SpellE>kiri</span> dan <span
+            class=SpellE>kanan</span> <span class=SpellE>apabila</span> <span class=SpellE>nilai</span>
+            margin-left <span class=SpellE>diisi</span> auto <span class=SpellE>maka</span>
+            <span class=SpellE>akan</span> <span class=SpellE>membuat</span> element <span
+            class=SpellE>selalu</span> <span class=SpellE>berada</span> di paling <span
+            class=SpellE>ujung</span> <span class=SpellE>kanan</span> <span class=SpellE>dari</span>
+            <span class=SpellE>parentnya</span> <span class=SpellE>begitu</span> <span
+            class=SpellE>sebaliknya</span> <span class=SpellE>dengan</span> margin-right:
+            auto<o:p></o:p></span></p>
+
+            
+
+            
+
+            <p class=MsoNormal style='margin-left:.5in'><span class=SpellE><span
+            style='mso-ansi-language:EN-US'>Apabila</span></span><span style='mso-ansi-language:
+            EN-US'> margin left dan margin right <span class=SpellE>diberi</span> auto dua <span
+            class=SpellE>duanya</span> <span class=SpellE>maka</span> <span class=SpellE>akan</span>
+            <span class=SpellE>membuat</span> element <span class=SpellE>berada</span> di <span
+            class=SpellE>tengah</span> <span class=SpellE>tengah</span> <span class=SpellE>parentnya</span><o:p></o:p></span></p>
+
+            
+
+            <span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+            mso-ascii-theme-font:minor-latin;mso-fareast-font-family:Calibri;mso-fareast-theme-font:
+            minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+            mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-US;mso-fareast-language:
+            EN-US;mso-bidi-language:AR-SA'><br clear=all style='mso-special-character:line-break;
+            page-break-before:always'>
+            </span>
+
+            <p class=MsoNormal><span style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+            <h3 style='margin-left:.5in;text-indent:.5in;mso-list:none'>Shorthand Margin</h3>
+
+            <p class=MsoNormal style='margin-left:1.0in'><span style='mso-ansi-language:
+            EN-US'>Margin <span class=SpellE>bisa</span> <span class=SpellE>diberi</span>
+            pada <span class=SpellE>setiap</span> <span class=SpellE>sisi</span> <span
+            class=SpellE>yaitu</span> <span class=SpellE>atas</span> <span class=SpellE>kanan</span>
+            <span class=SpellE>bawah</span> <span class=SpellE>kiri</span> masing <span
+            class=SpellE>masing</span> <span class=SpellE>sisi</span> <span class=SpellE>memiliki</span>
+            property margin <span class=SpellE>sendiri</span> <span class=SpellE>sendiri</span>
+            Adapun <span class=SpellE>satu</span> property yang <span class=SpellE>bisa</span>
+            <span class=SpellE>memberi</span> <span class=SpellE>nilai</span> <span
+            class=SpellE>langsung</span> pada <span class=SpellE>keempat</span> <span
+            class=SpellE>sisi</span> <span class=SpellE>yaitu</span> property <b><i>margin<o:p></o:p></i></b></span></p>
+
+            <p class=MsoNormal style='margin-left:1.0in'><span style='mso-ansi-language:
+            EN-US'>Property <span class=SpellE>ini</span> <span class=SpellE>bisa</span> <span
+            class=SpellE>diisi</span> <span class=SpellE>satu</span> <span class=SpellE>nilai</span>,
+            dua <span class=SpellE>nilai</span>, <span class=SpellE>tiga</span> <span
+            class=SpellE>nilai</span>, dan <span class=SpellE>empat</span> <span
+            class=SpellE>nilai</span><o:p></o:p></span></p>
+
+            <p class=MsoNormal style='margin-left:1.0in'><span class=SpellE><span
+            style='mso-ansi-language:EN-US'>Apabila</span></span><span style='mso-ansi-language:
+            EN-US'> <span class=SpellE>diisi</span> <span class=SpellE>satu</span> <span
+            class=SpellE>nilai</span> <span class=SpellE>maka</span> <span class=SpellE>keempat</span>
+            <span class=SpellE>sisinya</span> <span class=SpellE>akan</span> <span
+            class=SpellE>memiliki</span> <span class=SpellE>nilai</span> yang <span
+            class=SpellE>sama</span><o:p></o:p></span></p>
+
+            
+
+            <p class=MsoNormal style='margin-left:1.0in'><span class=SpellE><span
+            style='mso-ansi-language:EN-US'>Apabila</span></span><span style='mso-ansi-language:
+            EN-US'> <span class=SpellE>diisi</span> dua <span class=SpellE>nilai</span> <span
+            class=SpellE>maka</span> <span class=SpellE>nilai</span> <span class=SpellE>pertama</span>
+            <span class=SpellE>akan</span> <span class=SpellE>menjadi</span> <span
+            class=SpellE>nilai</span> margin <span class=SpellE>atas</span> <span
+            class=SpellE>bawah</span> dan value <span class=SpellE>kedua</span> <span
+            class=SpellE>akan</span> <span class=SpellE>menjadi</span> margin <span
+            class=SpellE>kiri</span> <span class=SpellE>kanan</span> <span class=SpellE>bisa</span>
+            <span class=SpellE>diisi</span> auto agar <span class=SpellE>langsung</span> <span
+            class=SpellE>berada</span> <span class=SpellE>ditengah</span><o:p></o:p></span></p>
+
+            
+
+            <p class=MsoNormal style='margin-left:1.0in'><span class=SpellE><span
+            style='mso-ansi-language:EN-US'>Apabila</span></span><span style='mso-ansi-language:
+            EN-US'> <span class=SpellE>diisi</span> <span class=SpellE>tiga</span> <span
+            class=SpellE>nilai</span> <span class=SpellE>maka</span> value <span
+            class=SpellE>pertama</span> <span class=SpellE>adalah</span> <span
+            class=SpellE>untuk</span> <span class=SpellE>sisi</span> <span class=SpellE>atas</span>
+            value <span class=SpellE>kedua</span> <span class=SpellE>untuk</span> <span
+            class=SpellE>sisi</span> <span class=SpellE>kiri</span> dan <span class=SpellE>kanan</span>
+            value <span class=SpellE>ketiga</span> <span class=SpellE>untuk</span> <span
+            class=SpellE>sisi</span> <span class=SpellE>bawah</span><o:p></o:p></span></p>
+
+            
+
+            <p class=MsoNormal style='margin-left:1.0in'><span style='mso-ansi-language:
+            EN-US'>Dan <span class=SpellE>apabila</span> <span class=SpellE>diisi</span> 4 <span
+            class=SpellE>nilai</span> <span class=SpellE>maka</span> <span class=SpellE>akan</span>
+            <span class=SpellE>mengisi</span> <span class=SpellE>atas</span> <span
+            class=SpellE>kanan</span> <span class=SpellE>bawah</span> <span class=SpellE>kiri</span>
+            <span class=SpellE>secara</span> <span class=SpellE>berurutan</span> <span
+            class=SpellE>atau</span> <span class=SpellE>searah</span> <span class=SpellE>jarum</span>
+            jam<o:p></o:p></span></p>
+
+            
+
+            <h2><span style='mso-ansi-language:EN-US'>Box <span class=GramE>Model :</span>
+            Padding<o:p></o:p></span></h2>
+
+            <p class=MsoNormal><span style='mso-ansi-language:EN-US'>Padding <span
+            class=SpellE>merupakan</span> area transparent di <span class=SpellE>dalam</span>
+            <span class=SpellE>kotak</span> <span class=SpellE>diantara</span> border dan
+            content<o:p></o:p></span></p>
+
+            <p class=MsoNormal><span style='mso-ansi-language:EN-US'>Sama <span
+            class=SpellE>seperti</span> margin, padding <span class=SpellE>memiliki</span>
+            4 property <span class=SpellE>untuk</span> <span class=SpellE>mengatur</span> <span
+            class=SpellE>jarak</span> padding <span class=SpellE>sisi</span> <span
+            class=SpellE>atas</span>, <span class=SpellE>sisi</span> <span class=SpellE>kanan</span>,
+            <span class=SpellE>sisi</span> <span class=SpellE>bawah</span>, dan <span
+            class=SpellE>sisi</span> <span class=SpellE>kiri</span><o:p></o:p></span></p>
+
+            
+
+            <p class=MsoNormal><span style='mso-ansi-language:EN-US'>Padding <span
+            class=SpellE>ini</span> <span class=SpellE>hampir</span> <span class=SpellE>mirip</span>
+            <span class=SpellE>sama</span> <span class=SpellE>persis</span> <span
+            class=SpellE>dengan</span> margin <span class=SpellE>bedanya</span> <span
+            class=SpellE>adalah</span> padding <span class=SpellE>tidak</span> <span
+            class=SpellE>bisa</span> <span class=SpellE>diisi</span> <span class=SpellE>nilai</span>
+            negative dan auto<o:p></o:p></span></p>
+
+            <p class=MsoNormal><span style='mso-ansi-language:EN-US'>Padding <span
+            class=SpellE>menambah</span> <span class=SpellE>ukuran</span> element, element
+            yang <span class=SpellE>ditambahkan</span> padding <span class=SpellE>akan</span>
+            <span class=SpellE>merubah</span> <span class=SpellE>ukuran</span> element <span
+            class=SpellE>tersebut</span> <span class=SpellE>singkatnya</span> padding <span
+            class=SpellE>mempengaruhi</span> <span class=SpellE>ukuran</span> <span
+            class=SpellE>boxnya</span><o:p></o:p></span></p>
+
+            
+
+            <p class=MsoNormal><span class=SpellE><span style='mso-ansi-language:EN-US'>Hitungannya</span></span><span
+            style='mso-ansi-language:EN-US'> <span class=SpellE>adalah</span> <span
+            class=SpellE>ukuran</span> element <span class=SpellE>ditambah</span> padding <span
+            class=SpellE>sisi</span> horizontal <span class=SpellE>atau</span> <span
+            class=SpellE>sisi</span> vertical <o:p></o:p></span></p>
+
+            <p class=MsoNormal><span style='mso-ansi-language:EN-US'>Dan <span
+            class=SpellE>untuk</span> <span class=SpellE>mengakali</span> <span
+            class=SpellE>hal</span> <span class=SpellE>ini</span> <span class=SpellE>bisa</span>
+            <span class=SpellE>dengan</span> <span class=SpellE>cara</span> <span
+            class=SpellE>mengukur</span> <span class=SpellE>contoh</span> <span
+            class=SpellE>mengurangi</span> width dan height element <span class=SpellE>dengan</span>
+            <span class=SpellE>ukuran</span> padding <o:p></o:p></span></p>
+
+            <h2><span style='mso-ansi-language:EN-US'>Box <span class=GramE>Model :</span>
+            Border<o:p></o:p></span></h2>
+
+            <p class=MsoNormal><span style='mso-ansi-language:EN-US'>Border <span
+            class=SpellE>Merupakan</span> batas di <span class=SpellE>sekeliling</span>
+            padding dan content <span class=SpellE>untuk</span> <span class=SpellE>membuat</span>
+            border <span class=SpellE>memerlukan</span> property <span class=SpellE>css</span>
+            border <span class=SpellE>diisi</span> <span class=SpellE>dengan</span> <span
+            class=SpellE>tebal</span> border, style border, dan <span class=SpellE>warna</span>
+            border<o:p></o:p></span></p>
+
+            
+
+            <p class=MsoNormal><span style='mso-ansi-language:EN-US'>Property Border <span
+            class=SpellE>ini</span> <span class=SpellE>memiliki</span> <span class=SpellE>beberapa</span>
+            style <span class=SpellE>yaitu</span> solid, dotted, dashed, dan double<o:p></o:p></span></p>
+
+            
+
+            
+
+            <p class=MsoNormal><span style='mso-ansi-language:EN-US'>Sama <span
+            class=SpellE>seperti</span> padding dan margin, border juga <span class=SpellE>bisa</span>
+            <span class=SpellE>diatur</span> <span class=SpellE>hanya</span> salah <span
+            class=SpellE>satu</span> <span class=SpellE>sisinya</span> <span class=SpellE>mau</span>
+            <span class=SpellE>sisi</span> <span class=SpellE>atas</span>, <span
+            class=SpellE>kanan</span>, <span class=SpellE>bawah</span>, <span class=SpellE>kiri</span>
+            <o:p></o:p></span></p>
+
+            
+
+            <p class=MsoNormal><span style='mso-ansi-language:EN-US'>Border <span
+            class=SpellE>sama</span> <span class=SpellE>seperti</span> padding <span
+            class=SpellE>penambahan</span> border <span class=SpellE>akan</span> <span
+            class=SpellE>menambah</span> <span class=SpellE>ukuran</span> <span
+            class=SpellE>dari</span> box <span class=SpellE>nya</span><o:p></o:p></span></p>
+
+            
+
+            <p class=MsoNormal><span class=SpellE><span style='mso-ansi-language:EN-US'>Untuk</span></span><span
+            style='mso-ansi-language:EN-US'> <span class=SpellE>mengakalinya</span> <span
+            class=SpellE>sama</span> <span class=SpellE>seperti</span> padding <span
+            class=SpellE>bisa</span> <span class=SpellE>dengan</span> <span class=SpellE>mengurangi</span>
+            width <span class=SpellE>dengan</span> <span class=SpellE>jumlah</span> padding
+            dan border <span class=SpellE>atau</span> <span class=SpellE>menggunakan</span>
+            property box-sizing<o:p></o:p></span></p>
+
+            <h2><span style='mso-ansi-language:EN-US'>Box <span class=GramE>Model :</span>
+            Box-Sizing<o:p></o:p></span></h2>
+
+            <p class=MsoNormal><span style='mso-ansi-language:EN-US'>Box-Sizing <span
+            class=SpellE>merupakan</span> Property <span class=SpellE>untuk</span> <span
+            class=SpellE>membuat</span> <span class=SpellE>ukuran</span> <span
+            class=SpellE>kotak</span> <span class=SpellE>tetap</span> <span class=SpellE>seperti</span>
+            yang <span class=SpellE>diisi</span> di property width <span class=SpellE>meskipun</span>
+            <span class=SpellE>terdapat</span> padding dan border<o:p></o:p></span></p>
+
+            
+
+            <h2><span style='mso-ansi-language:EN-US'>CSS Reset<o:p></o:p></span></h2>
+
+            <p class=MsoNormal><span class=SpellE><span style='mso-ansi-language:EN-US'>Merupakan</span></span><span
+            style='mso-ansi-language:EN-US'> <span class=SpellE>teknik</span> <span
+            class=SpellE>untuk</span> <span class=SpellE>mengatur</span> <span
+            class=SpellE>ulang</span> <span class=SpellE>nilai</span> <span class=SpellE>nilai</span>
+            <span class=SpellE>css</span> default <span class=SpellE>dari</span> element
+            yang <span class=SpellE>ada</span> pada HTML <span class=SpellE>khususnya</span>
+            <span class=SpellE>mengenai</span> margin dan padding<o:p></o:p></span></p>
+
+            <p class=MsoNormal><span class=SpellE><span style='mso-ansi-language:EN-US'>Secara</span></span><span
+            style='mso-ansi-language:EN-US'> default <span class=SpellE>ketika</span> <span
+            class=SpellE>membuat</span> <span class=SpellE>sebuah</span> element <span
+            class=SpellE>pasti</span> <span class=SpellE>sudah</span> <span class=SpellE>memiliki</span>
+            <span class=SpellE>jarak</span> <span class=SpellE>padahal</span> <span
+            class=SpellE>belum</span> <span class=SpellE>diberi</span> margin pada element <span
+            class=SpellE>tersebut</span><o:p></o:p></span></p>
+
+            
+
+            <p class=MsoNormal><span style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+            <p class=MsoNormal><span class=SpellE><span style='mso-ansi-language:EN-US'>Padahal</span></span><span
+            style='mso-ansi-language:EN-US'> element pada <span class=SpellE>gambar</span> <span
+            class=SpellE>ini</span> <span class=SpellE>diberi</span> margin 0, <span
+            class=SpellE>hal</span> <span class=SpellE>ini</span> <span class=SpellE><span
+            class=GramE>terjadi</span></span><span class=GramE><span
+            style='mso-spacerun:yes'>� </span><span class=SpellE>karena</span></span> <span
+            class=SpellE>ada</span> element html yang <span class=SpellE>sudah</span> <span
+            class=SpellE>mempunyai</span> <span class=SpellE>nilai</span> margin dan
+            padding pada <span class=SpellE>kasus</span> <span class=SpellE>ini</span> <span
+            class=SpellE>adalah</span> element body <span class=SpellE>sudah</span> <span
+            class=SpellE>memiliki</span> margin dan padding <o:p></o:p></span></p>
+
+            <p class=MsoNormal><span style='mso-ansi-language:EN-US'>Dan <span
+            class=SpellE>apabila</span> body <span class=SpellE>diberi</span> margin dan
+            padding 0 <span class=SpellE>maka</span> element <span class=SpellE>kotak</span>
+            pada <span class=SpellE>gambar</span> <span class=SpellE>sekarang</span> <span
+            class=SpellE>tidak</span> <span class=SpellE>memiliki</span> <span
+            class=SpellE>jarak</span> <span class=SpellE>kosong</span> <span class=SpellE>lagi</span><o:p></o:p></span></p>
+
+            <p class=MsoNormal><span style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+            
+
+            <p class=MsoNormal><span style='mso-ansi-language:EN-US'>Hal <span
+            class=SpellE>ini</span> <span class=SpellE>sudah</span> <span class=SpellE>bisa</span>
+            <span class=SpellE>dikatakan</span> <span class=SpellE>sudah</span> <span
+            class=SpellE>melakukan</span> CSS Reset <span class=SpellE>selain</span>
+            element body <span class=SpellE>banyak</span> <span class=SpellE>lagi</span>
+            element yang <span class=SpellE>memiliki</span> <span class=SpellE>nilai</span>
+            default margin dan padding <span class=SpellE>seperti</span> pada h1 dan p <o:p></o:p></span></p>
+
+            
+
+            <p class=MsoNormal><span style='mso-ansi-language:EN-US'>CSS Reset <span
+            class=SpellE>bertujuan</span> agar developer <span class=SpellE>memiliki</span>
+            <span class=SpellE>kendali</span> <span class=SpellE>penuh</span> <span
+            class=SpellE>atas</span> CSS yang <span class=SpellE>dibuat</span><o:p></o:p></span></p>
+
+            <p class=MsoNormal><span class=SpellE><span style='mso-ansi-language:EN-US'>Untuk</span></span><span
+            style='mso-ansi-language:EN-US'> <span class=SpellE>melakukan</span> reset <span
+            class=SpellE>sekaligus</span> <span class=SpellE>seluruh</span> element <span
+            class=SpellE>bisa</span> <span class=SpellE>menggunakan</span> selector
+            universal yang <span class=SpellE>disimbolkan</span> <span class=SpellE>dengan</span>
+            <span class=SpellE>tanda</span> Bintang �</span><b><span style='font-size:18.0pt;
+            line-height:107%;mso-ansi-language:EN-US'>*</span></b><span style='mso-ansi-language:
+            EN-US'>� <o:p></o:p></span></p>
+
+            <p class=MsoNormal><span class=SpellE><span style='mso-ansi-language:EN-US'>Namun</span></span><span
+            style='mso-ansi-language:EN-US'> <span class=SpellE>menggunakan</span> selector
+            universal <span class=SpellE>ini</span> juga <span class=SpellE>ada</span> yang
+            <span class=SpellE>berpendapat</span> <span class=SpellE>bahwa</span> <span
+            class=SpellE>terlalu</span> <span class=SpellE>berat</span> <span class=SpellE>karena</span>
+            <span class=SpellE>seluruh</span> element yang <span class=SpellE>sudah</span> <span
+            class=SpellE>ada</span> <span class=SpellE>maupun</span> yang <span
+            class=SpellE>tidak</span> <span class=SpellE>ada</span> <span class=SpellE>akan</span>
+            <span class=SpellE>terkena</span><o:p></o:p></span></p>
+
+            <p class=MsoNormal><span style='mso-ansi-language:EN-US'>Cara yang <span
+            class=SpellE>lebih</span> <span class=SpellE>efektif</span> <span class=SpellE>adalah</span>
+            <span class=SpellE>dengan</span> <span class=SpellE>menggunakan</span> CSS
+            Reset <span class=SpellE>dari</span> meyerweb.com<o:p></o:p></span></p>
+
+            
+
+            <h2><span style='mso-ansi-language:EN-US'>Container<o:p></o:p></span></h2>
+
+            <p class=MsoNormal><span class=SpellE><span style='mso-ansi-language:EN-US'>Biasanya</span></span><span
+            style='mso-ansi-language:EN-US'> element pada website <span class=SpellE>akan</span>
+            <span class=SpellE>dibungkus</span> <span class=SpellE>dengan</span> <span
+            class=SpellE>satu</span> container yang <span class=SpellE>dibuat</span> <span
+            class=SpellE>menggunakan</span> div <span class=SpellE>untuk</span> <span
+            class=SpellE>mengatur</span> <span class=SpellE>lebar</span> <span
+            class=SpellE>seluruh</span> element di <span class=SpellE>dalamnya</span><o:p></o:p></span></p>
+        </article>
+
+        <footer><strong>Copyright © 2023 RezaFauzan MIT License</strong></footer>
+    </div>
+</body>
+
+</html>
