@@ -145,7 +145,7 @@
     <hr>
 
     <h2>Float Image Gallery</h2>
-    <div class="container">
+    <div class="container" style="overflow:auto">
         <div class="gallery-images">Images-1</div>
         <div class="gallery-images">Images-2</div>
         <div class="gallery-images">Images-3</div>
@@ -162,15 +162,9 @@
 
     <h2>Float Multi-Column Layout</h2>
     <div class="container">
-        <div class="left">
-
-        </div>
-        <div class="center">
-
-        </div>
-        <div class="right">
-
-        </div>
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
     </div>
 
     <hr>
@@ -179,7 +173,50 @@
         Ini Merupakan Hasil Belajar Dari Video Di Channel Youtube Web Programming Unpas Playlist CSS Layouting Video ke 9
         tentang <strong>Float</strong> Catatan Selengkapnya Bisa Dilihat Di <a href="../catatan.docx">catatan.docx</a>
     </p>
-
+    <h2>Catatan</h2>
+    <pre>
+        Float
+        Float merupakan property pada CSS untuk mengatur posisi sebuah element
+        Sebuah element dapat dipaksa untuk berada di sebelah kiri atau kanan dari parent/ pembungkusnya dengan menggunakan property ini 
+        Property float memiliki 3 value yaitu none(default), left, right
+        Float memiliki perilaku Out-Of Flow yang dimana element dengan property float akan keluar dari flow normalnya
+        Ketika sebuah element diberi float right maka element tersebut akan berada di paling kanan dari parentnya
+        
+        
+            Penggunaan Float
+            Float biasa digunakan ketika akan membuat text-wrapping, image gallery, multi-column layout dll
+        
+            •	Text Wrapping
+        
+                Yaitu sebuah teknik untuk membuat teks mengelilingi gambar atau element lain
+                Text Wrapping ini terjadi ketika gambar diberi float left sehingga text akan mengisi bagian yang kosong yaitu naik ke kanan gambar hingga memenuhi area yang kosong berlaku juga untuk float right
+            
+            •	Image Gallery
+                Membuat serangkaian gambar menjadi gallery
+                
+                Float juga dapat digunakan untuk menampilkan urutannya akan dimulai dari sebelah kiri ke kanan atau kanan ke kiri dengan value left dan right
+        
+            •	Multi-Column Layout
+                Membuat halaman memiliki tata letak beberapa kolom 
+                Yaitu dengan membuat beberapa element pembungkus seperti div diberikan nilai float yang sama 
+                
+                dengan catatan widthnya tidak boleh melebihi parentnya atau akan menyebabkan ada element yang turun karena tidak cukup
+            
+        Flow
+        Flow merupakan perilaku perilaku element ketika diberi CSS terdapat dua jenis flow yaitu Normal Flow dan Out-Of Flow 
+            
+            Normal Flow
+            Merupakan flow yang default dan normal seperti pada konsep box model dimana ketika suatu element diberi display block maka akan berada dibawah element sebelumnya dan jika diberi display inline maka akan berada di sebelah kanannya
+            
+            Out-Of Flow
+            Karena Property float menyebabkan Out-Of Flow maka element yang diberi float akan membuat element tersebut keluar dari flow normalnya 
+            Bisa terlihat pada gambar Ketika Kotak dua berwarna aquamarine diberi float, kotak berwarna salmon seakan menghilang, yang terjadi adalah kotak berwarna salmon menganggap bahwa kotak berwarna aquamarine tidak ada sehingga kotak salmon naik
+            
+            Ketika kotak dua diberi margin left maka terlihat kotak berwarna salmon berada dibawah dari kotak dua berwarna aquamarine
+        
+        Vertical Centering Text 
+        Untuk membuat text berada di tengah parentnya secara vertical bisa menggunakan property line-height diisi sama dengan height parentnya         
+    </pre>
 </body>
 
 </html>
