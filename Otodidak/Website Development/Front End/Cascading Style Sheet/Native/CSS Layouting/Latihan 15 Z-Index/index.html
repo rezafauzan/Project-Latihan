@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar CSS Layouting Latihan 15 : Z-Index</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .satu.absolute {
+            width: 100px;
+            height: 100px;
+            background-color: darkblue;
+            color: white;
+            position: absolute;
+        }
+
+        .dua.absolute {
+            width: 100px;
+            height: 100px;
+            background-color: darkgreen;
+            color: white;
+            position: absolute;
+        }
+
+        .tiga.absolute {
+            width: 100px;
+            height: 100px;
+            background-color: darkred;
+            color: white;
+            position: absolute;
+        }
+
+        .dua.absolute.stack {
+            top: 50px;
+            left: 50px;
+        }
+
+        .tiga.absolute.stack {
+            top: 90px;
+            left: 90px;
+        }
+
+        .satu.absolute.stack.z-indexed {
+            z-index: 2;
+        }
+
+        .tiga.absolute.stack.z-indexed {
+            z-index: 1;
+        }
+
+        .container {
+            width: 600px;
+            height: 400px;
+            padding: 150px;
+            margin-bottom: 20px;
+            display: inline-block;
+            border: 1px solid black;
+        }
+
+        .container-rel {
+            width: 600px;
+            height: 400px;
+            margin-bottom: 20px;
+            display: inline-block;
+            border: 1px solid blue;
+            position: relative;
+            left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Z-Index</h1>
+    <h2>Tanpa Property Z-Index</h2>
+    <div class="container-rel">
+        <div class="satu absolute stack">Kotak Satu</div>
+        <div class="dua absolute stack">Kotak Dua</div>
+        <div class="tiga absolute stack">Kotak Tiga</div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <p>Disini Terdapat 3 Kotak : Kotak 1 berwarna darkblue, Kotak 2 berwarna darkgreen, Kotak 3 berwarna darkred</p>
+        <br>
+        <p>Urutan ini berdasarkan penulisan mark up pada source code HTML nya</p>
+        <br>
+        <p>normalnya urutan element HTML adalah yang paling terakhir ditulis akan berada paling depan</p>
+    </div>
+
+    <div class="container-rel">
+        <div class="dua absolute stack">Kotak Dua</div>
+        <div class="tiga absolute stack">Kotak Tiga</div>
+        <div class="satu absolute stack">Kotak Satu</div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <p>Lihat Pada Source Code! kini kotak tiga penulisannya berada ditengah dan kotak dua pertama kotak satu
+            terakhir</p>
+        <br>
+        <p>sehingga kini kotak satu tumpukannya pindah ke paling depan dan kotak dua berada paling belakang, kotak tiga
+            berada di tengah</p>
+    </div>
+
+    <hr>
+
+    <h2>Dengan Property Z-Index</h2>
+    <div class="container-rel">
+        <div class="satu absolute stack z-indexed">Kotak Satu</div>
+        <div class="dua absolute stack z-indexed">Kotak Dua</div>
+        <div class="tiga absolute stack z-indexed">Kotak Tiga</div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <p>Lihat Pada Source Code! urutan penulisan mark upnya kini berurutan yaitu kotak satu, kotak dua, kotak tiga
+        </p>
+        <br>
+        <p>namun tumpukannya diatur oleh property z-index kotak satu tumpukannya pindah ke paling depan(z-index:2) dan
+            kotak dua berada paling belakang(z-index:0), kotak tiga berada di tengah(z-index:1)</p>
+    </div>
+
+    <hr>
+
+    <p>
+        Ini Merupakan Hasil Belajar Dari Video Di Channel Youtube Web Programming Unpas Playlist CSS Layouting Video ke
+        14
+        tentang <strong>Z-Index</strong> Catatan Selengkapnya Bisa Dilihat Di <a href="../catatan.docx">catatan.docx</a>
+    </p>
+
+    <h2>Catatan</h2>
+    <pre>
+        Z-Index
+        Normalnya urutan element HTML adalah yang paling terakhir ditulis akan berada paling depan
+        Untuk mengatur tumpukan element agar bisa berada didepan atau dibelakang element lain bisa dengan cara menuliskan tag html tersebut dibawah atau diatas element lain
+
+        Pada gambar diatas terdapat tiga kotak Kotak 1 berwarna darkblue, Kotak 2 berwarna darkgreen, Kotak 3 berwarna darkred
+        Ketiga kotak tersebut memiliki property position absolute, kotak dua dan tiga diberi property top dan left sehingga menghasilkan tampilan seperti pada gambar 
+        Terlihat pada gambar tersebut bahwa kotak dua menimpa kotak satu dan kotak tiga menimpa kotak dua
+        Hal ini terjadi karena Urutan penulisan mark up pada source code HTML nya
+
+        normalnya urutan element HTML adalah yang paling terakhir ditulis akan berada paling depan
+        dan kotak satu berada paling pertama dan kotak tiga paling akhir di source code
+        untuk mengatur urutannya bisa dengan cara memindahkan element yang di mau berada dibawah element yang di mau pada source code 
+
+        Bisa terlihat pada gambar bahwa sekarang di source code dan hasilnya Kotak satu berada paling depan dan dua paling bawah
+        Hal ini cukup merepotkan untuk mengatur urutan tumpukannya karena harus selalu mengubah HTML nya
+
+        Z index merupakan property untuk mengatur urutan tumpukan element non static berdasar sumbu z
+
+        Bisa dilihat sekarang markupnya ditulis berurutan tapi urutan tampilnya diatur menggunakan property z-index
+        Property ini diisi dengan nilai angka yang merepresentasikan akan berada di tumpukan ke berapa semakin besar nilainya maka semakin berada di depan
+
+        z-index juga bisa diisi nilai yang besar jika ingin selalu berada paling depan misalnya 9999 atau diisi -9999 agar element berada paling belakang
+    </pre>
+</body>
+
+</html>
