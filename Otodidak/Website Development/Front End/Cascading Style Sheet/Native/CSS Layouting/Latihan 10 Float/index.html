@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar CSS Layouting Latihan 10 : Float</title>
+    <style>
+        .satu{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        } 
+        .dua{
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+        } 
+        .tiga{
+            width: 100px;
+            height: 100px;
+            background-color: salmon;
+        }
+
+        .dua.out{
+            border: 2px dashed red;
+            float: left;
+            box-sizing: border-box;
+            margin-left: 50px;
+        }
+
+        .dua.out.float{
+            border: 2px dashed red;
+            float: right;
+            box-sizing: border-box;
+            margin-left: 50px;
+        }
+        .container {
+            width: 800px;
+            margin: auto;
+            border: 1px solid black;
+        }
+        .container .dua.out.float{
+            border: 2px dashed red;
+            float: right;
+            box-sizing: border-box;
+            margin-left: 50px;
+        }
+
+        .container img.text-wrapping-image{
+            width: 100px;
+            margin-right: 10px;
+            float: left;
+        }
+
+        .container img.text-wrapping-image-right{
+            width: 100px;
+            margin-left: 10px;
+            float: right;
+        }
+
+        .container .gallery-images{
+            width: 150px;
+            height: 200px;
+            margin: 5px;
+            color: white;
+            background-color: indigo;
+            text-align: center;
+            line-height: 200px;
+            float: left;
+        }
+
+        .container .left{
+            width: 150px;
+            height: 500px;
+            background-color: midnightblue;
+            float: left;
+        }
+
+        .container .center{
+            width: 500px;
+            height: 500px;
+            background-color: springgreen;
+            float: left;
+        }
+
+        .container .right{
+            width: 150px;
+            height: 500px;
+            background-color: lightsalmon;
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Normal Flow</h2>
+    <div class="satu"></div>
+    <div class="dua"></div>
+    <div class="tiga"></div>
+
+    <h2>Out-Of Flow</h2>
+    <div class="satu"></div>
+    <div class="dua out"></div>
+    <div class="tiga"></div>
+    <p>
+        Bisa terlihat pada gambar Ketika Kotak dua berwarna aquamarine diberi float, kotak berwarna salmon seakan menghilang, yang terjadi adalah kotak berwarna salmon menganggap bahwa kotak berwarna aquamarine tidak ada sehingga kotak salmon naik
+        Ketika kotak dua diberi margin left maka terlihat kotak berwarna salmon berada dibawah dari kotak dua berwarna aquamarine
+    </p>
+
+    <h2>Float</h2>
+    <div class="satu"></div>
+    <div class="dua out float"></div>
+    <div class="tiga"></div>
+    
+    <h2>Float Dalam Container</h2>
+    <div class="container">
+        <div class="satu"></div>
+        <div class="dua out float"></div>
+        <div class="tiga"></div>
+    </div>
+    
+    <hr>
+
+    <h2>Float Text Wrapping</h2>
+    <div class="container">
+        <img class="text-wrapping-image" src="assets/img/quote.jpg" alt="Quote">
+        <p style="font-size: small;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A aperiam perspiciatis dolores quae architecto quas non qui molestiae eius voluptatum neque quo eum quidem ab cupiditate optio rerum quasi facere maiores eaque, quisquam quos delectus ullam. Deleniti et placeat, rerum nisi architecto reiciendis a quo voluptates, hic laudantium sit, repellendus corporis? Adipisci beatae officia, libero consectetur accusamus perspiciatis doloribus quis est quidem illo! Est, unde blanditiis officiis magnam quia esse deserunt tenetur adipisci repudiandae dolorum ipsa id! Ipsa illum dignissimos alias cumque inventore quas maxime officiis sunt quo, obcaecati, molestias quam id neque! Eligendi obcaecati debitis voluptas expedita facere corrupti. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, nesciunt?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, reiciendis Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, minus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus expedita veniam rem! Voluptatibus quisquam ipsum error nesciunt et facilis delectus quae reprehenderit corporis provident vero quos blanditiis, suscipit maxime est consequuntur aspernatur cumque nisi molestias repellat dolorum? Commodi dicta ratione totam excepturi. Maiores dolorum minima quam consequatur illum iure reprehenderit, distinctio pariatur aut, animi magnam iusto autem sint! Repellat aliquam, vel enim blanditiis tempora esse voluptas impedit tenetur quas sint. Quia, blanditiis! Autem dolorum labore, esse architecto voluptatem, voluptas ipsum accusamus obcaecati est incidunt excepturi amet necessitatibus numquam? Exercitationem nobis sequi nisi perferendis laboriosam. Voluptatibus fugit quidem numquam facilis quibusdam.
+        </p>
+        <b>Text Wrapping ini terjadi ketika gambar diberi float left sehingga text akan mengisi bagian yang kosong yaitu naik ke kanan gambar hingga memenuhi area yang kosong berlaku juga untuk float right</b>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <img class="text-wrapping-image-right" src="assets/img/quote2.jpg" alt="Quote">
+        <p style="font-size: small;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A aperiam perspiciatis dolores quae architecto quas non qui molestiae eius voluptatum neque quo eum quidem ab cupiditate optio rerum quasi facere maiores eaque, quisquam quos delectus ullam. Deleniti et placeat, rerum nisi architecto reiciendis a quo voluptates, hic laudantium sit, repellendus corporis? Adipisci beatae officia, libero consectetur accusamus perspiciatis doloribus quis est quidem illo! Est, unde blanditiis officiis magnam quia esse deserunt tenetur adipisci repudiandae dolorum ipsa id! Ipsa illum dignissimos alias cumque inventore quas maxime officiis sunt quo, obcaecati, molestias quam id neque! Eligendi obcaecati debitis voluptas expedita facere corrupti. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, nesciunt?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, reiciendis Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, minus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus expedita veniam rem! Voluptatibus quisquam ipsum error nesciunt et facilis delectus quae reprehenderit corporis provident vero quos blanditiis, suscipit maxime est consequuntur aspernatur cumque nisi molestias repellat dolorum? Commodi dicta ratione totam excepturi. Maiores dolorum minima quam consequatur illum iure reprehenderit, distinctio pariatur aut, animi magnam iusto autem sint! Repellat aliquam, vel enim blanditiis tempora esse voluptas impedit tenetur quas sint. Quia, blanditiis! Autem dolorum labore, esse architecto voluptatem, voluptas ipsum accusamus obcaecati est incidunt excepturi amet necessitatibus numquam? Exercitationem nobis sequi nisi perferendis laboriosam. Voluptatibus fugit quidem numquam facilis quibusdam.
+        </p>
+        <b>Text Wrapping ini terjadi ketika gambar diberi float right sehingga text akan mengisi bagian yang kosong yaitu naik ke kiri gambar hingga memenuhi area yang kosong berlaku juga untuk float left</b>
+    </div>
+
+    <hr>
+
+    <h2>Float Image Gallery</h2>
+    <div class="container" style="overflow:auto">
+        <div class="gallery-images">Images-1</div>
+        <div class="gallery-images">Images-2</div>
+        <div class="gallery-images">Images-3</div>
+        <div class="gallery-images">Images-4</div>
+        <div class="gallery-images">Images-5</div>
+        <div class="gallery-images">Images-6</div>
+        <div class="gallery-images">Images-7</div>
+        <div class="gallery-images">Images-8</div>
+        <div class="gallery-images">Images-9</div>
+        <div class="gallery-images">Images-10</div>
+    </div>
+
+    <hr>
+
+    <h2>Float Multi-Column Layout</h2>
+    <div class="container">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+
+    <hr>
+
+    <p>
+        Ini Merupakan Hasil Belajar Dari Video Di Channel Youtube Web Programming Unpas Playlist CSS Layouting Video ke 9
+        tentang <strong>Float</strong> Catatan Selengkapnya Bisa Dilihat Di <a href="../catatan.docx">catatan.docx</a>
+    </p>
+    <h2>Catatan</h2>
+    <pre>
+        Float
+        Float merupakan property pada CSS untuk mengatur posisi sebuah element
+        Sebuah element dapat dipaksa untuk berada di sebelah kiri atau kanan dari parent/ pembungkusnya dengan menggunakan property ini 
+        Property float memiliki 3 value yaitu none(default), left, right
+        Float memiliki perilaku Out-Of Flow yang dimana element dengan property float akan keluar dari flow normalnya
+        Ketika sebuah element diberi float right maka element tersebut akan berada di paling kanan dari parentnya
+        
+        
+            Penggunaan Float
+            Float biasa digunakan ketika akan membuat text-wrapping, image gallery, multi-column layout dll
+        
+            •	Text Wrapping
+        
+                Yaitu sebuah teknik untuk membuat teks mengelilingi gambar atau element lain
+                Text Wrapping ini terjadi ketika gambar diberi float left sehingga text akan mengisi bagian yang kosong yaitu naik ke kanan gambar hingga memenuhi area yang kosong berlaku juga untuk float right
+            
+            •	Image Gallery
+                Membuat serangkaian gambar menjadi gallery
+                
+                Float juga dapat digunakan untuk menampilkan urutannya akan dimulai dari sebelah kiri ke kanan atau kanan ke kiri dengan value left dan right
+        
+            •	Multi-Column Layout
+                Membuat halaman memiliki tata letak beberapa kolom 
+                Yaitu dengan membuat beberapa element pembungkus seperti div diberikan nilai float yang sama 
+                
+                dengan catatan widthnya tidak boleh melebihi parentnya atau akan menyebabkan ada element yang turun karena tidak cukup
+            
+        Flow
+        Flow merupakan perilaku perilaku element ketika diberi CSS terdapat dua jenis flow yaitu Normal Flow dan Out-Of Flow 
+            
+            Normal Flow
+            Merupakan flow yang default dan normal seperti pada konsep box model dimana ketika suatu element diberi display block maka akan berada dibawah element sebelumnya dan jika diberi display inline maka akan berada di sebelah kanannya
+            
+            Out-Of Flow
+            Karena Property float menyebabkan Out-Of Flow maka element yang diberi float akan membuat element tersebut keluar dari flow normalnya 
+            Bisa terlihat pada gambar Ketika Kotak dua berwarna aquamarine diberi float, kotak berwarna salmon seakan menghilang, yang terjadi adalah kotak berwarna salmon menganggap bahwa kotak berwarna aquamarine tidak ada sehingga kotak salmon naik
+            
+            Ketika kotak dua diberi margin left maka terlihat kotak berwarna salmon berada dibawah dari kotak dua berwarna aquamarine
+        
+        Vertical Centering Text 
+        Untuk membuat text berada di tengah parentnya secara vertical bisa menggunakan property line-height diisi sama dengan height parentnya         
+    </pre>
+</body>
+
+</html>

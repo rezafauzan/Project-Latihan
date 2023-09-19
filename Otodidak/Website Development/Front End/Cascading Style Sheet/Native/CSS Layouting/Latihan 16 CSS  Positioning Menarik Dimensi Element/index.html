@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar CSS Layouting Latihan 16 : Positioning Menarik Dimensi Element</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .satu{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            position: static;
+        } 
+        .dua{
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            position: static;
+        } 
+        .tiga{
+            width: 100px;
+            height: 100px;
+            background-color: salmon;
+            position: static;
+        }
+
+        .satu.absolute{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            position: absolute;
+        } 
+        .dua.absolute{
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            position:absolute;
+        } 
+        .tiga.absolute{
+            width: 100px;
+            height: 100px;
+            background-color: salmon;
+            position: absolute;
+        }
+
+        .container{
+            width: 600px;
+            height: 400px;
+            padding: 150px;
+            margin-bottom: 20px;
+            display: inline-block;
+            border: 1px solid black;
+        }
+
+        .container-rel{
+            width: 600px;
+            height: 400px;
+            display: inline-block;
+            border: 1px solid blue;
+            position: relative;
+        } 
+
+        .dua.absolute.top{
+        top: 0;
+        } 
+        .dua.absolute.left{
+        left: 0;
+        } 
+        .dua.absolute.bottom{
+        bottom: 0;
+        } 
+        .dua.absolute.right{
+        right: 0;
+        }
+
+        nav.position-fixed{
+            width: 100%;
+            height: 100px;
+            background-color: indigo;
+            color: aliceblue;
+            text-align: center;
+            position: fixed;
+            top: 0;
+        }
+
+        button.position-fixed{
+            width: 100px;
+            height: 100px;
+            background-color: indigo;
+            color: aliceblue;
+            position: fixed; 
+            right:40px; 
+            bottom:40px
+        }
+
+        button.position-fixed:hover{
+            background-color: rgb(77, 0, 77);
+        }
+
+        footer.position-fixed{
+            height: 100px;
+            background-color: darkblue;
+            color: aliceblue;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .barier{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            bottom: 10px;
+            left: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Positioning Menarik Dimensi Element</h1>
+    <h2>Position : Static</h2>
+    <div class="satu"></div>
+    <div class="dua"></div>
+    <div class="tiga"></div>
+
+    <h2>Position : Absolute</h2>
+    <div class="container-rel">
+        <div class="satu"></div>
+        <div class="dua absolute"></div>
+        <div class="tiga"></div>
+        <p>Nampak sama namun sekarang tiga kotak diatas memiliki property position:absolute; sehingga memiliki akses untuk menggunakan property top, left, bottom, dan right</p>
+        <p>Kotak kedua juga sudah maju satu dimensi namun ruang kosong sebelumnya dianggap tidak ada lihat pada catatan.docx untuk ilustrasinya</p>
+    </div>
+
+    <h3>Property Top Left Bottom Right Dengan Container Static</h3>
+    
+    <div class="container" style="position: relative;">
+        <div class="container-rel" style="position: static;">
+        <div class="satu "></div>
+        <div class="dua absolute top">top</div>
+        <div class="tiga "></div>
+    </div>
+    </div>
+
+    <div class="container" style="position: relative;">
+        <div class="container-rel" style="position: static;">
+        <div class="satu "></div>
+        <div class="dua absolute left">left</div>
+        <div class="tiga "></div>
+    </div>
+    </div>
+
+    <div class="container" style="position: relative;">
+        <div class="container-rel" style="position: static;">
+        <div class="satu "></div>
+        <div class="dua absolute bottom">bottom</div>
+        <div class="tiga "></div>
+    </div>
+    </div>
+
+    <div class="container" style="position: relative;">
+        <div class="container-rel" style="position: static;">
+        <div class="satu "></div>
+        <div class="dua absolute right">right</div>
+        <div class="tiga "></div>
+    </div>
+    </div>
+    
+    <hr>
+
+    <h3>Property Top Left Bottom Right Dengan Container Relative</h3>
+
+    <div class="container-rel">
+        <div class="satu "></div>
+        <div class="dua absolute top">top</div>
+        <div class="tiga "></div>
+    </div>
+        <div class="container-rel">
+        <div class="satu "></div>
+        <div class="dua absolute left">left</div>
+        <div class="tiga "></div>
+    </div>
+    <div class="container-rel">
+        <div class="satu "></div>
+        <div class="dua absolute bottom">bottom</div>
+        <div class="tiga "></div>
+    </div>
+    <div class="container-rel">
+        <div class="satu "></div>
+        <div class="dua absolute right">right</div>
+        <div class="tiga "></div>
+    </div>
+
+    <hr>
+
+    <nav class="position-fixed">
+        <h2>Position : Fixed</h2>
+        <h3>
+            <p>position:fixed; top:0;</p>
+            <p><strong>Element ini memiliki property position fixed akan selalu berada di atas titik 0 biasanya digunakan sebagai navbar</strong></p>
+            <p>element ini juga tidak memiliki property width karena digantikan oleh left:0; right:0;</p>
+        </h3>
+    </nav>
+
+    <div class="barier">
+        <p>barrier ini diberi ukuran hanya dengan property top right bottom left</p>
+    </div>
+
+    <footer class="position-fixed">
+        <h2>Position : Fixed</h2>
+        <h3>
+            <p>position:fixed; bottom:0;</p>
+            <p><strong>Element ini memiliki property position fixed akan selalu berada di atas titik 0 biasanya digunakan sebagai navbar</strong></p>
+            <p>element ini juga tidak memiliki property width karena digantikan oleh left:0; right:0;</p>
+        </h3>
+    </footer>
+
+    <button class="position-fixed">Button Fixed right:20px; bottom:20px</button>
+
+    <hr>
+
+    <p>
+        Ini Merupakan Hasil Belajar Dari Video Di Channel Youtube Web Programming Unpas Playlist CSS Layouting Video ke 14
+        tentang <strong> Positioning Menarik Dimensi Element</strong> Catatan Selengkapnya Bisa Dilihat Di <a href="../catatan.docx">catatan.docx</a>
+    </p>
+
+    <h2>Catatan</h2>
+    <pre>
+        Position juga bisa digunakan untuk menarik agar element html memiliki ukuran contohnya jika sebuah element diberi position absolute dan diberi left 0 right 0 maka akan membuat element tersebut ditarik ke kiri dan kanan  
+
+        Bisa dilihat element berwarna dark blue ini tidak memiliki property width tapi ukurannya ditarik ke kiri dan kanan sehingga menghasilkan ukuran yang sama seperti pada navbar
+        Hal ini juga berlaku dengan property top dan bottom
+        
+        Dan jika diberi nilai selain 0 maka akan menambahkan jarak dan sisanya adalah element tersebut        
+    </pre>
+</body>
+
+</html>

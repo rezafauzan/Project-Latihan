@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar CSS Layouting Latihan 7 : Konsep Box Model : Border</title>
+    <style>
+    .border{
+            width: 200px;
+            margin: 20px auto;
+            padding: 20px 15px 10px 5px;
+            border: 5px solid salmon;
+            background-color: aqua;
+    }    
+    .borderSolid{
+            width: 200px;
+            margin: 20px auto;
+            padding: 20px 15px 10px 5px;
+            border: 5px solid salmon;
+            background-color: aqua;
+    }    
+    .borderDotted{
+            width: 200px;
+            margin: 20px auto;
+            padding: 20px 15px 10px 5px;
+            border: 5px dotted aqua;
+            background-color: salmon;
+    }    
+    .borderDashed{
+            width: 200px;
+            margin: 20px auto;
+            padding: 20px 15px 10px 5px;
+            border: 5px dashed salmon;
+            background-color: aqua;
+    }    
+    .borderDouble{
+            width: 200px;
+            margin: 20px auto;
+            padding: 20px 15px 10px 5px;
+            border: 5px double aqua;
+            background-color: salmon;
+    }
+    .borderLeft{
+            width: 200px;
+            margin: 20px auto;
+            padding: 20px 15px 10px 5px;
+            border-left: 5px solid salmon;
+            background-color: aqua;
+    } 
+    .borderRight{
+            width: 200px;
+            margin: 20px auto;
+            padding: 20px 15px 10px 5px;
+            border-right: 5px dashed salmon;
+            background-color: aqua;
+    } 
+    .borderLeftRight{
+            width: 200px;
+            margin: 20px auto;
+            padding: 20px 15px 10px 5px;
+            border-left: 5px dotted greenyellow;
+            border-right: 5px dashed salmon;
+            background-color: aqua;
+    } 
+    .borderSize{
+            width: 200px;
+            margin: 5px auto;
+            padding: 5px;
+            border-top: 5px solid greenyellow;
+            border-right: 5px dotted green;
+            border-bottom: 5px dashed aquamarine;
+            border-left: 5px double skyblue;
+            background-color: salmon;
+    }
+    .borderSizeFixManually{
+            width: 180px;
+            margin: 5px auto;
+            padding: 5px;
+            border-top: 5px solid greenyellow;
+            border-right: 5px dotted green;
+            border-bottom: 5px dashed aquamarine;
+            border-left: 5px double skyblue;
+            background-color: salmon;
+    }
+    .boxSized{
+            width: 180px;
+            margin: 5px auto;
+            padding: 5px;
+            border-top: 5px double greenyellow;
+            border-right: 5px dashed green;
+            border-bottom: 5px dotted aquamarine;
+            border-left: 5px solid skyblue;
+            background-color: salmon;
+            box-sizing: border-box;
+    } 
+    </style>
+</head>
+
+<body>
+    <h1>Konsep Box Model : Border</h1>
+    <h2>Property Border</h2>
+    <div class="border">
+        <p>Div Ini Menggunakan Property border: 5px solid salmon;</p>
+    </div>
+
+    <hr>
+
+    <h2>Border Style</h2>
+    <h3>Border Style Solid</h3>
+    <div class="borderSolid">
+        <p>Div Ini Menggunakan Property border: 5px solid salmon;</p>
+    </div>
+    <h3>Border Style Dotted</h3>
+    <div class="borderDotted">
+        <p>Div Ini Menggunakan Property border: 5px dotted salmon;</p>
+    </div>
+    <h3>Border Style Dashed</h3>
+    <div class="borderDashed">
+        <p>Div Ini Menggunakan Property border: 5px dashed salmon;</p>
+    </div>
+    <h3>Border Style Double</h3>
+    <div class="borderDouble">
+        <p>Div Ini Menggunakan Property border: 5px double salmon;</p>
+    </div>
+    
+    <hr>
+
+    <h2>Border Salah Satu Sisi</h2>
+    <div class="borderLeft">
+        <p>Div Ini Menggunakan Property border-left: 5px solid salmon;</p>
+    </div>
+    <div class="borderRight">
+        <p>Div Ini Menggunakan Property border-right: 5px solid salmon;</p>
+    </div>
+    <div class="borderLeftRight">
+        <p>Div Ini Menggunakan Property border-left: 5px dotted greenyellow; border-right: 5px dashed salmon;</p>
+    </div>
+
+    <hr>
+
+    <h2>Border Menambah Ukuran Kotak</h2>
+    <div class="borderSize">
+        <p>Div Ini Memiliki Ukuran lebar 200px dan Border 5px setiap sisi dan padding 5px di setiap sisi juga</p>
+    </div>
+    <div class="borderSizeFixManually">
+        <p>Div Ini Memiliki Ukuran lebar 200px dan Border 5px setiap sisi dan padding 5px di setiap sisi juga</p>
+        <p>dan div ini lebarnya dikurangi dengan hitungan width = 200px-borderLeft-paddingLeft-paddingRight-borderRight = 180px </p>
+        <p>cara ini tidak efektif karena harus terus menghitung apabila ingin merubah widthnya</p>
+    </div>
+    <h2>Box Sizing Untuk Memperbaiki Ukuran Width Karena Padding dan Border</h2>
+    <div class="boxSized">
+        <p>Div Ini Memiliki Ukuran lebar 200px dan Border 5px setiap sisi dan padding 5px di setiap sisi juga</p>
+        <p>Div ini sekarang Lebarnya 200px meskipun ada border dan padding karena menggunakan property box-sizing: border-box;</p>
+    </div>
+
+    <hr>
+    
+    <p>
+        Ini Merupakan Hasil Belajar Dari Video Di Channel Youtube Web Programming Unpas Playlist CSS Layouting Video ke 6
+        tentang <strong>Konsep Box Model : Border</strong> Catatan Selengkapnya Bisa Dilihat Di <a
+            href="../Catatan.docx">Catatan</a>
+    </p>
+
+    <h2>Catatan</h2>
+    <pre>
+        Box Model : Border
+        Border Merupakan batas di sekeliling padding dan content untuk membuat border memerlukan property css border diisi dengan tebal border, style border, dan warna border
+
+        Property Border ini memiliki beberapa style yaitu solid, dotted, dashed, dan double
+
+        Sama seperti padding dan margin, border juga bisa diatur hanya salah satu sisinya mau sisi atas, kanan, bawah, kiri 
+
+        Border sama seperti padding penambahan border akan menambah ukuran dari box nya
+
+        Untuk mengakalinya sama seperti padding bisa dengan mengurangi width dengan jumlah padding dan border atau menggunakan property box-sizing
+
+        Box Model : Box-Sizing
+        Box-Sizing merupakan Property untuk membuat ukuran kotak tetap seperti yang diisi di property width meskipun terdapat padding dan border
+    </pre>
+</body>
+
+</html>

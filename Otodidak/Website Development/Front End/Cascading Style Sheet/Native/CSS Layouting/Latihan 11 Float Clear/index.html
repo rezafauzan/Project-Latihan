@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar CSS Layouting Latihan 11 : Menghentikan/Membersihkan Float</title>
+    <style>
+        .satu{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        } 
+        .dua{
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+        } 
+        .tiga{
+            width: 100px;
+            height: 100px;
+            background-color: salmon;
+        }
+
+        .dua.out{
+            border: 2px dashed red;
+            float: left;
+            box-sizing: border-box;
+            margin-left: 50px;
+        }
+
+        .dua.out.float{
+            border: 2px dashed red;
+            float: right;
+            box-sizing: border-box;
+            margin-left: 50px;
+        }
+        .container {
+            width: 800px;
+            margin: auto;
+            border: 1px solid black;
+        }
+        .container .dua.out.float{
+            border: 2px dashed red;
+            float: right;
+            box-sizing: border-box;
+            margin-left: 50px;
+        }
+
+        .container img.text-wrapping-image{
+            width: 100px;
+            margin-right: 10px;
+            float: left;
+        }
+
+        .container img.text-wrapping-image-right{
+            width: 100px;
+            margin-left: 10px;
+            float: right;
+        }
+
+        .container .gallery-images{
+            width: 150px;
+            height: 200px;
+            margin: 5px;
+            color: white;
+            background-color: indigo;
+            text-align: center;
+            line-height: 200px;
+            float: left;
+        }
+
+        .container .left{
+            width: 150px;
+            height: 500px;
+            background-color: midnightblue;
+            float: left;
+        }
+
+        .container .center{
+            width: 500px;
+            height: 500px;
+            background-color: springgreen;
+            float: left;
+        }
+
+        .container .right{
+            width: 150px;
+            height: 500px;
+            background-color: lightsalmon;
+            float: right;
+        }
+
+        .container.clear-fix-overflow{
+            overflow: auto;
+        }
+
+        .container .clear{
+            clear: left;
+        }
+        .container .clear-both{
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Menghentikan/Membersihkan Float</h2>
+    <h3>Clear Fix Float Text Wrapping Dengan overflow:auto;</h3>
+    <div class="container clear-fix-overflow">
+        <img class="text-wrapping-image" src="assets/img/quote.jpg" alt="Quote">
+        <p style="font-size: small;">
+            Jika Jumlah Kontennya hanya sedikit dan tidak cukup untuk melewati tinggi gambar maka container ini akan colapse dan harus diatasi dengan memberhentikan atau membersihkan float metode yang digunakan untuk container ini adalah dengan overflow:auto; pada containernya
+        </p>
+        <b>Text Wrapping ini terjadi ketika gambar diberi float left sehingga text akan mengisi bagian yang kosong yaitu naik ke kanan gambar hingga memenuhi area yang kosong berlaku juga untuk float right</b>
+    </div>
+
+    <hr>
+
+    <h3>Float Image Gallery</h3>
+    <div class="container">
+        <div class="gallery-images">Images-1</div>
+        <div class="gallery-images">Images-2</div>
+        <div class="gallery-images">Images-3</div>
+        <div class="gallery-images">Images-4</div>
+        <div class="gallery-images">Images-5</div>
+        <div class="gallery-images">Images-6</div>
+        <div class="gallery-images">Images-7</div>
+        <div class="gallery-images">Images-8</div>
+        <div class="gallery-images">Images-9</div>
+        <div class="gallery-images">Images-10</div>
+        <div class="clear"></div>
+    </div>
+
+    <hr>
+
+    <h3>Float Multi-Column Layout</h3>
+    <div class="container">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+        <div class="clear-both"></div>
+    </div>
+
+    <hr>
+
+    <p>
+        Ini Merupakan Hasil Belajar Dari Video Di Channel Youtube Web Programming Unpas Playlist CSS Layouting Video ke 10
+        tentang <strong>Menghentikan/Membersihkan Float</strong> Catatan Selengkapnya Bisa Dilihat Di <a href="../catatan.docx">catatan.docx</a>
+    </p>
+
+    <h2>Catatan</h2>
+    <pre>
+    Container Collapse
+        Container Collapse merupakan kejadian apabila seluruh element dalam suatu pembungkus / container diberi float 
+        
+        Karena float membuat element menjadi keluar dari flownya atau Out-Of Flow dan membuat pembungkusnya dan element lain yang tidak memiliki float memanggap element float itu tidak ada
+        
+        Jika seluruh element dalam suatu pembungkus dianggap tidak ada maka akan menyebabkan containernya collapse atau runtuh yang dimana container akan menjadi kecil karena menganggap tidak memiliki element
+
+        Untuk Mengatasi Container Collapse perlu untuk membersihkan atau menghentikan atau membatasi float
+        Ada beberapa cara untuk melakukannya yaitu dengan property overflow, menggunakan div kosong dan menggunakan metode clear fix 
+
+    •	Metode Clear Float Dengan Property Overflow:Auto
+        Dengan menambahkan property overflow:auto pada container maka akan membuat element dengan float akan dianggap ada lagi
+
+    •	Metode Clear Float Dengan Property Clear
+
+        Property clear berfungsi untuk menghentikan atau membersihkan float dan merupakan best practice untuk membersihkan float
+        
+        Setiap akhir dari element float harus diberi div kosong setelah element float (Khusus untuk text wrapping div kosong ditambahkan setelah text agar text wrapping tetap sesuai harapan) dengan property clear dan diberi value dengan ketentuan sebagai berikut
+        
+        Apabila float nya left maka value clearnya juga left jika float right maka harus diberi clear:right; apabila ingin kedua nya isi clear dengan nilai both
+
+        Namun dengan menggunakan cara seperti ini ada pendapat bahwa cara ini membuat source code jadi tidak rapih karena terdapat div kosong dan tidak bermakna
+
+    •   Metode Clear Float Dengan Script Micro Clearfix
+        Cara ini dipercaya merupakan solusi yang lebih baik untuk membersihkan atau menghentikan float yaitu dengan script dari Nicolas Gallagher
+
+    Vertical Centering Text 
+        Untuk membuat text berada di tengah parentnya secara vertical bisa menggunakan property line-height diisi sama dengan height parentnya 
+    </pre>
+
+</body>
+
+</html>

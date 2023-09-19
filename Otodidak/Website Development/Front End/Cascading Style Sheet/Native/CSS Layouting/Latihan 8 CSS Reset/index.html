@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar CSS Layouting Latihan 8 : CSS Reset</title>
+    <style>
+        /* Menggunakan Selector Universal */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* Memilih element yang diinginkan untuk direset */
+        body, div, h1, p{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Reset</h1>
+
+    <div style="width:200px;height:200px;background-color:salmon;">
+        Halaman Ini CSS nya telah Di reset, Lihat Pada catatan.docx dan Source Code
+    </div>
+
+    <h1>Lorem</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam distinctio in rem placeat. Tempore temporibus eligendi perspiciatis unde dicta aspernatur reprehenderit odit aperiam debitis id obcaecati facilis mollitia, corrupti vel?</p>
+
+    <hr>
+    
+    <p>
+        Ini Merupakan Hasil Belajar Dari Video Di Channel Youtube Web Programming Unpas Playlist CSS Layouting Video ke 7
+        tentang <strong>CSS Reset</strong> Catatan Selengkapnya Bisa Dilihat Di <a
+            href="../Catatan.docx">Catatan</a>
+    </p>
+
+    <h2>Catatan</h2>
+    <pre>
+        CSS Reset
+        Merupakan teknik untuk mengatur ulang nilai nilai css default dari element yang ada pada HTML khususnya mengenai margin dan padding
+        Secara default ketika membuat sebuah element pasti sudah memiliki jarak padahal belum diberi margin pada element tersebut
+
+        Padahal element pada gambar ini diberi margin 0, hal ini terjadi  karena ada element html yang sudah mempunyai nilai margin dan padding pada kasus ini adalah element body sudah memiliki margin dan padding 
+        Dan apabila body diberi margin dan padding 0 maka element kotak pada gambar sekarang tidak memiliki jarak kosong lagi
+
+        Hal ini sudah bisa dikatakan sudah melakukan CSS Reset selain element body banyak lagi element yang memiliki nilai default margin dan padding seperti pada h1 dan p 
+
+        CSS Reset bertujuan agar developer memiliki kendali penuh atas CSS yang dibuat
+        Untuk melakukan reset sekaligus seluruh element bisa menggunakan selector universal yang disimbolkan dengan tanda Bintang “*” 
+        Namun menggunakan selector universal ini juga ada yang berpendapat bahwa terlalu berat karena seluruh element yang sudah ada maupun yang tidak ada akan terkena
+        Cara yang lebih efektif adalah dengan menggunakan CSS Reset dari meyerweb.com
+    </pre>
+</body>
+
+</html>
