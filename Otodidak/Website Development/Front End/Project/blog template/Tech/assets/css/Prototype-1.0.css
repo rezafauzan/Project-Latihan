@@ -1,0 +1,299 @@
+:root {
+  --max-width-container: 1280px;
+  --aside-header-margin-bottom: 40px;
+  --font-color: black;
+  --footer-font-color:#fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: darkslategrey;
+}
+
+.container {
+  background: #fff;
+  max-width: var(--max-width-container);
+  margin: 0px auto;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 5px 5px 5px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+header .container {
+  border-radius: 0px;
+  box-shadow: 5px 0px 5px;
+}
+header nav {
+  padding: 20px 20px;
+  background-color: blanchedalmond;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .brand {
+  display: flex;
+  align-items: center;
+}
+header nav .brand .brand-image {
+  width: 40px;
+  height: 40px;
+}
+header nav .brand .brand-name {
+  margin-left: 20px;
+  font-weight: 800;
+}
+header nav .navigation {
+  width: 70%;
+}
+header nav .navigation .nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+header nav .navigation .nav-list .nav-list-item .nav-link {
+  text-decoration: none;
+}
+header .hero {
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .hero .hero-image {
+  width: 100%;
+  height: 200px;
+}
+header .hero .hero-overlay {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+header .hero .hero-overlay .hero-cta {
+  position: absolute;
+  margin: 40px;
+}
+header .hero .hero-overlay .hero-cta .cta-btn {
+  margin: -5px;
+  box-sizing: border-box;
+}
+
+main {
+  max-width: var(--max-width-container);
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+main .container {
+  background: rgba(255, 255, 255, 0);
+  padding: 10px 0;
+  padding-bottom: 0;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 0px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  column-gap: 40px;
+  grid-template-areas: "article aside";
+}
+main article {
+  background: #fff;
+  padding: 15px;
+  padding-bottom: 0;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 5px;
+  grid-area: "article";
+}
+main article img:first-child {
+  max-width: 50%;
+  float: left;
+}
+main article p:first-child {
+  clear: left;
+}
+main article p {
+  line-height: 20px;
+  text-align: justify;
+}
+main article .other-article-refference {
+  padding: 15px;
+  background-color: #a7a7a7;
+}
+main article .other-article-refference a {
+  text-decoration: none;
+}
+main article .article-ads-banner {
+  margin: 60px 0;
+}
+main article .article-ads-banner .ads-banner-image {
+  width: 100%;
+  max-height: 200px;
+  float: none;
+}
+main article .author-box {
+  background: #a7a7a7;
+  margin-bottom: var(--aside-header-margin-bottom);
+}
+main article .author-box .author-profile-picture {
+  width: 200px;
+  border-radius: 50%;
+  float: left;
+}
+main article .author-box .author-name {
+  font-weight: 400px;
+}
+main article .author-box .author-desc {
+  text-align: justify;
+  clear: left;
+}
+main article .related-post {
+  margin-bottom: 20px;
+}
+main article .related-post h3 {
+  margin-bottom: 15px;
+}
+main article .related-post .related-post-list {
+  display: flex;
+  justify-content: space-around;
+}
+main article .related-post .related-post-list h4 a {
+  text-decoration: none;
+  text-align: center;
+}
+main article .related-post .related-post-list h4 a p {
+  font-size: larger;
+  margin: 15px 0;
+  color: var(--font-color);
+}
+main article .comment-box {
+  padding-top: 5px;
+  background: blanchedalmond;
+}
+main article .comment-box h3 {
+  margin: 15px 0;
+}
+main article .comment-box #comment-input {
+  width: 100%;
+  height: 60px;
+  resize: none;
+}
+main article .comment-box .comment-list {
+  list-style: none;
+}
+main article .comment-box .comment-list .comment-list-item {
+  margin: 20px 0;
+}
+main article .comment-box .comment-list .comment-list-item .commentator-profile-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  float: left;
+}
+main article .comment-box .comment-list .comment-list-item .comment-messages {
+  font-size: 12px;
+  line-height: 25px;
+}
+main aside {
+  padding: 15px;
+  background: #fff;
+  box-shadow: 5px 5px 5px;
+  grid-area: "aside";
+}
+main aside h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+main aside .author-box {
+  margin-bottom: var(--aside-header-margin-bottom);
+}
+main aside .author-box .author-profile-picture {
+  width: 200px;
+  border-radius: 50%;
+  float: left;
+  clear: left;
+}
+main aside .author-box .author-name {
+  font-weight: 400px;
+}
+main aside .author-box .author-desc {
+  text-align: justify;
+}
+main aside .aside-cta {
+  margin-bottom: var(--aside-header-margin-bottom);
+}
+main aside .aside-cta p {
+  margin: 15px 0;
+  text-align: center;
+}
+main aside .aside-cta .cta-text-input {
+  width: 100%;
+}
+main aside .aside-cta .cta-btn {
+  width: 101%;
+  margin-top: -20px;
+}
+main aside .aside-social-media {
+  margin-bottom: var(--aside-header-margin-bottom);
+}
+main aside .aside-social-media .social-media-list {
+  display: flex;
+  justify-content: space-around;
+}
+main aside .aside-social-media .social-media-list .social-media-btn {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  display: flex;
+  border-radius: 50%;
+}
+main aside .aside-popular-article {
+  margin-bottom: var(--aside-header-margin-bottom);
+}
+main aside .aside-popular-article .popular-article-list {
+  list-style: none;
+}
+main aside .aside-popular-article .popular-article-list .popular-article-list-item .popular-article-title {
+  margin: 15px 0;
+}
+main aside .aside-popular-article .popular-article-list .popular-article-list-item .popular-article-title a {
+  text-decoration: none;
+}
+main aside .aside-blog-categories {
+  margin-bottom: var(--aside-header-margin-bottom);
+}
+main aside .aside-blog-categories .blog-categories-list {
+  list-style: none;
+}
+main aside .aside-blog-categories .blog-categories-list .blog-categories-list-item {
+  margin: 15px 0;
+}
+main aside .aside-blog-categories .blog-categories-list .blog-categories-list-item a {
+  text-decoration: none;
+}
+main aside .aside-cta-banner {
+  margin: 60px 0;
+}
+main aside .aside-cta-banner .cta-banner-image {
+  width: 100%;
+  max-height: 200px;
+}
+main aside .aside-ads-banner {
+  margin: 60px 0;
+}
+main aside .aside-ads-banner .ads-banner-image {
+  width: 100%;
+  max-height: 200px;
+}
+
+footer {
+  height: 40px;
+  line-height: 40px;
+  padding: 20px;
+  background: black;
+  color: var(--footer-font-color);
+  font-size: 20px;
+  text-align: center;
+}/*# sourceMappingURL=Prototype-1.0.css.map */
