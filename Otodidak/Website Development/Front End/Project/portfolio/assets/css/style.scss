@@ -1,10 +1,12 @@
 :root {
-    --color-blue: #00b8ff;
-    --background-blue: #00b8ff;
-    --background-darkblue: #001f2b;
+    --color-white: #FFF;
+    --color-blue: #00B8FF;
+    --color-darkblue: #001F2B;
+    --background-blue: #00B8FF;
+    --background-darkblue: #001F2B;
     --fontcolor-white: #FFFFFF;
-    --fontcolor-blue: #00b8ff;
-    --fontcolor-darkblue: #001f2b;
+    --fontcolor-blue: #00B8FF;
+    --fontcolor-darkblue: #001F2B;
 }
 
 * {
@@ -69,10 +71,10 @@ header {
 
 main {
     margin: 80px 0;
+    padding: 5px 20px;
 
     .hero {
         margin: 20px;
-        padding: 5px 20px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -98,7 +100,7 @@ main {
             }
 
             .call-to-action {
-                
+
                 .cta-btn {
                     margin: 15px 5px;
                     padding: 15px 30px;
@@ -142,7 +144,7 @@ main {
                                 text-align: center;
                             }
 
-                            i:hover{
+                            i:hover {
                                 background: var(--background-blue);
                                 color: var(--fontcolor-darkblue);
                             }
@@ -167,30 +169,29 @@ main {
 
     }
 
-    .about{
-        margin: 20px ;
-        padding: 5px 20px;
+    .about {
+        margin: 20px;
         color: var(--fontcolor-white);
         text-align: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
-        h2{
+
+        h2 {
             margin: 15px;
             font-size: 42px;
 
-            span{
+            span {
                 color: var(--fontcolor-blue);
             }
         }
 
-        h3{
+        h3 {
             margin: 15px;
 
         }
 
-        .profile-image{
+        .profile-image {
             width: 50%;
             max-width: 240px;
             margin: 15px auto;
@@ -198,7 +199,7 @@ main {
             border-radius: 50%;
         }
 
-        p{
+        p {
             margin: 15px 0;
             text-align: center;
         }
@@ -220,6 +221,137 @@ main {
             background: var(--background-blue);
             color: var(--fontcolor-darkblue);
             cursor: pointer;
+        }
+
+    }
+
+    .journey {
+        margin: 20px;
+        color: var(--fontcolor-white);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "title title"
+        "education experience";
+        column-gap: 48px;
+
+        h2{
+            margin: 20px 0;
+            font-size: 42px;
+            text-align: center;
+            grid-area: title;
+
+            span{
+                color: var(--fontcolor-blue);
+            }
+        }
+
+        .education {
+            grid-area: education;
+
+            h2 {
+                margin: 15px 0;
+            }
+
+            .education-list {
+                list-style: none;
+
+                .education-list-item {
+                    height: auto;
+                    margin: 20px 0;
+                    padding: 20px;
+                    border: 1px solid var(--color-blue);
+                    border-radius: 10px;
+                    position: relative;
+
+                    .vertical-line{
+                        width: 1px;
+                        height: 110%;
+                        border-left: 1px solid var(--color-blue);
+                        position: absolute;
+                        top: 5px;
+                        left:-24px;
+
+                        .circle{
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background: var(--background-blue);
+                            position: absolute;
+                            top: -10px;
+                            left: -10px;
+                            
+                        }
+
+                    }
+
+                    .education-years {
+                        color: var(--fontcolor-blue);
+                    }
+
+                    .education-title {
+                        margin: 15px 0;
+                        font-size: 24px;
+                    }
+
+                }
+
+            }
+
+        }
+
+        .experience {
+            grid-area: experience;
+
+            h2 {
+                margin: 15px 0;
+            }
+
+            .experience-list {
+                list-style: none;
+
+                .experience-list-item {
+                    height: auto;
+                    margin: 20px 0;
+                    padding: 20px;
+                    border: 1px solid var(--color-blue);
+                    border-radius: 10px;
+                    position: relative;
+
+                    .vertical-line{
+                        width: 1px;
+                        height: 110%;
+                        border-left: 1px solid var(--color-blue);
+                        position: absolute;
+                        top: 5px;
+                        left:-24px;
+
+                        .circle{
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background: var(--background-blue);
+                            position: absolute;
+                            top: -10px;
+                            left: -10px;
+                            
+                        }
+
+                    }
+
+                    .experience-years {
+                        color: var(--fontcolor-blue);
+                    }
+
+                    .experience-title {
+                        margin: 15px 0;
+                        font-size: 24px;
+                    }
+
+                }
+
+            }
+
         }
 
     }
