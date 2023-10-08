@@ -1,21 +1,30 @@
 :root {
     --color-white: #FFF;
     --color-blue: #00B8FF;
-    --color-darkblue: #001F2B;
+    --color-deepblue: #001F2B;
+    --color-lightblue: #19BFFF;
     --background-blue: #00B8FF;
-    --background-darkblue: #001F2B;
+    --background-darkerblue: #00A5FF;
+    --background-darkblue: #00415a;
+    --background-deepblue: #001F2B;
+    --background-lightblue: #19BFFF;
     --fontcolor-white: #FFFFFF;
     --fontcolor-blue: #00B8FF;
-    --fontcolor-darkblue: #001F2B;
+    --fontcolor-deepblue: #001F2B;
 }
 
 * {
     margin: 0;
     padding: 0;
+    font-family: 'roboto', 'poppins', 'ubuntu', 'nunito', 'raleway', 'Pixelify+Sans',  Verdana, sans-serif;
 }
 
 body {
-    background: var(--background-darkblue);
+    background: var(--background-deepblue);
+
+    textarea {
+        resize: none;
+    }
 }
 
 header {
@@ -70,7 +79,8 @@ header {
 }
 
 main {
-    margin: 80px 0;
+    max-width: 1240px;
+    margin: 80px auto;
     padding: 5px 20px;
 
     .hero {
@@ -114,7 +124,7 @@ main {
 
                 .cta-btn:hover {
                     background: var(--background-blue);
-                    color: var(--fontcolor-darkblue);
+                    color: var(--fontcolor-deepblue);
                     cursor: pointer;
                 }
             }
@@ -146,7 +156,7 @@ main {
 
                             i:hover {
                                 background: var(--background-blue);
-                                color: var(--fontcolor-darkblue);
+                                color: var(--fontcolor-deepblue);
                             }
 
                         }
@@ -219,7 +229,7 @@ main {
 
         .cta-btn:hover {
             background: var(--background-blue);
-            color: var(--fontcolor-darkblue);
+            color: var(--fontcolor-deepblue);
             cursor: pointer;
         }
 
@@ -230,18 +240,18 @@ main {
         color: var(--fontcolor-white);
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "title title"
-        "education experience";
+        grid-template-areas:
+            "title title"
+            "education experience";
         column-gap: 48px;
 
-        h2{
+        h2 {
             margin: 20px 0;
             font-size: 42px;
             text-align: center;
             grid-area: title;
 
-            span{
+            span {
                 color: var(--fontcolor-blue);
             }
         }
@@ -249,7 +259,7 @@ main {
         .education {
             grid-area: education;
 
-            h2 {
+            h3 {
                 margin: 15px 0;
             }
 
@@ -264,15 +274,15 @@ main {
                     border-radius: 10px;
                     position: relative;
 
-                    .vertical-line{
+                    .vertical-line {
                         width: 1px;
                         height: 110%;
                         border-left: 1px solid var(--color-blue);
                         position: absolute;
                         top: 5px;
-                        left:-24px;
+                        left: -24px;
 
-                        .circle{
+                        .circle {
                             width: 20px;
                             height: 20px;
                             border-radius: 50%;
@@ -280,7 +290,7 @@ main {
                             position: absolute;
                             top: -10px;
                             left: -10px;
-                            
+
                         }
 
                     }
@@ -303,7 +313,7 @@ main {
         .experience {
             grid-area: experience;
 
-            h2 {
+            h3 {
                 margin: 15px 0;
             }
 
@@ -318,15 +328,15 @@ main {
                     border-radius: 10px;
                     position: relative;
 
-                    .vertical-line{
+                    .vertical-line {
                         width: 1px;
                         height: 110%;
                         border-left: 1px solid var(--color-blue);
                         position: absolute;
                         top: 5px;
-                        left:-24px;
+                        left: -24px;
 
-                        .circle{
+                        .circle {
                             width: 20px;
                             height: 20px;
                             border-radius: 50%;
@@ -334,7 +344,7 @@ main {
                             position: absolute;
                             top: -10px;
                             left: -10px;
-                            
+
                         }
 
                     }
@@ -350,6 +360,223 @@ main {
 
                 }
 
+            }
+
+        }
+
+    }
+
+    .my-skills {
+        margin: 20px;
+        color: var(--fontcolor-white);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "title title"
+            "coding-skills professional-skills";
+        column-gap: 48px;
+
+        h2 {
+            margin: 20px 0;
+            font-size: 42px;
+            text-align: center;
+            grid-area: title;
+
+            span {
+                color: var(--fontcolor-blue);
+            }
+        }
+
+        .coding-skills {
+            grid-area: coding-skills;
+
+            h3 {
+                margin: 15px 0;
+            }
+
+            .coding-skills-list {
+                border: 1px solid var(--color-blue);
+                border-radius: 10px;
+                list-style: none;
+
+                .coding-skills-list-item {
+                    height: auto;
+                    padding: 15px;
+                    position: relative;
+
+                    .skill-title {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+
+                    .skill-percentage-bar-container {
+                        height: 10px;
+                        margin: 15px 0 0 0;
+                        padding: 5px;
+                        border: 1px solid var(--color-blue);
+                        border-radius: 10px;
+
+                        .skill-percentage-bar {
+                            width: 90%;
+                            max-width: 100%;
+                            height: 100%;
+                            border-radius: 2px;
+                            border: 1px solid var(--color-lightblue);
+                            background: linear-gradient(to right, var(--background-darkerblue), var(--background-lightblue));
+                            filter: drop-shadow(0px 0px 3px var(--color-lightblue));
+                        }
+
+                    }
+                }
+
+            }
+
+        }
+
+        .professional-skills {
+            grid-area: professional-skills;
+
+            h3 {
+                margin: 15px 0;
+            }
+
+            .professional-skills-list {
+                border: 1px solid var(--color-blue);
+                border-radius: 10px;
+                list-style: none;
+
+                .professional-skills-list-item {
+                    height: auto;
+                    padding: 15px;
+                    position: relative;
+
+                    .skill-title {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+
+                    .skill-percentage-bar-container {
+                        height: 10px;
+                        margin: 15px 0 0 0;
+                        padding: 5px;
+                        border: 1px solid var(--color-blue);
+                        border-radius: 10px;
+
+                        .skill-percentage-bar {
+                            width: 90%;
+                            max-width: 100%;
+                            height: 100%;
+                            border-radius: 2px;
+                            border: 1px solid var(--color-lightblue);
+                            background: linear-gradient(to right, var(--background-darkerblue), var(--background-lightblue));
+                            filter: drop-shadow(0px 0px 3px var(--color-lightblue));
+                        }
+
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+    .contact {
+        margin: 20px;
+        color: var(--fontcolor-white);
+
+        h2 {
+            margin: 20px 0;
+            font-size: 42px;
+            text-align: center;
+            grid-area: title;
+
+            span {
+                color: var(--fontcolor-blue);
+            }
+        }
+
+        .contact-form {
+            max-width: 360px;
+            margin: 0 auto;
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 20px;
+            row-gap: 20px;
+            grid-template-areas:
+                "fullname-input email-input"
+                "mobile-number-input email-subject-input"
+                "message-input message-input"
+                "submit-button submit-button"
+            ;
+
+            input {
+                padding: 20px;
+                border: 1px solid var(--color-blue);
+                border-radius: 5px;
+                background: transparent;
+
+            }
+
+            input::placeholder {
+                color: var(--fontcolor-white);
+                opacity: 0.9;
+            }
+
+            input:focus {
+                color: var(--fontcolor-white);
+                border: 1px solid var(--color-blue);
+                background-color: var(--background-darkblue);
+            }
+
+            input[name="fullname"] {
+                grid-area: email-input;
+            }
+
+            input[name="email"] {
+                grid-area: fullname-input;
+            }
+
+            input[name="mobile-number"] {
+                grid-area: mobile-number-input;
+            }
+
+            input[name="email-subject"] {
+                grid-area: email-subject-input;
+            }
+
+            textarea {
+                height: 240px;
+                padding: 10px;
+                border: 1px solid var(--color-blue);
+                border-radius: 5px;
+                background: transparent;
+            }
+
+            textarea::placeholder {
+                color: var(--fontcolor-white);
+                opacity: 0.9;
+            }
+
+            textarea:focus {
+                color: var(--fontcolor-white);
+                border: 1px solid var(--color-blue);
+                background-color: var(--background-darkblue);
+            }
+
+            textarea[name="message"] {
+                grid-area: message-input;
+            }
+
+            .submit-message{
+                margin: 15px 0;
+                padding: 15px;
+                border: 1px solid var(--color-blue);
+                border-radius: 10px;
+                background: var(--background-blue);
+                color: var(--background-darkblue);
+                grid-area: submit-button;
             }
 
         }
