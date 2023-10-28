@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript DOM : Latihan 1 Representasi Dokumen HTML Sebagai Object Dalam Javascript DOM</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Buka Console Untuk Melihat Hasil Source Code Javascript</h1>
+    <p>Ini Merupakan Hasil Belajar Dari Video Di Channel Youtube Web Programming Unpas Playlist Javascript DOM Video ke 1 tentang <strong>Definisi dan Representasi Dokumen HTML Sebagai Object Dalam Javascript DOM</strong>
+        Selengkapnya Bisa Dilihat Di <a href="../Catatan.docx">Catatan</a></p>
+    
+    <h2>Catatan</h2>
+    <pre>
+    Javascript Document Object Model (DOM)
+        Definisi Javascript Document Object Model (DOM)
+        Menurut Mozilla DOM “merupakan antarmuka  pemrograman untuk HTML yang merepresentasikan halaman web, sehingga program dapat mengubah dan memanipulasi strukturnya”
+
+        dan Menurut bapak Sandhika Galih Javascript DOM memiliki definisi “Representasi elemen HTML pada Dokumen menjadi sebuah object”
+
+        Dan Definisi DOM menurut saya pribadi adalah “Javascript DOM merupakan sebuah cara untuk memanipulasi element HTML pada dokumen(yang direpresentasikan sebagai object) agar bisa dirubah strukturnya secara pemrograman menggunakan javascript”
+        
+        DOM berfungsi untuk membuat halaman website menjadi lebih interaktif menarik dan lebih baik
+        Untuk mempelajari Javascript DOM diperlukan pemahaman mengenai pemrograman dasar khususnya menggunakan Bahasa pemrograman Javascript dan DOM ini merupakan sebuah cara untuk Bahasa Javascript berinteraksi dengan HTML
+        DOM Merupakan kependekan dari 3 element yaitu Document Object Model 
+
+        1.	Document 
+            Document pada DOM merujuk pada isi website 
+
+        2.	Object
+            Object pada DOM merupakan Nilai atau Tipe Data yang ada pada Javascript contohnya adalah object sederhana pada gambar dibawah yaitu sebuah variable object yang di dalamnya terdapat banyak nilai berupa property dan method.
+
+            Object pada Javascript bisa juga menjadi kompleks misalnya di dalam object terdapat property berisi object dan object tersebut memiliki property berisi array yang isinya object
+
+        3.	Model
+            Model dalam Javascript DOM bisa dimaknai sebagai representasi dari sesuatu lebih tepatnya ketika membuka sebuah dokumen html seluruh strukturnya diterjemahkan(direpresentasikan) menjadi sebuah object document
+
+            Apabila di dalam console pada browser ditulis document maka browser akan menghiglight dan mengembalikan seluruh halaman sebagai isi dari object document
+
+            Tampilan pada console bisa dilihat pada gambar di catatan.docx 
+
+        Visualisasi Model dari Document sebagai DOM Tree
+        Halaman website di representasikan sebagai model yang tersimpan di dalam memory berbentuk Pohon Hirarki DOM atau disebut juga DOM Tree 
+        Visualisasi DOM Tree bisa dilihat pada gambar di catatan.docx 
+
+        Hirarki ini sesuai dengan struktur HTML yang dibuat pada dokumen HTML nya, pemahaman mengenai DOM Tree akan menjadi penting saat akan melakukan pemilihan atau seleksi dan penelusuran  element 
+        Tiap kotak yang ada pada visualisasi DOM Tree diatas disebut dengan Simpul atau Node dan bentuknya merupakan object juga dan seluruh simpul yang ada pada halaman HTML terdapat pada satu buah simpul yaitu document 
+
+        Contoh Lain bisa dilihat pada catatan.docx
+
+        Semakin kompleks struktur HTML maka DOM Tree nya pun akan semakin besar
+
+        Window Node
+        Simpul Document bukan lah yang paling tinggi ada yang lebih tinggi kedudukanya yaitu object window, object document hanya memiliki akses terhadap website sedangkan object window memiliki akses yang lebih luas termasuk histori, lokasi kursor, besar ukuran window, dll
+
+        Kesimpulannya adalah DOM merupakan :
+        •	Sebuah Antarmuka Pemrograman Berbasis Object Yang merepresentasikan dokumen web
+        •	DOM Membuat seluruh komponen halaman web dapat diakses dan dimanipulasi
+        •	komponen yang bisa diakses meliputi element HTML, Atribut pada Elemen, text, dll
+        •	DOM dapat dimanipulasi(dibuat, diubah, dihapus ,menggunakan javascript)
+
+    </pre>
+    <!-- Lihat File Script Untuk Melihat Source Code JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

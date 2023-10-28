@@ -5,15 +5,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript DOM : Latihan 1 Representasi Dokumen HTML Sebagai Object Dalam Javascript DOM</title>
+    <title>Javascript DOM : Latihan 2 DOM Tree, Type Node, Kumpulan Node, dan Struktur Hirarki DOM Tree</title>
 </head>
 
 <body>
     <h1 style="text-align: center;">Buka Console Untuk Melihat Hasil Source Code Javascript</h1>
-    <p>Ini Merupakan Hasil Belajar Dari Video Di Channel Youtube Web Programming Unpas Playlist Javascript DOM Video ke 1 tentang <strong>Definisi dan Representasi Dokumen HTML Sebagai Object Dalam Javascript DOM</strong>
+    <p>Ini Merupakan Hasil Belajar Dari Video Di Channel Youtube Web Programming Unpas Playlist Javascript DOM Video ke 2 tentang <strong>DOM Tree, Type Node, Kumpulan Node, dan Struktur Hirarki DOM Tree</strong>
         Selengkapnya Bisa Dilihat Di <a href="../Catatan.docx">Catatan</a></p>
     
     <h2>Catatan</h2>
+    <pre>
+        DOM Tree
+        DOM Tree Merupakan representasi element element HTML di dalam browser dan seluruh element pada DOM Tree Disebut sebagai Node atau Simpul
+
+        Node paling atas adalah Root atau Document head dan body merupakan element terluar dari HTML
+        
+        Type Pada Node
+        Node Pada DOM Tree memiliki tipe yang berbeda beda seluruh element HTML memiliki type Element dan tulisan yang berada di dalam element memiliki type Text ada juga simpul dengan type Attribute(Deprecated) seluruh simpul bisa disebut dengan Node + type nya misal Text Node atau Element Node
+
+        Node List & HTML Collection
+            Node List & HTML Collection merupakan kumpulan node atau simpul yang dipilih kumpulan node yang berbeda, Perbedaan ini akan membuat cara pengelolaannya juga berbeda
+            struktur data kumpulan node mirip dengan struktur data array karena kumpulan node ini berisikan nilai nilai atau object object namun ada beberapa kriteria yang membuat kumpulan node tidak bisa disebut array 
+            
+            Ketika memilih sebuah node maka node yang dipilih akan sesuai dengan tipe node yang dipilih jika bertipe element maka node yang dipilih adalah node element
+            
+            Dan jika memilih lebih dari satu node itu akan disebut sebagai Node List dan tidak memperdulikan tipe node nya apa
+
+            Sedangkan HTML Collection merupakan kumpulan node yang harus berisi node bertipe element saja HTML Collection bersifat Live sedangkan nodeList tidak 
+
+        Struktur Hirarki DOM Tree
+            Struktur Hirarki DOM Tree bisa dikatakan mirip dengan silsilah keluarga karena terdapat konsep konsep seperti parent dan child 
+            
+            •	Root Node
+                Merupakan node yang menjadi sumber dari semua node lain di dalam DOM secara default Root Node adalah document
+            
+            •	Parent Node
+                Merupakan Node yang berada 1 tingkat diatas node yang lain contohnya body adalah parent dari element dibawahnya seperti terdapat element h1, p, img, a
+                Apabila berada 2 tingkat diatas node lain ada yang menyebutnya sebagai Grand Parent Node dan jika lebih dari 2 tingkat diatas node lain ada yang menyebutnya sebagai Anchestor Node
+            
+            •	Child Node
+                Merupakan Node yang berada 1 tingkat dibawah node yang lain contohnya element h1, p, img, dan a merupakan child node dari body
+                Dan child node tidak memperdulikan tipe nodenya sedangkan child node yang spesifik tipe element nodenya disebut dengan Children Node 
+                Ada juga yang disebut dengan Sibling Node yaitu child node yang bersumber dari parent node yang sama 
+                Dan apabila node yang berada lebih dari 1 tingkat dibawah node yang lain disebut dengan Descendant Node        
+
+    </pre>
     <!-- Lihat File Script Untuk Melihat Source Code JS -->
     <script src="assets/js/script.js"></script>
 </body>
