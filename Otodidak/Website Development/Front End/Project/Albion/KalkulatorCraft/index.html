@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Crafting</title>
+</head>
+
+<body>
+    <h2>Kalkulator Bahan</h2>
+    <form id="raw-material-calculator">
+        <table>
+            <tr>
+                <td>
+                    <select name="" id="" class="item-category">
+                        <option value="" disabled selected>Kategori Item</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="" id="" class="item-sub-category">
+                        <option value="" disabled selected>Sub Kategori Item</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="" id="" class="item">
+                        <option value="" disabled selected>Item Yang Akan Dicraft</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="quantity">Sebanyak :</label>
+                </td>
+                <td>
+                    <input type="number" name="quantity" id="quantity" placeholder="quantity">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="resource-price">Harga Bahan Satuan :</label>
+                </td>
+                <td>
+                    <input type="number" name="resource-price" id="resource-price"
+                        placeholder="Harga Bahan Satuan (Silver)">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="craft-price">Harga Craft Satuan :</label>
+                </td>
+                <td>
+                    <input type="number" name="craft-price" id="craft-price" placeholder="Harga Craft Satuan (Silver)">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Material Total :</label>
+                </td>
+                <td>
+                    <ul id="material-list">
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Total Harga Pembuatan :</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Total Harga Pembuatan Satuan :</label>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <h2>Kalkualtor Profit</h2>
+    <select name="" id="" class="item-category">
+        <option value="" disabled selected>Kategori Item</option>
+    </select>
+    <select name="" id="" class="item-sub-category">
+        <option value="" disabled selected>Sub Kategori Item</option>
+    </select>
+    <select name="" id="" class="item">
+        <option value="" disabled selected>Item Yang Akan Dijual</option>
+    </select>
+    <label for="amount">Jumlah Yang Akan Dijual</label>
+    <input type="number" name="amount" id="amount" placeholder="Jumlah Yang Akan Dijual">
+    <label for="craft-price">Biaya Pembuatan Item Satuan :</label>
+    <input type="number" name="craft-price" id="craft-price" placeholder="Biaya Pembuatan Item Satuan">
+    <label for="sell-price">Harga Jual ( Jual Langsung )</label>
+    <input type="number" name="sell-price" id="sell-price" placeholder="Harga Jual">
+    <label for="sell-order-price">Harga Jual ( Sell Order )</label>
+    <input type="number" name="sell-order-price" id="sell-order-price" placeholder="Harga Jual ( Sell Order )">
+    <label for="sell-tax">Pajak Market ( % )</label>
+    <input type="number" name="sell-tax" id="sell-tax" placeholder="Pajak Market ( % )">
+    <label for="sell-order-tax">Pajak Sell Order ( % )</label>
+    <input type="number" name="sell-tax" id="sell-tax" placeholder="Pajak Sell Order ( % )">
+
+    <a href="#">Cek Harga Item Dari Seluruh Kota Disini</a>
+    <script src="assets/js/category.js"></script>
+    <script src="assets/js/calculator.js"></script>
+</body>
+
+</html>
