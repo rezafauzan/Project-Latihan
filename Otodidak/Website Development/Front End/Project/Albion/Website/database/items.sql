@@ -1,0 +1,1 @@
+INSERT INTO `items` (`id`, `item_name`, `item_indonesian_name`, `item_unique_name`, `item_description`, `sub_category_id`, `created_at`, `updated_at`) VALUES (NULL, 'Novice\'s Bag', 'Tas Pemula', 'T2_BAG', 'Equipment Item', 1, current_timestamp(), current_timestamp())
