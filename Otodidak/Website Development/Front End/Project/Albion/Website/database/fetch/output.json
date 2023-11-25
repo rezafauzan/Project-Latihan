@@ -1,0 +1,1231 @@
+{
+  "item_categories": [
+    {
+      "name": "Accessories",
+      "sub_categories": [
+        {
+          "name": "Bag",
+          "items": [
+            {
+              "name": "Novice's Bag"
+            },
+            {
+              "name": "Journeyman's Bag"
+            },
+            {
+              "name": "Adept's Bag"
+            },
+            {
+              "name": "Adept's Bag"
+            },
+            {
+              "name": "Adept's Bag"
+            },
+            {
+              "name": "Adept's Bag"
+            },
+            {
+              "name": "Adept's Bag"
+            },
+            {
+              "name": "Expert's Bag"
+            },
+            {
+              "name": "Expert's Bag"
+            },
+            {
+              "name": "Expert's Bag"
+            },
+            {
+              "name": "Expert's Bag"
+            },
+            {
+              "name": "Expert's Bag"
+            },
+            {
+              "name": "Master's Bag"
+            },
+            {
+              "name": "Master's Bag"
+            },
+            {
+              "name": "Master's Bag"
+            },
+            {
+              "name": "Master's Bag"
+            },
+            {
+              "name": "Master's Bag"
+            },
+            {
+              "name": "Grandmaster's Bag"
+            },
+            {
+              "name": "Grandmaster's Bag"
+            },
+            {
+              "name": "Grandmaster's Bag"
+            },
+            {
+              "name": "Grandmaster's Bag"
+            },
+            {
+              "name": "Grandmaster's Bag"
+            },
+            {
+              "name": "Elder's Bag"
+            },
+            {
+              "name": "Elder's Bag"
+            },
+            {
+              "name": "Elder's Bag"
+            },
+            {
+              "name": "Elder's Bag"
+            },
+            {
+              "name": "Elder's Bag"
+            },
+            {
+              "name": "Adept's Satchel of Insight"
+            },
+            {
+              "name": "Adept's Satchel of Insight"
+            },
+            {
+              "name": "Adept's Satchel of Insight"
+            },
+            {
+              "name": "Adept's Satchel of Insight"
+            },
+            {
+              "name": "Adept's Satchel of Insight"
+            },
+            {
+              "name": "Expert's Satchel of Insight"
+            },
+            {
+              "name": "Expert's Satchel of Insight"
+            },
+            {
+              "name": "Expert's Satchel of Insight"
+            },
+            {
+              "name": "Expert's Satchel of Insight"
+            },
+            {
+              "name": "Expert's Satchel of Insight"
+            },
+            {
+              "name": "Master's Satchel of Insight"
+            },
+            {
+              "name": "Master's Satchel of Insight"
+            },
+            {
+              "name": "Master's Satchel of Insight"
+            },
+            {
+              "name": "Master's Satchel of Insight"
+            },
+            {
+              "name": "Master's Satchel of Insight"
+            },
+            {
+              "name": "Grandmaster's Satchel of Insight"
+            },
+            {
+              "name": "Grandmaster's Satchel of Insight"
+            },
+            {
+              "name": "Grandmaster's Satchel of Insight"
+            },
+            {
+              "name": "Grandmaster's Satchel of Insight"
+            },
+            {
+              "name": "Grandmaster's Satchel of Insight"
+            },
+            {
+              "name": "Elder's Satchel of Insight"
+            },
+            {
+              "name": "Elder's Satchel of Insight"
+            },
+            {
+              "name": "Elder's Satchel of Insight"
+            },
+            {
+              "name": "Elder's Satchel of Insight"
+            },
+            {
+              "name": "Elder's Satchel of Insight"
+            }
+          ]
+        },
+        {
+          "name": "Cape",
+          "items": [
+            {
+              "name": "Novice's Cape"
+            },
+            {
+              "name": "Journeyman's Cape"
+            },
+            {
+              "name": "Adept's Cape"
+            },
+            {
+              "name": "Adept's Cape"
+            },
+            {
+              "name": "Adept's Cape"
+            },
+            {
+              "name": "Adept's Cape"
+            },
+            {
+              "name": "Adept's Cape"
+            },
+            {
+              "name": "Expert's Cape"
+            },
+            {
+              "name": "Expert's Cape"
+            },
+            {
+              "name": "Expert's Cape"
+            },
+            {
+              "name": "Expert's Cape"
+            },
+            {
+              "name": "Expert's Cape"
+            },
+            {
+              "name": "Master's Cape"
+            },
+            {
+              "name": "Master's Cape"
+            },
+            {
+              "name": "Master's Cape"
+            },
+            {
+              "name": "Master's Cape"
+            },
+            {
+              "name": "Master's Cape"
+            },
+            {
+              "name": "Grandmaster's Cape"
+            },
+            {
+              "name": "Grandmaster's Cape"
+            },
+            {
+              "name": "Grandmaster's Cape"
+            },
+            {
+              "name": "Grandmaster's Cape"
+            },
+            {
+              "name": "Grandmaster's Cape"
+            },
+            {
+              "name": "Elder's Cape"
+            },
+            {
+              "name": "Elder's Cape"
+            },
+            {
+              "name": "Elder's Cape"
+            },
+            {
+              "name": "Elder's Cape"
+            },
+            {
+              "name": "Elder's Cape"
+            },
+            {
+              "name": "Adept's Bridgewatch Cape"
+            },
+            {
+              "name": "Adept's Bridgewatch Cape"
+            },
+            {
+              "name": "Adept's Bridgewatch Cape"
+            },
+            {
+              "name": "Adept's Bridgewatch Cape"
+            },
+            {
+              "name": "Adept's Bridgewatch Cape"
+            },
+            {
+              "name": "Expert's Bridgewatch Cape"
+            },
+            {
+              "name": "Expert's Bridgewatch Cape"
+            },
+            {
+              "name": "Expert's Bridgewatch Cape"
+            },
+            {
+              "name": "Expert's Bridgewatch Cape"
+            },
+            {
+              "name": "Expert's Bridgewatch Cape"
+            },
+            {
+              "name": "Master's Bridgewatch Cape"
+            },
+            {
+              "name": "Master's Bridgewatch Cape"
+            },
+            {
+              "name": "Master's Bridgewatch Cape"
+            },
+            {
+              "name": "Master's Bridgewatch Cape"
+            },
+            {
+              "name": "Master's Bridgewatch Cape"
+            },
+            {
+              "name": "Grandmaster's Bridgewatch Cape"
+            },
+            {
+              "name": "Grandmaster's Bridgewatch Cape"
+            },
+            {
+              "name": "Grandmaster's Bridgewatch Cape"
+            },
+            {
+              "name": "Grandmaster's Bridgewatch Cape"
+            },
+            {
+              "name": "Grandmaster's Bridgewatch Cape"
+            },
+            {
+              "name": "Elder's Bridgewatch Cape"
+            },
+            {
+              "name": "Elder's Bridgewatch Cape"
+            },
+            {
+              "name": "Elder's Bridgewatch Cape"
+            },
+            {
+              "name": "Elder's Bridgewatch Cape"
+            },
+            {
+              "name": "Elder's Bridgewatch Cape"
+            },
+            {
+              "name": "Adept's Fort Sterling Cape"
+            },
+            {
+              "name": "Adept's Fort Sterling Cape"
+            },
+            {
+              "name": "Adept's Fort Sterling Cape"
+            },
+            {
+              "name": "Adept's Fort Sterling Cape"
+            },
+            {
+              "name": "Adept's Fort Sterling Cape"
+            },
+            {
+              "name": "Expert's Fort Sterling Cape"
+            },
+            {
+              "name": "Expert's Fort Sterling Cape"
+            },
+            {
+              "name": "Expert's Fort Sterling Cape"
+            },
+            {
+              "name": "Expert's Fort Sterling Cape"
+            },
+            {
+              "name": "Expert's Fort Sterling Cape"
+            },
+            {
+              "name": "Master's Fort Sterling Cape"
+            },
+            {
+              "name": "Master's Fort Sterling Cape"
+            },
+            {
+              "name": "Master's Fort Sterling Cape"
+            },
+            {
+              "name": "Master's Fort Sterling Cape"
+            },
+            {
+              "name": "Master's Fort Sterling Cape"
+            },
+            {
+              "name": "Grandmaster's Fort Sterling Cape"
+            },
+            {
+              "name": "Grandmaster's Fort Sterling Cape"
+            },
+            {
+              "name": "Grandmaster's Fort Sterling Cape"
+            },
+            {
+              "name": "Grandmaster's Fort Sterling Cape"
+            },
+            {
+              "name": "Grandmaster's Fort Sterling Cape"
+            },
+            {
+              "name": "Elder's Fort Sterling Cape"
+            },
+            {
+              "name": "Elder's Fort Sterling Cape"
+            },
+            {
+              "name": "Elder's Fort Sterling Cape"
+            },
+            {
+              "name": "Elder's Fort Sterling Cape"
+            },
+            {
+              "name": "Elder's Fort Sterling Cape"
+            },
+            {
+              "name": "Adept's Lymhurst Cape"
+            },
+            {
+              "name": "Adept's Lymhurst Cape"
+            },
+            {
+              "name": "Adept's Lymhurst Cape"
+            },
+            {
+              "name": "Adept's Lymhurst Cape"
+            },
+            {
+              "name": "Adept's Lymhurst Cape"
+            },
+            {
+              "name": "Expert's Lymhurst Cape"
+            },
+            {
+              "name": "Expert's Lymhurst Cape"
+            },
+            {
+              "name": "Expert's Lymhurst Cape"
+            },
+            {
+              "name": "Expert's Lymhurst Cape"
+            },
+            {
+              "name": "Expert's Lymhurst Cape"
+            },
+            {
+              "name": "Master's Lymhurst Cape"
+            },
+            {
+              "name": "Master's Lymhurst Cape"
+            },
+            {
+              "name": "Master's Lymhurst Cape"
+            },
+            {
+              "name": "Master's Lymhurst Cape"
+            },
+            {
+              "name": "Master's Lymhurst Cape"
+            },
+            {
+              "name": "Grandmaster's Lymhurst Cape"
+            },
+            {
+              "name": "Grandmaster's Lymhurst Cape"
+            },
+            {
+              "name": "Grandmaster's Lymhurst Cape"
+            },
+            {
+              "name": "Grandmaster's Lymhurst Cape"
+            },
+            {
+              "name": "Grandmaster's Lymhurst Cape"
+            },
+            {
+              "name": "Elder's Lymhurst Cape"
+            },
+            {
+              "name": "Elder's Lymhurst Cape"
+            },
+            {
+              "name": "Elder's Lymhurst Cape"
+            },
+            {
+              "name": "Elder's Lymhurst Cape"
+            },
+            {
+              "name": "Elder's Lymhurst Cape"
+            },
+            {
+              "name": "Adept's Martlock Cape"
+            },
+            {
+              "name": "Adept's Martlock Cape"
+            },
+            {
+              "name": "Adept's Martlock Cape"
+            },
+            {
+              "name": "Adept's Martlock Cape"
+            },
+            {
+              "name": "Adept's Martlock Cape"
+            },
+            {
+              "name": "Expert's Martlock Cape"
+            },
+            {
+              "name": "Expert's Martlock Cape"
+            },
+            {
+              "name": "Expert's Martlock Cape"
+            },
+            {
+              "name": "Expert's Martlock Cape"
+            },
+            {
+              "name": "Expert's Martlock Cape"
+            },
+            {
+              "name": "Master's Martlock Cape"
+            },
+            {
+              "name": "Master's Martlock Cape"
+            },
+            {
+              "name": "Master's Martlock Cape"
+            },
+            {
+              "name": "Master's Martlock Cape"
+            },
+            {
+              "name": "Master's Martlock Cape"
+            },
+            {
+              "name": "Grandmaster's Martlock Cape"
+            },
+            {
+              "name": "Grandmaster's Martlock Cape"
+            },
+            {
+              "name": "Grandmaster's Martlock Cape"
+            },
+            {
+              "name": "Grandmaster's Martlock Cape"
+            },
+            {
+              "name": "Grandmaster's Martlock Cape"
+            },
+            {
+              "name": "Elder's Martlock Cape"
+            },
+            {
+              "name": "Elder's Martlock Cape"
+            },
+            {
+              "name": "Elder's Martlock Cape"
+            },
+            {
+              "name": "Elder's Martlock Cape"
+            },
+            {
+              "name": "Elder's Martlock Cape"
+            },
+            {
+              "name": "Adept's Thetford Cape"
+            },
+            {
+              "name": "Adept's Thetford Cape"
+            },
+            {
+              "name": "Adept's Thetford Cape"
+            },
+            {
+              "name": "Adept's Thetford Cape"
+            },
+            {
+              "name": "Adept's Thetford Cape"
+            },
+            {
+              "name": "Expert's Thetford Cape"
+            },
+            {
+              "name": "Expert's Thetford Cape"
+            },
+            {
+              "name": "Expert's Thetford Cape"
+            },
+            {
+              "name": "Expert's Thetford Cape"
+            },
+            {
+              "name": "Expert's Thetford Cape"
+            },
+            {
+              "name": "Master's Thetford Cape"
+            },
+            {
+              "name": "Master's Thetford Cape"
+            },
+            {
+              "name": "Master's Thetford Cape"
+            },
+            {
+              "name": "Master's Thetford Cape"
+            },
+            {
+              "name": "Master's Thetford Cape"
+            },
+            {
+              "name": "Grandmaster's Thetford Cape"
+            },
+            {
+              "name": "Grandmaster's Thetford Cape"
+            },
+            {
+              "name": "Grandmaster's Thetford Cape"
+            },
+            {
+              "name": "Grandmaster's Thetford Cape"
+            },
+            {
+              "name": "Grandmaster's Thetford Cape"
+            },
+            {
+              "name": "Elder's Thetford Cape"
+            },
+            {
+              "name": "Elder's Thetford Cape"
+            },
+            {
+              "name": "Elder's Thetford Cape"
+            },
+            {
+              "name": "Elder's Thetford Cape"
+            },
+            {
+              "name": "Elder's Thetford Cape"
+            },
+            {
+              "name": "Adept's Caerleon Cape"
+            },
+            {
+              "name": "Adept's Caerleon Cape"
+            },
+            {
+              "name": "Adept's Caerleon Cape"
+            },
+            {
+              "name": "Adept's Caerleon Cape"
+            },
+            {
+              "name": "Adept's Caerleon Cape"
+            },
+            {
+              "name": "Expert's Caerleon Cape"
+            },
+            {
+              "name": "Expert's Caerleon Cape"
+            },
+            {
+              "name": "Expert's Caerleon Cape"
+            },
+            {
+              "name": "Expert's Caerleon Cape"
+            },
+            {
+              "name": "Expert's Caerleon Cape"
+            },
+            {
+              "name": "Master's Caerleon Cape"
+            },
+            {
+              "name": "Master's Caerleon Cape"
+            },
+            {
+              "name": "Master's Caerleon Cape"
+            },
+            {
+              "name": "Master's Caerleon Cape"
+            },
+            {
+              "name": "Master's Caerleon Cape"
+            },
+            {
+              "name": "Grandmaster's Caerleon Cape"
+            },
+            {
+              "name": "Grandmaster's Caerleon Cape"
+            },
+            {
+              "name": "Grandmaster's Caerleon Cape"
+            },
+            {
+              "name": "Grandmaster's Caerleon Cape"
+            },
+            {
+              "name": "Grandmaster's Caerleon Cape"
+            },
+            {
+              "name": "Elder's Caerleon Cape"
+            },
+            {
+              "name": "Elder's Caerleon Cape"
+            },
+            {
+              "name": "Elder's Caerleon Cape"
+            },
+            {
+              "name": "Elder's Caerleon Cape"
+            },
+            {
+              "name": "Elder's Caerleon Cape"
+            },
+            {
+              "name": "Adept's Brecilien Cape"
+            },
+            {
+              "name": "Adept's Brecilien Cape"
+            },
+            {
+              "name": "Adept's Brecilien Cape"
+            },
+            {
+              "name": "Adept's Brecilien Cape"
+            },
+            {
+              "name": "Adept's Brecilien Cape"
+            },
+            {
+              "name": "Expert's Brecilien Cape"
+            },
+            {
+              "name": "Expert's Brecilien Cape"
+            },
+            {
+              "name": "Expert's Brecilien Cape"
+            },
+            {
+              "name": "Expert's Brecilien Cape"
+            },
+            {
+              "name": "Expert's Brecilien Cape"
+            },
+            {
+              "name": "Master's Brecilien Cape"
+            },
+            {
+              "name": "Master's Brecilien Cape"
+            },
+            {
+              "name": "Master's Brecilien Cape"
+            },
+            {
+              "name": "Master's Brecilien Cape"
+            },
+            {
+              "name": "Master's Brecilien Cape"
+            },
+            {
+              "name": "Grandmaster's Brecilien Cape"
+            },
+            {
+              "name": "Grandmaster's Brecilien Cape"
+            },
+            {
+              "name": "Grandmaster's Brecilien Cape"
+            },
+            {
+              "name": "Grandmaster's Brecilien Cape"
+            },
+            {
+              "name": "Grandmaster's Brecilien Cape"
+            },
+            {
+              "name": "Elder's Brecilien Cape"
+            },
+            {
+              "name": "Elder's Brecilien Cape"
+            },
+            {
+              "name": "Elder's Brecilien Cape"
+            },
+            {
+              "name": "Elder's Brecilien Cape"
+            },
+            {
+              "name": "Elder's Brecilien Cape"
+            },
+            {
+              "name": "Adept's Avalonian Cape"
+            },
+            {
+              "name": "Adept's Avalonian Cape"
+            },
+            {
+              "name": "Adept's Avalonian Cape"
+            },
+            {
+              "name": "Adept's Avalonian Cape"
+            },
+            {
+              "name": "Adept's Avalonian Cape"
+            },
+            {
+              "name": "Expert's Avalonian Cape"
+            },
+            {
+              "name": "Expert's Avalonian Cape"
+            },
+            {
+              "name": "Expert's Avalonian Cape"
+            },
+            {
+              "name": "Expert's Avalonian Cape"
+            },
+            {
+              "name": "Expert's Avalonian Cape"
+            },
+            {
+              "name": "Master's Avalonian Cape"
+            },
+            {
+              "name": "Master's Avalonian Cape"
+            },
+            {
+              "name": "Master's Avalonian Cape"
+            },
+            {
+              "name": "Master's Avalonian Cape"
+            },
+            {
+              "name": "Master's Avalonian Cape"
+            },
+            {
+              "name": "Grandmaster's Avalonian Cape"
+            },
+            {
+              "name": "Grandmaster's Avalonian Cape"
+            },
+            {
+              "name": "Grandmaster's Avalonian Cape"
+            },
+            {
+              "name": "Grandmaster's Avalonian Cape"
+            },
+            {
+              "name": "Grandmaster's Avalonian Cape"
+            },
+            {
+              "name": "Elder's Avalonian Cape"
+            },
+            {
+              "name": "Elder's Avalonian Cape"
+            },
+            {
+              "name": "Elder's Avalonian Cape"
+            },
+            {
+              "name": "Elder's Avalonian Cape"
+            },
+            {
+              "name": "Elder's Avalonian Cape"
+            },
+            {
+              "name": "Adept's Heretic Cape"
+            },
+            {
+              "name": "Adept's Heretic Cape"
+            },
+            {
+              "name": "Adept's Heretic Cape"
+            },
+            {
+              "name": "Adept's Heretic Cape"
+            },
+            {
+              "name": "Adept's Heretic Cape"
+            },
+            {
+              "name": "Expert's Heretic Cape"
+            },
+            {
+              "name": "Expert's Heretic Cape"
+            },
+            {
+              "name": "Expert's Heretic Cape"
+            },
+            {
+              "name": "Expert's Heretic Cape"
+            },
+            {
+              "name": "Expert's Heretic Cape"
+            },
+            {
+              "name": "Master's Heretic Cape"
+            },
+            {
+              "name": "Master's Heretic Cape"
+            },
+            {
+              "name": "Master's Heretic Cape"
+            },
+            {
+              "name": "Master's Heretic Cape"
+            },
+            {
+              "name": "Master's Heretic Cape"
+            },
+            {
+              "name": "Grandmaster's Heretic Cape"
+            },
+            {
+              "name": "Grandmaster's Heretic Cape"
+            },
+            {
+              "name": "Grandmaster's Heretic Cape"
+            },
+            {
+              "name": "Grandmaster's Heretic Cape"
+            },
+            {
+              "name": "Grandmaster's Heretic Cape"
+            },
+            {
+              "name": "Elder's Heretic Cape"
+            },
+            {
+              "name": "Elder's Heretic Cape"
+            },
+            {
+              "name": "Elder's Heretic Cape"
+            },
+            {
+              "name": "Elder's Heretic Cape"
+            },
+            {
+              "name": "Elder's Heretic Cape"
+            },
+            {
+              "name": "Adept's Undead Cape"
+            },
+            {
+              "name": "Adept's Undead Cape"
+            },
+            {
+              "name": "Adept's Undead Cape"
+            },
+            {
+              "name": "Adept's Undead Cape"
+            },
+            {
+              "name": "Adept's Undead Cape"
+            },
+            {
+              "name": "Expert's Undead Cape"
+            },
+            {
+              "name": "Expert's Undead Cape"
+            },
+            {
+              "name": "Expert's Undead Cape"
+            },
+            {
+              "name": "Expert's Undead Cape"
+            },
+            {
+              "name": "Expert's Undead Cape"
+            },
+            {
+              "name": "Master's Undead Cape"
+            },
+            {
+              "name": "Master's Undead Cape"
+            },
+            {
+              "name": "Master's Undead Cape"
+            },
+            {
+              "name": "Master's Undead Cape"
+            },
+            {
+              "name": "Master's Undead Cape"
+            },
+            {
+              "name": "Grandmaster's Undead Cape"
+            },
+            {
+              "name": "Grandmaster's Undead Cape"
+            },
+            {
+              "name": "Grandmaster's Undead Cape"
+            },
+            {
+              "name": "Grandmaster's Undead Cape"
+            },
+            {
+              "name": "Grandmaster's Undead Cape"
+            },
+            {
+              "name": "Elder's Undead Cape"
+            },
+            {
+              "name": "Elder's Undead Cape"
+            },
+            {
+              "name": "Elder's Undead Cape"
+            },
+            {
+              "name": "Elder's Undead Cape"
+            },
+            {
+              "name": "Elder's Undead Cape"
+            },
+            {
+              "name": "Adept's Keeper Cape"
+            },
+            {
+              "name": "Adept's Keeper Cape"
+            },
+            {
+              "name": "Adept's Keeper Cape"
+            },
+            {
+              "name": "Adept's Keeper Cape"
+            },
+            {
+              "name": "Adept's Keeper Cape"
+            },
+            {
+              "name": "Expert's Keeper Cape"
+            },
+            {
+              "name": "Expert's Keeper Cape"
+            },
+            {
+              "name": "Expert's Keeper Cape"
+            },
+            {
+              "name": "Expert's Keeper Cape"
+            },
+            {
+              "name": "Expert's Keeper Cape"
+            },
+            {
+              "name": "Master's Keeper Cape"
+            },
+            {
+              "name": "Master's Keeper Cape"
+            },
+            {
+              "name": "Master's Keeper Cape"
+            },
+            {
+              "name": "Master's Keeper Cape"
+            },
+            {
+              "name": "Master's Keeper Cape"
+            },
+            {
+              "name": "Grandmaster's Keeper Cape"
+            },
+            {
+              "name": "Grandmaster's Keeper Cape"
+            },
+            {
+              "name": "Grandmaster's Keeper Cape"
+            },
+            {
+              "name": "Grandmaster's Keeper Cape"
+            },
+            {
+              "name": "Grandmaster's Keeper Cape"
+            },
+            {
+              "name": "Elder's Keeper Cape"
+            },
+            {
+              "name": "Elder's Keeper Cape"
+            },
+            {
+              "name": "Elder's Keeper Cape"
+            },
+            {
+              "name": "Elder's Keeper Cape"
+            },
+            {
+              "name": "Elder's Keeper Cape"
+            },
+            {
+              "name": "Adept's Morgana Cape"
+            },
+            {
+              "name": "Adept's Morgana Cape"
+            },
+            {
+              "name": "Adept's Morgana Cape"
+            },
+            {
+              "name": "Adept's Morgana Cape"
+            },
+            {
+              "name": "Adept's Morgana Cape"
+            },
+            {
+              "name": "Expert's Morgana Cape"
+            },
+            {
+              "name": "Expert's Morgana Cape"
+            },
+            {
+              "name": "Expert's Morgana Cape"
+            },
+            {
+              "name": "Expert's Morgana Cape"
+            },
+            {
+              "name": "Expert's Morgana Cape"
+            },
+            {
+              "name": "Master's Morgana Cape"
+            },
+            {
+              "name": "Master's Morgana Cape"
+            },
+            {
+              "name": "Master's Morgana Cape"
+            },
+            {
+              "name": "Master's Morgana Cape"
+            },
+            {
+              "name": "Master's Morgana Cape"
+            },
+            {
+              "name": "Grandmaster's Morgana Cape"
+            },
+            {
+              "name": "Grandmaster's Morgana Cape"
+            },
+            {
+              "name": "Grandmaster's Morgana Cape"
+            },
+            {
+              "name": "Grandmaster's Morgana Cape"
+            },
+            {
+              "name": "Grandmaster's Morgana Cape"
+            },
+            {
+              "name": "Elder's Morgana Cape"
+            },
+            {
+              "name": "Elder's Morgana Cape"
+            },
+            {
+              "name": "Elder's Morgana Cape"
+            },
+            {
+              "name": "Elder's Morgana Cape"
+            },
+            {
+              "name": "Elder's Morgana Cape"
+            },
+            {
+              "name": "Adept's Demon Cape"
+            },
+            {
+              "name": "Adept's Demon Cape"
+            },
+            {
+              "name": "Adept's Demon Cape"
+            },
+            {
+              "name": "Adept's Demon Cape"
+            },
+            {
+              "name": "Adept's Demon Cape"
+            },
+            {
+              "name": "Expert's Demon Cape"
+            },
+            {
+              "name": "Expert's Demon Cape"
+            },
+            {
+              "name": "Expert's Demon Cape"
+            },
+            {
+              "name": "Expert's Demon Cape"
+            },
+            {
+              "name": "Expert's Demon Cape"
+            },
+            {
+              "name": "Master's Demon Cape"
+            },
+            {
+              "name": "Master's Demon Cape"
+            },
+            {
+              "name": "Master's Demon Cape"
+            },
+            {
+              "name": "Master's Demon Cape"
+            },
+            {
+              "name": "Master's Demon Cape"
+            },
+            {
+              "name": "Grandmaster's Demon Cape"
+            },
+            {
+              "name": "Grandmaster's Demon Cape"
+            },
+            {
+              "name": "Grandmaster's Demon Cape"
+            },
+            {
+              "name": "Grandmaster's Demon Cape"
+            },
+            {
+              "name": "Grandmaster's Demon Cape"
+            },
+            {
+              "name": "Elder's Demon Cape"
+            },
+            {
+              "name": "Elder's Demon Cape"
+            },
+            {
+              "name": "Elder's Demon Cape"
+            },
+            {
+              "name": "Elder's Demon Cape"
+            },
+            {
+              "name": "Elder's Demon Cape"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
