@@ -1,0 +1,119 @@
+:root {
+  --fontcolor-black: #000;
+  --color-silver: silver;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  background: var(--color-silver);
+  width: 100%;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+}
+.card img {
+  max-width: 100%;
+  margin-bottom: 5px;
+}
+.card .card-body {
+  padding: 15px;
+  line-height: 15px;
+}
+.card .card-body h4 {
+  margin-bottom: 15px;
+}
+
+header nav {
+  background: var(--color-silver);
+  padding: 4vh 20px;
+  display: flex;
+  justify-content: space-around;
+}
+header nav .brand .brand-link {
+  text-decoration: none;
+}
+header nav .nav-list {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+header nav .nav-list .nav-list-item {
+  display: flex;
+}
+header nav .nav-list .nav-list-item .nav-link {
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main section {
+  background: var(--color-silver);
+  padding: 15px 20px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+main section .section-header {
+  margin-bottom: 15px;
+}
+main section .section-body {
+  margin: 15px auto;
+  line-height: 25px;
+  display: flex;
+  justify-content: space-around;
+}
+main .hero .copytext {
+  flex-direction: column;
+}
+main .hero .copytext .copytext-header {
+  margin-bottom: 15px;
+}
+main .hero .copytext .copytext-content {
+  line-height: 25px;
+}
+main .portfolio .projects .projects-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-evenly;
+}
+main .portfolio .projects .projects-list .project {
+  margin: 20px;
+  display: flex;
+}
+main .portfolio .projects .projects-list .project .project-link {
+  color: var(--fontcolor-black);
+  text-decoration: none;
+}
+main .contact {
+  background: var(--color-silver);
+  padding: 15px 20px;
+  border: 1px solid black;
+}
+main .contact .contact-form {
+  width: 40vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+main .contact .contact-form label {
+  margin-bottom: 15px;
+}
+main .contact .contact-form input {
+  margin-bottom: 15px;
+}
+main .contact .contact-form textarea {
+  margin-bottom: 15px;
+  height: 150px;
+  resize: none;
+}
+main .contact .contact-form button[type=submit] {
+  width: 50%;
+  margin: auto;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,176 @@
+:root{
+    --fontcolor-black: #000;
+    --color-silver: silver;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    background: var(--color-silver);
+    width: 100%;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+
+    img {
+        max-width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .card-body {
+        padding: 15px;
+        line-height: 15px;
+
+        h4 {
+            margin-bottom: 15px;
+        }
+
+    }
+
+}
+
+header {
+
+    nav {
+        background: var(--color-silver);
+        padding: 4vh 20px;
+        display: flex;
+        justify-content: space-around;
+
+        .brand {
+            .brand-link {
+                text-decoration: none;
+            }
+
+        }
+
+        .nav-list {
+            width: 80%;
+            display: flex;
+            justify-content: space-evenly;
+
+            .nav-list-item {
+                display: flex;
+
+                .nav-link {
+                    text-decoration: none;
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    section{
+        background: var(--color-silver);
+        padding: 15px 20px;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        
+        .section-header {
+            margin-bottom: 15px;
+        }
+
+        .section-body{
+            margin: 15px auto;
+            line-height: 25px;
+            display: flex;
+            justify-content: space-around;
+        }
+    
+    }
+
+    .hero {
+        .copytext {
+            flex-direction: column;
+
+            .copytext-header {
+                margin-bottom: 15px;
+            }
+
+            .copytext-content {
+                line-height: 25px;
+            }
+
+        }
+
+    }
+
+    .about{
+
+    }
+
+    .portfolio {
+
+        .projects {
+
+            .projects-list {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                justify-content: space-evenly;
+
+                .project {
+                    margin: 20px;
+                    display: flex;
+
+                    .project-link{
+                        color: var(--fontcolor-black);
+                        text-decoration: none;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+    .contact {
+        background: var(--color-silver);
+        padding: 15px 20px;
+        border: 1px solid black;
+        
+        .contact-form {
+            width: 40vw;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+
+            label {
+                margin-bottom: 15px;
+            }
+
+            input {
+                margin-bottom: 15px;
+            }
+
+            textarea {
+                margin-bottom: 15px;
+                height: 150px;
+                resize: none;
+
+            }
+
+            button[type="submit"] {
+                width: 50%;
+                margin: auto;
+            }
+
+        }
+
+    }
+
+}
